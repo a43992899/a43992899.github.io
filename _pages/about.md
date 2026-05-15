@@ -197,7 +197,7 @@ Generative pretraining for symbolic music modeling and controllable composition.
 
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
-#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
+#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://aclanthology.org/2024.findings-acl.373/)
 **Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
 
 Music-language modeling that treats symbolic music as a native language for understanding and generation.
@@ -221,6 +221,14 @@ Large-scale multimodal benchmark across college-level disciplines and expert rea
 Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., **Ruibin Yuan**, et al.
 
 Unified discrete sequence modeling for language, image, audio, and speech modalities.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2025</span><span class="topic-pill">Omni-language evaluation</span></div>
+#### [OmniBench: Towards The Future of Universal Omni-Language Models](https://nips.cc/virtual/2025/poster/121644)
+Yizhi Li, Ge Zhang, Yinghao Ma, **Ruibin Yuan**, Kang Zhu, Hangyu Guo, et al.
+
+Tri-modal benchmark for integrated visual, acoustic, and textual reasoning in omni-language models.
 </div>
 
 <div class="publication-card" markdown="1">
@@ -254,7 +262,7 @@ High-quality Chinese instruction data construction and fine-tuning.
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2024</span><span class="topic-pill">Music representation</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
-#### [MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training](https://doi.org/10.48550/arxiv.2306.00107)
+#### [MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training](https://openreview.net/forum?id=w3YZ9MSlBu)
 Yizhi Li*, **Ruibin Yuan***, Ge Zhang*, Yinghao Ma*, et al.
 
 Large-scale self-supervised acoustic music model for transferable music understanding.
@@ -262,7 +270,7 @@ Large-scale self-supervised acoustic music model for transferable music understa
 
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2023</span><span class="topic-pill">Music benchmark</span><span class="cite-pill" data-metric="publications.marble.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.marble.citations | default: 59 }}</span></div>
-#### [MARBLE: Music Audio Representation Benchmark for Universal Evaluation](https://doi.org/10.48550/arxiv.2306.10548)
+#### [MARBLE: Music Audio Representation Benchmark for Universal Evaluation](https://proceedings.neurips.cc/paper_files/paper/2023/hash/7cbeec46f979618beafb4f46d8f39f36-Abstract-Datasets_and_Benchmarks.html)
 **Ruibin Yuan***, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.
 
 Unified benchmark for evaluating music audio representations across diverse MIR tasks.
@@ -279,14 +287,14 @@ Universal music information retrieval across unaligned modalities and unseen lan
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill" data-metric="publications.clamp2.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp2.citations | default: 19 }}</span></div>
 #### [CLaMP 2: Multimodal Music Information Retrieval Across 101 Languages Using Large Language Models](https://doi.org/10.18653/v1/2025.findings-naacl.27)
-Yongqi Wang, **Ruibin Yuan**, Ge Zhang, Yinghao Ma, et al.
+Shangda Wu, Yashan Wang, **Ruibin Yuan**, Zhancheng Guo, Xu Tan, Ge Zhang, et al.
 
 Multilingual music information retrieval across text, audio, and symbolic music interfaces.
 </div>
 
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Lyrics transcription</span><span class="cite-pill" data-metric="publications.lyricwhiz.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.lyricwhiz.citations | default: 43 }}</span></div>
-#### [LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT](https://doi.org/10.48550/arxiv.2306.17103)
+#### [LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT](https://doi.org/10.5281/zenodo.10265295)
 Le Zhuo, **Ruibin Yuan**, Jiahao Pan, Yinghao Ma, et al.
 
 Multilingual zero-shot lyrics transcription using speech recognition and LLM post-processing.
@@ -305,11 +313,19 @@ Large-scale heterogeneous supervision for music structure analysis, with SongFor
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill" data-metric="publications.composerx.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.composerx.citations | default: 67 }}</span></div>
-#### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.48550/arxiv.2404.18081)
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill" data-metric="publications.composerx.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.composerx.citations | default: 67 }}</span></div>
+#### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.5281/zenodo.14877425)
 **Ruibin Yuan**, et al.
 
 Multi-agent symbolic composition framework for structured music creation with language models.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2024</span><span class="topic-pill">Music reasoning evaluation</span></div>
+#### [Can LLMs "Reason" in Music? An Evaluation of LLMs' Capability of Music Understanding and Generation](https://doi.org/10.5281/zenodo.14877281)
+Ziya Zhou, Yuhang Wu, Zhiyue Wu, Xinyue Zhang, **Ruibin Yuan**, Yinghao Ma, et al.
+
+Evaluation of LLMs on symbolic music understanding, generation, and multi-step music reasoning.
 </div>
 
 <div class="publication-card" markdown="1">
@@ -318,14 +334,6 @@ Multi-agent symbolic composition framework for structured music creation with la
 Shangda Wu, Ziya Zhou, Yongyi Zang, Yutong Zheng, Dafang Liang, **Ruibin Yuan**, Qiuqiang Kong.
 
 Multilingual benchmark for music understanding across cultural and linguistic contexts.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Omni-language evaluation</span></div>
-#### [OmniBench: Towards The Future of Universal Omni-Language Models](https://arxiv.org/abs/2409.15272)
-Yizhi Li, Ge Zhang, Yinghao Ma, **Ruibin Yuan**, Kang Zhu, Hangyu Guo, et al.
-
-Evaluation for omni-language model capabilities across modalities.
 </div>
 
 <div class="publication-card" markdown="1">
