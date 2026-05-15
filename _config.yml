@@ -7,7 +7,8 @@
 
 # Site Settings
 title                    : "Ruibin Yuan (袁锐斌)"
-description              : "PhD student in Artificial Intelligence, focusing on LLM, GenAI, and music."
+description              : "PhD student in Artificial Intelligence at HKUST. Open music AGI, multimodal foundation models, and AI music generation."
+url                      : "https://a43992899.github.io"
 repository               : "a43992899/a43992899.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,14 +24,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ruibin Yuan (袁锐斌)"
   avatar           : "images/WechatIMG24.jpg"
-  bio              : "Multimodal Art Projection"
+  bio              : "Open Music AGI. Trying my best to teach AGI music."
   location         : "Hong Kong"
-  employer         :
+  employer         : "HKUST / MAP"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ"
   email            : "a43992899@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://a43992899.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -51,7 +52,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "abc43992899"
   vine             :
   weibo            :
   xing             :

@@ -3,56 +3,147 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+<section class="profile-hero" markdown="1">
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+# Ruibin Yuan
 
+I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research focuses on foundation models for music generation and understanding, multimodal LLMs, and the data and systems needed to make creative AI genuinely useful.
 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to projects including [YuE](https://github.com/multimodal-art-projection/YuE), MERT, ChatMusician, MARBLE, MMMU/CMMMU, and COIG.
 
-# 📝 Publications 
+[Download CV](/files/Ruibin_Yuan_CV.pdf){: .btn .btn--primary}
+[Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
+[GitHub](https://github.com/a43992899){: .btn}
+[MAP](https://huggingface.co/m-a-p){: .btn}
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+</section>
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+<section class="focus-grid" markdown="1">
+<div markdown="1">
+### Open Music AGI
+Building models that can understand, compose, and reason about music as a first-class creative medium.
+</div>
+<div markdown="1">
+### Multimodal Foundation Models
+Training and evaluating systems across language, music, audio, vision, and expert reasoning.
+</div>
+<div markdown="1">
+### Open Research Infrastructure
+Large-scale data collection, training systems, benchmarks, logs, and reproducible open-source releases.
+</div>
+</section>
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+<span class='anchor' id='work'></span>
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+## Selected Work
+
+<div class="work-grid" markdown="1">
+<div class="work-card" markdown="1">
+### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
+Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
+</div>
+
+<div class="work-card" markdown="1">
+### Qwen Music
+Foundation model research for music generation, with additional work on music understanding capabilities in the Qwen-Omni series.
+</div>
+
+<div class="work-card" markdown="1">
+### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329)
+Symbolic music LLM research, large-scale music-language data, and advanced music understanding evaluation.
+</div>
+
+<div class="work-card" markdown="1">
+### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927) and [MARBLE](https://marble-bm.shef.ac.uk)
+Self-supervised music audio representation learning and unified benchmark design for music understanding.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<span class='anchor' id='publications'></span>
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+## Selected Publications and Manuscripts
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<ol class="pub-list">
+  <li><strong>[CVPR 2024]</strong> MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI. Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., <strong>Ruibin Yuan</strong>, et al.</li>
+  <li><strong>[ICLR 2024]</strong> MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training. Yizhi Li*, <strong>Ruibin Yuan*</strong>, Ge Zhang*, Yinghao Ma*, et al.</li>
+  <li><strong>[NeurIPS 2023]</strong> MARBLE: Music Audio Representation Benchmark for Universal Evaluation. <strong>Ruibin Yuan*</strong>, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.</li>
+  <li><strong>[ACL 2024 Main]</strong> AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling. Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., <strong>Ruibin Yuan</strong>, et al.</li>
+  <li><strong>[ACL 2024 Findings]</strong> ChatMusician: Understanding and Generating Music Intrinsically with LLM. <strong>Ruibin Yuan</strong>, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.</li>
+  <li><strong>[ISMIR 2023]</strong> On the Effectiveness of Speech Self-supervised Learning for Music. Yinghao Ma, <strong>Ruibin Yuan</strong>, Yizhi Li, Ge Zhang, et al.</li>
+  <li><strong>[ISMIR 2023]</strong> LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT. Le Zhuo, <strong>Ruibin Yuan</strong>, Jiahao Pan, Yinghao Ma, et al.</li>
+  <li><strong>[ISMIR 2022 LBD]</strong> MAP-Music2Vec: A Simple and Effective Baseline for Self-Supervised Music Audio Representation Learning. Yizhi Li*, <strong>Ruibin Yuan*</strong>, Ge Zhang*, Yinghao Ma*, et al.</li>
+  <li><strong>[Interspeech 2022]</strong> DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion. <strong>Ruibin Yuan</strong>, Yuxuan Wu, Jacob Li, Jaxter Kim.</li>
+</ol>
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+See the [full CV](/files/Ruibin_Yuan_CV.pdf) or [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list.
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+<span class='anchor' id='experience'></span>
+
+## Experience
+
+<div class="timeline-list" markdown="1">
+<div markdown="1">
+**Qwen**<br>
+Research Intern, Qwen Music. Supervisor: [Jin Xu](https://scholar.google.com/citations?user=COYDNmYAAAAJ).<br>
+<span>2025.04 - present · Remote</span>
+</div>
+
+<div markdown="1">
+**Moonshot.ai**<br>
+Research Intern. Supervisor: [Xu Tan](https://scholar.google.com/citations?user=tob-U1oAAAAJ).<br>
+<span>2024.09 - 2025.04 · Remote</span>
+</div>
+
+<div markdown="1">
+**BAAI**<br>
+Part-time Research Intern. Supervisor: [Jie Fu](https://scholar.google.com/citations?user=66osleIAAAAJ).<br>
+<span>2022 - 2023 · Remote</span>
+</div>
+
+<div markdown="1">
+**Stardust.ai**<br>
+Part-time ML Consultant, Ex-engineer.<br>
+<span>2020.05 - 2021 · Beijing</span>
+</div>
+
+<div markdown="1">
+**NetEase, Inc.**<br>
+Intern Machine Learning Engineer.<br>
+<span>2019.12 - 2020.04 · Shanghai</span>
+</div>
+</div>
+
+<span class='anchor' id='education'></span>
+
+## Education
+
+<div class="timeline-list" markdown="1">
+<div markdown="1">
+**Hong Kong University of Science and Technology**<br>
+PhD in Artificial Intelligence. Advisors: Jie Fu, Wei Xue, Yike Guo.<br>
+<span>2023.09 - present · Hong Kong</span>
+</div>
+
+<div markdown="1">
+**Carnegie Mellon University**<br>
+M.S. in Music and Technology, Computer Science Emphasis. Advisors: Roger B. Dannenberg, Gus Xia, Riccardo Schulz.<br>
+<span>2021.09 - 2023.05 · Pittsburgh</span>
+</div>
+
+<div markdown="1">
+**Beijing University of Posts and Telecommunications**<br>
+B.S. in Electronic Science and Technology.<br>
+<span>2016.09 - 2020.06 · Beijing</span>
+</div>
+</div>
+
+## Music
+
+Lead guitarist and cofounder of BUPT Slow Blues Band, president of BUPT Guitar Club, and longtime believer that intelligence without music is missing something essential.
