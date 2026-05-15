@@ -20,7 +20,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 
 [Download CV](/files/Ruibin_Yuan_CV.pdf){: .btn .btn--primary}
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
-[GitHub](https://github.com/a43992899){: .btn}
+[GitHub Profile](https://github.com/a43992899){: .btn}
 [MAP](https://huggingface.co/m-a-p){: .btn}
 
 </section>
@@ -83,6 +83,27 @@ Self-supervised music audio representation learning and unified benchmark design
 </ol>
 
 See the [full CV](/files/Ruibin_Yuan_CV.pdf) or [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list.
+
+<span class='anchor' id='collaborate'></span>
+
+## Let's Build Together
+
+<div class="collab-panel" markdown="1">
+I am always open to collaboration with people who care about open music AI, large-scale training, evaluation, and creative tools. The shortest informal version of what I am exploring lives in my [GitHub profile README](https://github.com/a43992899), and the more academic version lives here.
+
+Current ideas I am especially excited about:
+
+- A public Lyrics2Song dataset.
+- Better diffusion upsampling for YuE, especially fidelity and resolution.
+- Better evaluation metrics for musicality.
+- More controllability for full-song generation.
+- A music arena for popular AI music systems.
+- **NMLB (No Music Left Behind)**: collecting all human music, not only western music, and building open music understanding and generation models on top of it.
+
+[GitHub Profile README](https://github.com/a43992899){: .btn}
+[MAP Discord](https://discord.gg/Z8ZHxS44uE){: .btn}
+[Buy Me a Coffee](https://buymeacoffee.com/ruibin){: .btn}
+</div>
 
 <span class='anchor' id='experience'></span>
 

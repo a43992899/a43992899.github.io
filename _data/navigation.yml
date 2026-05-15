@@ -9,6 +9,9 @@ main:
   - title: "Publications"
     url: "/#publications"
 
+  - title: "Collaborate"
+    url: "/#collaborate"
+
   - title: "Experience"
     url: "/#experience"
 
@@ -17,3 +20,6 @@ main:
 
   - title: "CV"
     url: "/files/Ruibin_Yuan_CV.pdf"
+
+  - title: "GitHub"
+    url: "https://github.com/a43992899"
