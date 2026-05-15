@@ -9,4 +9,4 @@ BUNDLE_PATH=/Users/stardust/code/cubbylab/local/ruby-bundle-a43992899 \
   ~/.gem/ruby/2.6.0/bin/bundle _2.2.19_ exec jekyll build
 ```
 
-The latest CV PDF and LaTeX source are published under `files/`.
+The full CV PDF and LaTeX source are kept in the private `a43992899/ruibin-yuan-cv` repository. The public homepage exposes a request form instead of hosting downloadable CV files.

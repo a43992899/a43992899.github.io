@@ -15,6 +15,14 @@ google_scholar_stats_use_cdn : true
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
+# Optional privacy-friendly visitor metrics. GitHub Pages is static, so real
+# counts and locations need an external analytics endpoint before this is shown.
+visitor_stats:
+  enabled                : false
+  provider               :
+  api_url                :
+  public_dashboard_url   :
+
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
@@ -29,7 +37,9 @@ author:
   employer         : "HKUST / MAP"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ"
-  email            : "a43992899@gmail.com"
+  protected_email  :
+    user_b64       : "YTQzOTkyODk5"
+    domain_b64     : "Z21haWwuY29t"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              : "https://a43992899.github.io"
   bitbucket        :

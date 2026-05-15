@@ -15,14 +15,14 @@ main:
   - title: "Collaborate"
     url: "/#collaborate"
 
+  - title: "CV"
+    url: "/#cv-request"
+
   - title: "Experience"
     url: "/#experience"
 
   - title: "Education"
     url: "/#education"
-
-  - title: "CV"
-    url: "/files/Ruibin_Yuan_CV.pdf"
 
   - title: "GitHub"
     url: "https://github.com/a43992899"

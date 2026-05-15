@@ -1,0 +1,34 @@
+<footer class="site-footer site-footer--personal" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__identity">
+      <strong>Ruibin Yuan</strong>
+      <span>Open music AGI · multimodal foundation models · creative AI</span>
+    </div>
+
+    {% if site.visitor_stats.enabled %}
+      <section
+        class="visitor-stats"
+        data-visitor-stats
+        {% if site.visitor_stats.api_url %}data-api-url="{{ site.visitor_stats.api_url }}"{% endif %}
+      >
+        <span class="visitor-stats__eyebrow">Visitor stats</span>
+        <div class="visitor-stats__grid">
+          <span>
+            <strong data-visitor-total>Pending</strong>
+            <small>Total visits</small>
+          </span>
+          <span>
+            <strong data-visitor-locations>Pending</strong>
+            <small>Top locations</small>
+          </span>
+        </div>
+        <p>
+          Updated <span data-visitor-updated>after analytics is connected</span>
+          {% if site.visitor_stats.public_dashboard_url %}
+            · <a href="{{ site.visitor_stats.public_dashboard_url }}">dashboard</a>
+          {% endif %}
+        </p>
+      </section>
+    {% endif %}
+  </div>
+</footer>
