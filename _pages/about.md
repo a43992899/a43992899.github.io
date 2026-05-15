@@ -14,9 +14,9 @@ redirect_from:
 
 # Ruibin Yuan
 
-I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research focuses on foundation models for music generation and understanding, multimodal LLMs, and the data and systems needed to make creative AI genuinely useful.
+I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research sits at the intersection of music generation, music understanding, multimodal LLMs, and the open data and systems needed to make creative AI genuinely useful.
 
-I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to projects including [YuE](https://github.com/multimodal-art-projection/YuE), MERT, ChatMusician, MARBLE, MMMU/CMMMU, and COIG.
+I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open research infrastructure.
 
 [Download CV](/files/Ruibin_Yuan_CV.pdf){: .btn .btn--primary}
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
@@ -25,18 +25,73 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 
 </section>
 
-<section class="focus-grid" markdown="1">
+<section class="impact-strip" markdown="1">
 <div markdown="1">
-### Open Music AGI
-Building models that can understand, compose, and reason about music as a first-class creative medium.
+<strong>411</strong>
+<span>OpenAlex indexed citations</span>
 </div>
 <div markdown="1">
-### Multimodal Foundation Models
-Training and evaluating systems across language, music, audio, vision, and expert reasoning.
+<strong>47</strong>
+<span>indexed scholarly works</span>
 </div>
 <div markdown="1">
+<strong>8</strong>
+<span>OpenAlex h-index</span>
+</div>
+<div markdown="1">
+<strong>6.2k+</strong>
+<span>GitHub stars on YuE</span>
+</div>
+</section>
+
+<p class="metric-note">Citation metrics are OpenAlex-indexed snapshots; see <a href="https://scholar.google.com/citations?user=Qd_hX1cAAAAJ">Google Scholar</a> for the live bibliography profile.</p>
+
+<span class='anchor' id='research-areas'></span>
+
+## Research Areas
+
+<section class="research-grid" markdown="1">
+<div class="research-card area-music-generation" markdown="1">
+### Music Generation
+Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
+
+<span>YuE</span><span>ChatMusician</span><span>ComposerX</span><span>MuPT</span>
+</div>
+
+<div class="research-card area-music-understanding" markdown="1">
+### Music Understanding
+Self-supervised music audio representation, multilingual MIR, cross-modal retrieval, and practical evaluation for music intelligence.
+
+<span>MERT</span><span>MARBLE</span><span>CLaMP</span><span>Music2Vec</span>
+</div>
+
+<div class="research-card area-multimodal" markdown="1">
+### Multimodal LLMs and Benchmarks
+Discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
+
+<span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>COIG</span>
+</div>
+
+<div class="research-card area-systems" markdown="1">
 ### Open Research Infrastructure
-Large-scale data collection, training systems, benchmarks, logs, and reproducible open-source releases.
+Open datasets, reproducible training pipelines, benchmark design, community releases, and tooling for researchers and builders.
+
+<span>MAP</span><span>Open data</span><span>Evaluation</span><span>Tooling</span>
+</div>
+</section>
+
+<section class="scholar-snapshot" markdown="1">
+<div markdown="1">
+### OpenAlex Snapshot
+OpenAlex currently clusters my work around **Music and Audio Processing**, **Speech Recognition and Synthesis**, **Natural Language Processing Techniques**, **Music Technology and Sound Studies**, and **Topic Modeling**.
+</div>
+<div markdown="1">
+### Most Cited Directions
+The strongest citation signals come from multimodal expert benchmarks, unified multimodal LLMs, and music representation learning: MMMU, AnyGPT, MERT, MARBLE, and open instruction/data releases.
+</div>
+<div markdown="1">
+### Open-Source Footprint
+MAP's public projects combine research prototypes and community infrastructure, with [YuE](https://github.com/multimodal-art-projection/YuE) alone attracting more than 6.2k GitHub stars.
 </div>
 </section>
 
@@ -46,23 +101,39 @@ Large-scale data collection, training systems, benchmarks, logs, and reproducibl
 
 <div class="work-grid" markdown="1">
 <div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill">6.2k stars</span></div>
 ### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
 Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
 </div>
 
 <div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Foundation model</span><span class="star-pill">Qwen Music</span></div>
 ### Qwen Music
 Foundation model research for music generation, with additional work on music understanding capabilities in the Qwen-Omni series.
 </div>
 
 <div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL Findings</span></div>
 ### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329)
 Symbolic music LLM research, large-scale music-language data, and advanced music understanding evaluation.
 </div>
 
 <div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span></div>
 ### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927) and [MARBLE](https://marble-bm.shef.ac.uk)
 Self-supervised music audio representation learning and unified benchmark design for music understanding.
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Multimodal benchmark</span><span class="star-pill">CVPR</span></div>
+### [MMMU / CMMMU](https://mmmu-benchmark.github.io)
+Expert-level multimodal understanding benchmarks for testing reasoning across university-level disciplines and Chinese multimodal settings.
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Open community</span><span class="star-pill">MAP</span></div>
+### [Multimodal Art Projection](https://huggingface.co/m-a-p)
+Open research community for multimodal art, music intelligence, datasets, checkpoints, and reproducible releases.
 </div>
 </div>
 
@@ -70,17 +141,121 @@ Self-supervised music audio representation learning and unified benchmark design
 
 ## Selected Publications and Manuscripts
 
-<ol class="pub-list">
-  <li><strong>[CVPR 2024]</strong> MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI. Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., <strong>Ruibin Yuan</strong>, et al.</li>
-  <li><strong>[ICLR 2024]</strong> MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training. Yizhi Li*, <strong>Ruibin Yuan*</strong>, Ge Zhang*, Yinghao Ma*, et al.</li>
-  <li><strong>[NeurIPS 2023]</strong> MARBLE: Music Audio Representation Benchmark for Universal Evaluation. <strong>Ruibin Yuan*</strong>, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.</li>
-  <li><strong>[ACL 2024 Main]</strong> AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling. Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., <strong>Ruibin Yuan</strong>, et al.</li>
-  <li><strong>[ACL 2024 Findings]</strong> ChatMusician: Understanding and Generating Music Intrinsically with LLM. <strong>Ruibin Yuan</strong>, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.</li>
-  <li><strong>[ISMIR 2023]</strong> On the Effectiveness of Speech Self-supervised Learning for Music. Yinghao Ma, <strong>Ruibin Yuan</strong>, Yizhi Li, Ge Zhang, et al.</li>
-  <li><strong>[ISMIR 2023]</strong> LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT. Le Zhuo, <strong>Ruibin Yuan</strong>, Jiahao Pan, Yinghao Ma, et al.</li>
-  <li><strong>[ISMIR 2022 LBD]</strong> MAP-Music2Vec: A Simple and Effective Baseline for Self-Supervised Music Audio Representation Learning. Yizhi Li*, <strong>Ruibin Yuan*</strong>, Ge Zhang*, Yinghao Ma*, et al.</li>
-  <li><strong>[Interspeech 2022]</strong> DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion. <strong>Ruibin Yuan</strong>, Yuxuan Wu, Jacob Li, Jaxter Kim.</li>
-</ol>
+### Multimodal LLMs and Benchmarks
+
+<div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2024</span><span class="topic-pill">Expert AGI benchmark</span><span class="cite-pill">OA cites 222</span></div>
+#### [MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI](https://doi.org/10.1109/cvpr52733.2024.00913)
+Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., **Ruibin Yuan**, et al.
+
+Large-scale multimodal benchmark across college-level disciplines and expert reasoning tasks.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2024 Main</span><span class="topic-pill">Unified multimodal LLM</span><span class="cite-pill">OA cites 40</span></div>
+#### [AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling](https://doi.org/10.18653/v1/2024.acl-long.521)
+Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., **Ruibin Yuan**, et al.
+
+Unified discrete sequence modeling for language, image, audio, and speech modalities.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill">OA cites 3</span></div>
+#### [CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark](https://doi.org/10.48550/arxiv.2401.11944)
+Xiang Yue, Tianyu Zheng, Yuansheng Ni, Yubo Wang, et al., **Ruibin Yuan**, et al.
+
+Chinese multimodal benchmark extending expert-level evaluation across disciplines and cultural contexts.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2023</span><span class="topic-pill">Open instruction data</span><span class="cite-pill">OA cites 10</span></div>
+#### [Chinese Open Instruction Generalist: A Preliminary Release](https://doi.org/10.48550/arxiv.2304.07987)
+Hao Cheng, Sirui Zhang, Jize Zhang, Feng Jiang, **Ruibin Yuan**, et al.
+
+Open Chinese instruction data and training work for generalist language and multimodal systems.
+</div>
+</div>
+
+### Music Understanding and MIR
+
+<div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2024</span><span class="topic-pill">Music representation</span><span class="cite-pill">OA cites 26</span></div>
+#### [MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training](https://doi.org/10.48550/arxiv.2306.00107)
+Yizhi Li*, **Ruibin Yuan***, Ge Zhang*, Yinghao Ma*, et al.
+
+Large-scale self-supervised acoustic music model for transferable music understanding.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2023</span><span class="topic-pill">Music benchmark</span><span class="cite-pill">OA cites 6</span></div>
+#### [MARBLE: Music Audio Representation Benchmark for Universal Evaluation](https://doi.org/10.48550/arxiv.2306.10548)
+**Ruibin Yuan***, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.
+
+Unified benchmark for evaluating music audio representations across diverse MIR tasks.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill">OA cites 8</span></div>
+#### [CLaMP 2: Multimodal Music Information Retrieval Across 101 Languages Using Large Language Models](https://doi.org/10.18653/v1/2025.findings-naacl.27)
+Yongqi Wang, **Ruibin Yuan**, Ge Zhang, Yinghao Ma, et al.
+
+Multilingual music information retrieval across text, audio, and symbolic music interfaces.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Speech SSL for music</span><span class="cite-pill">OA cites 2</span></div>
+#### [On the Effectiveness of Speech Self-supervised Learning for Music](https://doi.org/10.48550/arxiv.2307.05161)
+Yinghao Ma, **Ruibin Yuan**, Yizhi Li, Ge Zhang, et al.
+
+Empirical study of how speech self-supervised representations transfer into music tasks.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Lyrics transcription</span><span class="cite-pill">OA cites 3</span></div>
+#### [LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT](https://doi.org/10.48550/arxiv.2306.17103)
+Le Zhuo, **Ruibin Yuan**, Jiahao Pan, Yinghao Ma, et al.
+
+Multilingual zero-shot lyrics transcription using speech recognition and LLM post-processing.
+</div>
+</div>
+
+### Music Generation and Creative AI
+
+<div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill">OA cites 4</span></div>
+#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
+**Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
+
+Music-language modeling that treats symbolic music as a native language for understanding and generation.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill">OA cites 6</span></div>
+#### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.48550/arxiv.2404.18081)
+**Ruibin Yuan**, et al.
+
+Multi-agent symbolic composition framework for structured music creation with language models.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill">OA cites 3</span></div>
+#### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://doi.org/10.48550/arxiv.2404.06393)
+**Ruibin Yuan**, et al.
+
+Generative pretraining for symbolic music modeling and controllable composition.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-interspeech">Interspeech 2022</span><span class="topic-pill">Voice conversion</span><span class="cite-pill">OA cites 5</span></div>
+#### [DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion](https://doi.org/10.21437/interspeech.2022-11036)
+**Ruibin Yuan**, Yuxuan Wu, Jacob Li, Jaxter Kim.
+
+Zero-shot pseudo voice conversion for privacy-preserving speaker de-identification.
+</div>
+</div>
 
 See the [full CV](/files/Ruibin_Yuan_CV.pdf) or [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list.
 

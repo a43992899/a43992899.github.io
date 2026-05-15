@@ -3,6 +3,9 @@ main:
   - title: "About"
     url: "/#about-me"
 
+  - title: "Areas"
+    url: "/#research-areas"
+
   - title: "Work"
     url: "/#work"
 

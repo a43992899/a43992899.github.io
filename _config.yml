@@ -24,7 +24,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ruibin Yuan (袁锐斌)"
   avatar           : "images/WechatIMG24.jpg"
-  bio              : "Open Music AGI. Trying my best to teach AGI music."
+  bio              : "Open music AGI, multimodal foundation models, and AI music generation."
   location         : "Hong Kong"
   employer         : "HKUST / MAP"
   pubmed           : 
