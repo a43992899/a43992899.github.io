@@ -19,6 +19,7 @@
   "publications": {
     "mmmu": { "citations": 2303 },
     "anygpt": { "citations": 298 },
+    "rq_rag": { "citations": 277 },
     "cmmmu": { "citations": 74 },
     "coig": { "citations": 46 },
     "mert": { "citations": 329 },

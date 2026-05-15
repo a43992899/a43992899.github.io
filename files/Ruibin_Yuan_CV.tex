@@ -16,6 +16,18 @@
 \IfFontExistsTF{Apple Symbols}
   {\newfontfamily{\iconfont}{Apple Symbols}}
   {\newfontfamily{\iconfont}{TeX Gyre Termes}}
+\newcommand{\setcviconfonts}[1]{%
+  \newfontfamily{\brandiconfont}[Path=#1]{fa-brands-400.ttf}%
+  \newfontfamily{\solidiconfont}[Path=#1]{fa-solid-900.ttf}%
+  \newfontfamily{\academiciconfont}[Path=#1]{academicons.ttf}%
+}
+\IfFileExists{../assets/fonts/fa-brands-400.ttf}
+  {\setcviconfonts{../assets/fonts/}}
+  {\IfFileExists{fonts/fa-brands-400.ttf}
+    {\setcviconfonts{fonts/}}
+    {\newfontfamily{\brandiconfont}{Arial Unicode MS}
+     \newfontfamily{\solidiconfont}{Arial Unicode MS}
+     \newfontfamily{\academiciconfont}{Arial Unicode MS}}}
 
 \definecolor{ink}{HTML}{1F2933}
 \definecolor{muted}{HTML}{52606D}
@@ -45,14 +57,25 @@
 \newcommand{\cvsubtle}[1]{{\color{muted}#1}}
 \newcommand{\role}[1]{\textit{#1}}
 \newcommand{\cvstrong}[1]{\textbf{#1}}
-\newcommand{\cvicon}[1]{{\scriptsize\color{accent}{\iconfont #1}}}
-\newcommand{\cvmutedicon}[1]{{\scriptsize\color{muted}{\iconfont #1}}}
-\newcommand{\externallinkicon}{\raisebox{0.2ex}{\scriptsize\color{accent}$\nearrow$}}
-\newcommand{\linkglyph}{\,{\externallinkicon}}
+\newcommand{\cvicon}[1]{\raisebox{-0.05ex}{\scriptsize\color{accent}#1}}
+\newcommand{\cvmutedicon}[1]{\raisebox{-0.05ex}{\scriptsize\color{muted}#1}}
+\newcommand{\faGithub}{{\brandiconfont\symbol{"F09B}}}
+\newcommand{\faDiscord}{{\brandiconfont\symbol{"F392}}}
+\newcommand{\faEnvelope}{{\solidiconfont\symbol{"F0E0}}}
+\newcommand{\faPhone}{{\solidiconfont\symbol{"F095}}}
+\newcommand{\faMapMarker}{{\solidiconfont\symbol{"F3C5}}}
+\newcommand{\faUsers}{{\solidiconfont\symbol{"F0C0}}}
+\newcommand{\faMusic}{{\solidiconfont\symbol{"F001}}}
+\newcommand{\faLink}{{\solidiconfont\symbol{"F0C1}}}
+\newcommand{\faFilePdf}{{\solidiconfont\symbol{"F1C1}}}
+\newcommand{\aiGoogleScholar}{{\academiciconfont\symbol{"E828}}}
+\newcommand{\aiArxiv}{{\academiciconfont\symbol{"E808}}}
+\newcommand{\linkglyph}{\,{\cvicon{\faLink}}}
 \newcommand{\link}[2]{\href{#1}{#2\linkglyph}}
-\newcommand{\contactlink}[3]{\href{#1}{\raisebox{0.05ex}{\cvicon{#2}}\hspace{0.22em}#3}}
-\newcommand{\mailcontactlink}[2]{\href{#1}{\raisebox{0.05ex}{\scriptsize\color{accent}\texttt{@}}\hspace{0.22em}#2}}
-\newcommand{\webcontactlink}[2]{\href{#1}{\externallinkicon\hspace{0.22em}#2}}
+\newcommand{\contactlink}[3]{\href{#1}{\cvicon{#2}\hspace{0.22em}#3}}
+\newcommand{\mailcontactlink}[2]{\contactlink{#1}{\faEnvelope}{#2}}
+\newcommand{\papericonlink}[2]{\href{#1}{\cvicon{#2}}}
+\newcommand{\paperlinks}[1]{\hspace{0.25em}{#1}}
 \newcommand{\daterange}[1]{{\color{muted}#1}}
 \newcommand{\entry}[4]{%
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
@@ -77,13 +100,13 @@
 \mailcontactlink{mailto:ruibiny@alumni.cmu.edu}{ruibiny@alumni.cmu.edu} \, | \,
 \mailcontactlink{mailto:a43992899@gmail.com}{a43992899@gmail.com}
 &
-\cvmutedicon{⌖}\hspace{0.22em}Hong Kong
+\cvmutedicon{\faMapMarker}\hspace{0.22em}Hong Kong
 \\
-\webcontactlink{https://github.com/a43992899}{github.com/a43992899} \, | \,
-\webcontactlink{https://scholar.google.com/citations?user=Qd_hX1cAAAAJ}{Google Scholar} \, | \,
-\webcontactlink{https://huggingface.co/m-a-p}{MAP Research Community}
+\contactlink{https://github.com/a43992899}{\faGithub}{github.com/a43992899} \, | \,
+\contactlink{https://scholar.google.com/citations?user=Qd_hX1cAAAAJ}{\aiGoogleScholar}{Google Scholar} \, | \,
+\contactlink{https://huggingface.co/m-a-p}{\faUsers}{MAP Research Community}
 &
-\cvmutedicon{☎}\hspace{0.22em}+852 46830974 \, | \, +86 18033231161
+\cvmutedicon{\faPhone}\hspace{0.22em}+852 46830974 \, | \, +86 18033231161
 \end{tabularx}
 
 \vspace{3pt}
@@ -97,11 +120,11 @@
 
 \entry{Hong Kong University of Science and Technology (HKUST)}{09/2023--Present}
 {PhD in Artificial Intelligence}{Hong Kong}
-Advisor: Jie Fu, Wei Xue, Yike Guo
+Supervisors: Jie Fu, Wei Xue, Yike Guo
 
 \entry{Carnegie Mellon University (CMU)}{09/2021--05/2023}
 {M.S. in Music and Technology, Computer Science Emphasis}{Pittsburgh, PA}
-Advisor: Roger B. Dannenberg, Gus Xia, Riccardo Schulz
+Supervisors: Roger B. Dannenberg, Gus Xia, Riccardo Schulz
 
 \entry{Beijing University of Posts and Telecommunications (BUPT)}{09/2016--06/2020}
 {B.S. in Electronic Science and Technology}{Beijing, China}
@@ -109,7 +132,7 @@ Advisor: Roger B. Dannenberg, Gus Xia, Riccardo Schulz
 \section{Academic Experience}
 
 \projectentry{Qwen Music}{04/2025--Present}{
-\textit{Team Lead.} Lead the development of Qwen Music, a foundation model for music generation, and contribute to music understanding capabilities in the Qwen-Omni series.
+\textit{Team Lead.} Lead foundation model research for music generation and contribute music understanding capabilities in the Qwen-Omni series.
 }
 
 \projectentry{\link{https://huggingface.co/m-a-p}{Multimodal Art Projection Research Community (MAP)}}{09/2022--Present}{
@@ -117,7 +140,7 @@ Advisor: Roger B. Dannenberg, Gus Xia, Riccardo Schulz
 }
 
 \projectentry{\link{https://github.com/multimodal-art-projection/YuE}{YuE (OpenSuno)}}{03/2024--03/2025}{
-\textit{Team Lead.} Built an open full-song generation foundation model designed to approach the capabilities of closed-source music generation systems such as Suno and Udio.
+\textit{Team Lead.} Built an open full-song generation foundation model for lyrics-to-song and long-form music generation, attracting broad open-source adoption.
 }
 
 \projectentry{\link{https://huggingface.co/collections/m-a-p/neo-models-66395a5c9662bb58d5d70f04}{NEO LLM}}{09/2023--05/2024}{
@@ -146,50 +169,48 @@ Built the first unified benchmark for music understanding.
 
 \section{Selected Publications and Manuscripts}
 
-\textit{Asterisks indicate equal contribution.}
+\textit{Asterisks indicate equal contribution. Icons link to papers, code, or project pages.}
 
 {\small
 \begin{enumerate}[itemsep=1pt]
-\item \textbf{[CVPR 2024]} MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI. Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, Ruoqi Liu, Ge Zhang, Samuel Stevens, Dongfu Jiang, Weiming Ren, Yuxuan Sun, Cong Wei, Botao Yu, \cvstrong{Ruibin Yuan}, Renliang Sun, Ming Yin, Boyuan Zheng, Zhenzhu Yang, Yibo Liu, Wenhao Huang, Huan Sun, Yu Su, Wenhu Chen.
+\item \textbf{[arXiv 2025]} YuE: Scaling Open Foundation Models for Long-Form Music Generation \paperlinks{\papericonlink{https://arxiv.org/abs/2503.08638}{\aiArxiv}\,\papericonlink{https://github.com/multimodal-art-projection/YuE}{\faGithub}}. \cvstrong{Ruibin Yuan}, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
 
-\item \textbf{[ICLR 2024]} MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training. Yizhi Li*, \cvstrong{Ruibin Yuan}*, Ge Zhang*, Yinghao Ma*, Xingran Chen, Hanzhi Yin, Chenghua Lin, Anton Ragni, Emmanouil Benetos, Norbert Gyenge, Roger Dannenberg, Ruibo Liu, Wenhu Chen, Gus Xia, Yemin Shi, Wenhao Huang, Yike Guo, Jie Fu.
+\item \textbf{[CVPR 2024, highly cited]} MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI \paperlinks{\papericonlink{https://doi.org/10.1109/cvpr52733.2024.00913}{\faFilePdf}}. Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., \cvstrong{Ruibin Yuan}, et al.
 
-\item \textbf{[NeurIPS 2023]} MARBLE: Music Audio Representation Benchmark for Universal Evaluation. \cvstrong{Ruibin Yuan}*, Yinghao Ma*, Yizhi Li*, Ge Zhang*, Xingran Chen, Hanzhi Yin, Le Zhuo, Yiqi Liu, Jiawen Huang, Zeyue Tian, Binyue Deng, Ningzhi Wang, Chenghua Lin, Emmanouil Benetos, Anton Ragni, Norbert Gyenge, Roger Dannenberg, Wenhu Chen, Gus Xia, Wei Xue, Si Liu, Shi Wang, Ruibo Liu, Yike Guo, Jie Fu.
+\item \textbf{[ICLR 2024]} MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training \paperlinks{\papericonlink{https://arxiv.org/abs/2306.00107}{\aiArxiv}}. Yizhi Li*, \cvstrong{Ruibin Yuan}*, Ge Zhang*, Yinghao Ma*, et al.
 
-\item \textbf{[ACL 2024 Main]} AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling. Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, Dong Zhang, Zhigeng Liu, Xin Zhang, \cvstrong{Ruibin Yuan}, Ge Zhang, Linyang Li, Hang Yan, Jie Fu, Tao Gui, Tianxiang Sun, Yugang Jiang, Xipeng Qiu.
+\item \textbf{[NeurIPS 2023]} MARBLE: Music Audio Representation Benchmark for Universal Evaluation \paperlinks{\papericonlink{https://arxiv.org/abs/2306.10548}{\aiArxiv}\,\papericonlink{https://marble-bm.shef.ac.uk}{\faMusic}}. \cvstrong{Ruibin Yuan}*, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.
 
-\item \textbf{[ACL 2024 Findings]} ChatMusician: Understanding and Generating Music Intrinsically with LLM. \cvstrong{Ruibin Yuan}, Hanfeng Lin, Yi Wang, Zeyue Tian, Shangda Wu, Tianhao Shen, Ge Zhang, Yuhang Wu, Cong Liu, Ziya Zhou, Ziyang Ma, Liumeng Xue, Ziyu Wang, Qin Liu, Tianyu Zheng, Yizhi Li, Yinghao Ma, Yiming Liang, Xiaowei Chi, Ruibo Liu, Zili Wang, Pengfei Li, Jingcheng Wu, Chenghua Lin, Qifeng Liu, Tao Jiang, Wenhao Huang, Wenhu Chen, Emmanouil Benetos, Jie Fu, Gus Xia, Roger Dannenberg, Wei Xue, Shiyin Kang, Yike Guo.
+\item \textbf{[ACL 2024 Main, highly cited]} AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling \paperlinks{\papericonlink{https://doi.org/10.18653/v1/2024.acl-long.521}{\faFilePdf}}. Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., \cvstrong{Ruibin Yuan}, et al.
 
-\item \textbf{[ISMIR 2023]} On the Effectiveness of Speech Self-supervised Learning for Music. Yinghao Ma, \cvstrong{Ruibin Yuan}, Yizhi Li, Ge Zhang, Xingran Chen, Hanzhi Yin, Chenghua Lin, Emmanouil Benetos, Anton Ragni, Norbert Gyenge, Ruibo Liu, Gus Xia, Roger Dannenberg, Yike Guo, Jie Fu.
+\item \textbf{[COLM 2024, highly cited]} RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation \paperlinks{\papericonlink{https://openreview.net/forum?id=tzE7VqsaJ4}{\faFilePdf}\,\papericonlink{https://github.com/chanchimin/RQ-RAG}{\faGithub}}. Chi-Min Chan, Chunpu Xu, \cvstrong{Ruibin Yuan}, Hongyin Luo, Wei Xue, Yike Guo, Jie Fu.
 
-\item \textbf{[ISMIR 2023]} LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT. Le Zhuo, \cvstrong{Ruibin Yuan}, Jiahao Pan, Yinghao Ma, Yizhi Li, Ge Zhang, Si Liu, Roger B. Dannenberg, Jie Fu, Chenghua Lin, Emmanouil Benetos, Wenhu Chen, Wei Xue, Yike Guo.
+\item \textbf{[ICLR 2025]} MuPT: A Generative Symbolic Music Pretrained Transformer \paperlinks{\papericonlink{https://proceedings.iclr.cc/paper_files/paper/2025/hash/73f6f8897896f7bda86ea7d1ebc1dc4f-Abstract-Conference.html}{\faFilePdf}}. Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou, Ka Man Lo, Jiaheng Liu, \cvstrong{Ruibin Yuan}, et al.
 
-\item \textbf{[ISMIR 2022 LBD]} MAP-Music2Vec: A Simple and Effective Baseline for Self-Supervised Music Audio Representation Learning. Yizhi Li*, \cvstrong{Ruibin Yuan}*, Ge Zhang*, Yinghao Ma*, Chenghua Lin, Xingran Chen, Anton Ragni, Hanzhi Yin, Zhijie Hu, Haoyu He, Emmanouil Benetos, Norbert Gyenge, Ruibo Liu, Jie Fu.
+\item \textbf{[ACL 2025 Findings]} CLaMP 3: Universal Music Information Retrieval Across Unaligned Modalities and Unseen Languages \paperlinks{\papericonlink{https://aclanthology.org/2025.findings-acl.133/}{\faFilePdf}\,\papericonlink{https://github.com/sanderwood/clamp3}{\faGithub}}. Shangda Wu, Zhancheng Guo, \cvstrong{Ruibin Yuan}, Junyan Jiang, Seungheon Doh, Gus Xia, Juhan Nam, Xiaobing Li, Feng Yu, Maosong Sun.
 
-\item \textbf{[Manuscript]} ComposerX: Multi-Agent Symbolic Music Composition with LLMs. Qixin Deng, Qikai Yang, \cvstrong{Ruibin Yuan}, Yipeng Huang, Yi Wang, Xubo Liu, Zeyue Tian, Jiahao Pan, Ge Zhang, Hanfeng Lin, Yizhi Li, Yinghao Ma, Jie Fu, Chenghua Lin, Emmanouil Benetos, Wenwu Wang, Guangyu Xia, Wei Xue, Yike Guo.
+\item \textbf{[NAACL 2025 Findings]} CLaMP 2: Multimodal Music Information Retrieval Across 101 Languages Using Large Language Models \paperlinks{\papericonlink{https://aclanthology.org/2025.findings-naacl.27/}{\faFilePdf}}. Shangda Wu, Yashan Wang, \cvstrong{Ruibin Yuan}, Zhancheng Guo, Xu Tan, Ge Zhang, et al.
 
-\item \textbf{[CVPR 2024]} Weakly-Supervised Emotion Transition Learning for Diverse 3D Co-speech Gesture Generation. Xingqun Qi, Jiahao Pan, Peng Li, \cvstrong{Ruibin Yuan}, Xiaowei Chi, Mengfei Li, Wenhan Luo, Wei Xue, Shanghang Zhang, Qifeng Liu, Yike Guo.
+\item \textbf{[ACL 2024 Findings]} ChatMusician: Understanding and Generating Music Intrinsically with LLM \paperlinks{\papericonlink{https://arxiv.org/abs/2402.16153}{\aiArxiv}}. \cvstrong{Ruibin Yuan}, Hanfeng Lin, Yi Wang, Zeyue Tian, Shangda Wu, Tianhao Shen, Ge Zhang, et al.
 
-\item \textbf{[DMRN+17]} MAP-Mu-BERT: Large-Scale Pretrained Model for Self-Supervised Music Audio Representation Learning. Yizhi Li*, \cvstrong{Ruibin Yuan}*, Ge Zhang*, Yinghao Ma*, Chenghua Lin, Xingran Chen, Anton Ragni, Hanzhi Yin, Zhijie Hu, Haoyu He, Emmanouil Benetos, Norbert Gyenge, Ruibo Liu, Jie Fu.
+\item \textbf{[arXiv 2024]} CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark \paperlinks{\papericonlink{https://arxiv.org/abs/2401.11944}{\aiArxiv}}. Ge Zhang, Xinrun Du, Bei Chen, Yiming Liang, Tongxu Luo, Tianyu Zheng, et al., \cvstrong{Ruibin Yuan}, et al.
 
-\item \textbf{[ACL 2024 Findings]} CIF-Bench: A Chinese Instruction-Following Benchmark for Evaluating the Generalizability of Large Language Models. Yizhi Li, Ge Zhang, Xingwei Qu, Jiali Li, Zhaoqun Li, Zekun Wang, Hao Li, \cvstrong{Ruibin Yuan}, Yinghao Ma, Kai Zhang, Wangchunshu Zhou, Yiming Liang, Lei Zhang, Lei Ma, Jiajun Zhang, Zuowen Li, Stephen W. Huang, Chenghua Lin, Wenhu Chen, Jie Fu.
+\item \textbf{[NAACL 2025 Findings]} COIG-CQIA: Quality is All You Need for Chinese Instruction Fine-tuning \paperlinks{\papericonlink{https://aclanthology.org/2025.findings-naacl.457/}{\faFilePdf}\,\papericonlink{https://huggingface.co/datasets/m-a-p/COIG-CQIA}{\faUsers}}. Yuelin Bai, Xeron Du, Yiming Liang, Leo Jin, Junting Zhou, et al., \cvstrong{Ruibin Yuan}, et al.
 
-\item \textbf{[Interspeech 2022]} DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion. \cvstrong{Ruibin Yuan}, Yuxuan Wu, Jacob Li, Jaxter Kim.
+\item \textbf{[arXiv 2024]} OmniBench: Towards The Future of Universal Omni-Language Models \paperlinks{\papericonlink{https://arxiv.org/abs/2409.15272}{\aiArxiv}}. Yizhi Li, Ge Zhang, Yinghao Ma, \cvstrong{Ruibin Yuan}, Kang Zhu, Hangyu Guo, et al.
 
-\item \textbf{[Manuscript]} CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark. Ge Zhang, Xinrun Du, Bei Chen, Yiming Liang, Tongxu Luo, Tianyu Zheng, Kang Zhu, Yuyang Cheng, Chunpu Xu, Shuyue Guo, Haoran Zhang, Xingwei Qu, Junjie Wang, \cvstrong{Ruibin Yuan}, Yizhi Li, Zekun Wang, Yudong Liu, Yu-Hsuan Tsai, Fengji Zhang, Chenghua Lin, Wenhao Huang, Wenhu Chen, Jie Fu.
+\item \textbf{[ISMIR 2023]} LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT \paperlinks{\papericonlink{https://arxiv.org/abs/2306.17103}{\aiArxiv}}. Le Zhuo, \cvstrong{Ruibin Yuan}, Jiahao Pan, Yinghao Ma, Yizhi Li, Ge Zhang, et al.
 
-\item \textbf{[Manuscript]} MuPT: A Generative Symbolic Music Pretrained Transformer. Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou, Ka Man Lo, Jiaheng Liu, \cvstrong{Ruibin Yuan}, Lejun Min, Xueling Liu, Tianyu Zhang, Xinrun Du, Shuyue Guo, Yiming Liang, Yizhi Li, Shangda Wu, Junting Zhou, Tianyu Zheng, Ziyang Ma, Fengze Han, Wei Xue, Gus Xia, Emmanouil Benetos, Xiang Yue, Chenghua Lin, Xu Tan, Stephen W. Huang, Wenhu Chen, Jie Fu, Ge Zhang.
+\item \textbf{[ISMIR 2023]} On the Effectiveness of Speech Self-supervised Learning for Music \paperlinks{\papericonlink{https://arxiv.org/abs/2307.05161}{\aiArxiv}}. Yinghao Ma, \cvstrong{Ruibin Yuan}, Yizhi Li, Ge Zhang, Xingran Chen, Hanzhi Yin, et al.
 
-\item \textbf{[Manuscript]} COIG-CQIA: Quality is All You Need for Chinese Instruction Fine-tuning. Yuelin Bai, Xinrun Du, Yiming Liang, Yonggang Jin, Ziqiang Liu, Junting Zhou, Tianyu Zheng, Xincheng Zhang, Nuo Ma, Zekun Wang, \cvstrong{Ruibin Yuan}, Haihong Wu, Hongquan Lin, Wenhao Huang, Jiajun Zhang, Wenhu Chen, Chenghua Lin, Jie Fu, Min Yang, Shiwen Ni, Ge Zhang.
-
-\item \textbf{[Manuscript]} The Fine Line: Navigating Large Language Model Pretraining with Downstream Capability Analysis. Chen Yang, Junzhuo Li, Xinyao Niu, Xinrun Du, Songyang Gao, Haoran Zhang, Zhaoliang Chen, Xingwei Qu, \cvstrong{Ruibin Yuan}, Yizhi Li, Jiaheng Liu, Stephen W. Huang, Shawn Yue, Wenhu Chen, Jie Fu, Ge Zhang.
+\item \textbf{[Interspeech 2022]} DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion \paperlinks{\papericonlink{https://doi.org/10.21437/interspeech.2022-11036}{\faFilePdf}}. \cvstrong{Ruibin Yuan}, Yuxuan Wu, Jacob Li, Jaxter Kim.
 \end{enumerate}
 }
 
 \section{Industry Experience}
 
 \entry{\link{https://chat.qwen.ai/}{Qwen}}{04/2025--Present}
-{Research Intern; Supervisor: \link{https://scholar.google.com/citations?user=COYDNmYAAAAJ}{Jin Xu}}{Remote}
+{Research Intern, Qwen Music; Supervisor: \link{https://scholar.google.com/citations?user=COYDNmYAAAAJ}{Jin Xu}}{Remote}
 
 \entry{\link{https://kimi.ai}{Moonshot.ai}}{09/2024--04/2025}
 {Research Intern; Supervisor: \link{https://scholar.google.com/citations?user=tob-U1oAAAAJ}{Xu Tan}}{Remote}

@@ -66,28 +66,28 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 ### Music Generation
 Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
 
-<span>YuE</span><span>ChatMusician</span><span>ComposerX</span><span>MuPT</span>
+<span>YuE</span><span>Qwen Music</span><span>ChatMusician</span><span>MuPT</span>
 </div>
 
 <div class="research-card area-music-understanding" markdown="1">
 ### Music Understanding
 Self-supervised music audio representation, multilingual MIR, cross-modal retrieval, and practical evaluation for music intelligence.
 
-<span>MERT</span><span>MARBLE</span><span>CLaMP</span><span>Music2Vec</span>
+<span>MERT</span><span>MARBLE</span><span>CLaMP 2/3</span><span>SongFormer</span>
 </div>
 
 <div class="research-card area-multimodal" markdown="1">
 ### Multimodal LLMs and Benchmarks
 Discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
 
-<span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>COIG</span>
+<span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>OmniBench</span>
 </div>
 
 <div class="research-card area-systems" markdown="1">
 ### Open Research Infrastructure
 Open datasets, reproducible training pipelines, benchmark design, community releases, and tooling for researchers and builders.
 
-<span>MAP</span><span>Open data</span><span>Evaluation</span><span>Tooling</span>
+<span>MAP</span><span>COIG</span><span>RQ-RAG</span><span>Open data</span>
 </div>
 </section>
 
@@ -98,7 +98,7 @@ Google Scholar lists my profile around **Artificial Intelligence**, **Music Gene
 </div>
 <div markdown="1">
 ### Most Cited Directions
-The strongest citation signals come from multimodal expert benchmarks, unified multimodal LLMs, retrieval-augmented generation, and music representation learning: MMMU, AnyGPT, RQ-RAG, MERT, MARBLE, and open instruction/data releases.
+The strongest citation signals come from multimodal expert benchmarks, unified multimodal LLMs, retrieval-augmented generation, and music representation learning: MMMU, Qwen-Omni, AnyGPT, RQ-RAG, MERT, MARBLE, and open instruction/data releases.
 </div>
 <div markdown="1">
 ### Open-Source Footprint
@@ -120,7 +120,7 @@ Open full-song music generation foundation model, designed as an open alternativ
 <div class="work-card" markdown="1">
 <div class="project-meta"><span class="project-type">Foundation model</span><span class="star-pill">Qwen Music</span></div>
 ### Qwen Music
-Foundation model research for music generation, with additional work on music understanding capabilities in the Qwen-Omni series.
+Foundation model research for music generation, with additional work on audio and music understanding capabilities in the Qwen-Omni series.
 </div>
 
 <div class="work-card" markdown="1">
@@ -152,7 +152,7 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 
 ## Selected Publications and Manuscripts
 
-### Multimodal LLMs and Benchmarks
+### High-Impact Multimodal and LLM Work
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
@@ -172,6 +172,14 @@ Unified discrete sequence modeling for language, image, audio, and speech modali
 </div>
 
 <div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-colm">COLM 2024</span><span class="topic-pill">Retrieval-augmented generation</span><span class="cite-pill" data-metric="publications.rq_rag.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.rq_rag.citations | default: 277 }}</span></div>
+#### [RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation](https://openreview.net/forum?id=tzE7VqsaJ4)
+Chi-Min Chan, Chunpu Xu, **Ruibin Yuan**, Hongyin Luo, Wei Xue, Yike Guo, Jie Fu.
+
+Query refinement for stronger retrieval-augmented generation.
+</div>
+
+<div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill" data-metric="publications.cmmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.cmmmu.citations | default: 74 }}</span></div>
 #### [CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark](https://doi.org/10.48550/arxiv.2401.11944)
 Xiang Yue, Tianyu Zheng, Yuansheng Ni, Yubo Wang, et al., **Ruibin Yuan**, et al.
@@ -180,11 +188,39 @@ Chinese multimodal benchmark extending expert-level evaluation across discipline
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2023</span><span class="topic-pill">Open instruction data</span><span class="cite-pill" data-metric="publications.coig.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.coig.citations | default: 46 }}</span></div>
-#### [Chinese Open Instruction Generalist: A Preliminary Release](https://doi.org/10.48550/arxiv.2304.07987)
-Hao Cheng, Sirui Zhang, Jize Zhang, Feng Jiang, **Ruibin Yuan**, et al.
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Instruction data quality</span></div>
+#### [COIG-CQIA: Quality is All You Need for Chinese Instruction Fine-tuning](https://aclanthology.org/2025.findings-naacl.457/)
+Yuelin Bai, Xeron Du, Yiming Liang, Leo Jin, Junting Zhou, et al., **Ruibin Yuan**, et al.
 
-Open Chinese instruction data and training work for generalist language and multimodal systems.
+High-quality Chinese instruction data construction and fine-tuning.
+</div>
+</div>
+
+### Music Foundation Models and Generation
+
+<div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2025</span><span class="topic-pill">Open full-song generation</span></div>
+#### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://arxiv.org/abs/2503.08638)
+**Ruibin Yuan**, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
+
+Open foundation model for long-form lyrics-to-song generation.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2025</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill" data-metric="publications.mupt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mupt.citations | default: 35 }}</span></div>
+#### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://proceedings.iclr.cc/paper_files/paper/2025/hash/73f6f8897896f7bda86ea7d1ebc1dc4f-Abstract-Conference.html)
+Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou, Ka Man Lo, Jiaheng Liu, **Ruibin Yuan**, et al.
+
+Generative pretraining for symbolic music modeling and controllable composition.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
+#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
+**Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
+
+Music-language modeling that treats symbolic music as a native language for understanding and generation.
 </div>
 </div>
 
@@ -205,6 +241,14 @@ Large-scale self-supervised acoustic music model for transferable music understa
 **Ruibin Yuan***, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.
 
 Unified benchmark for evaluating music audio representations across diverse MIR tasks.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2025</span><span class="topic-pill">Universal music retrieval</span></div>
+#### [CLaMP 3: Universal Music Information Retrieval Across Unaligned Modalities and Unseen Languages](https://aclanthology.org/2025.findings-acl.133/)
+Shangda Wu, Zhancheng Guo, **Ruibin Yuan**, Junyan Jiang, Seungheon Doh, Gus Xia, Juhan Nam, et al.
+
+Universal music information retrieval across unaligned modalities and unseen languages.
 </div>
 
 <div class="publication-card" markdown="1">
@@ -232,17 +276,9 @@ Multilingual zero-shot lyrics transcription using speech recognition and LLM pos
 </div>
 </div>
 
-### Music Generation and Creative AI
+### Other Selected Work
 
 <div class="publication-list" markdown="1">
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
-#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
-**Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
-
-Music-language modeling that treats symbolic music as a native language for understanding and generation.
-</div>
-
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill" data-metric="publications.composerx.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.composerx.citations | default: 67 }}</span></div>
 #### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.48550/arxiv.2404.18081)
@@ -252,11 +288,11 @@ Multi-agent symbolic composition framework for structured music creation with la
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill" data-metric="publications.mupt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mupt.citations | default: 35 }}</span></div>
-#### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://doi.org/10.48550/arxiv.2404.06393)
-**Ruibin Yuan**, et al.
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Omni-language evaluation</span></div>
+#### [OmniBench: Towards The Future of Universal Omni-Language Models](https://arxiv.org/abs/2409.15272)
+Yizhi Li, Ge Zhang, Yinghao Ma, **Ruibin Yuan**, Kang Zhu, Hangyu Guo, et al.
 
-Generative pretraining for symbolic music modeling and controllable composition.
+Evaluation for omni-language model capabilities across modalities.
 </div>
 
 <div class="publication-card" markdown="1">
