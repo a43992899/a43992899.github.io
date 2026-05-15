@@ -1,19 +1,37 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+    (function () {
+        function readMetric(data, path) {
+            return path.split('.').reduce(function (current, part) {
+                if (current && Object.prototype.hasOwnProperty.call(current, part)) {
+                    return current[part];
+                }
+                return undefined;
+            }, data);
+        }
+
+        function applyMetricData(data) {
+            if (!data) return;
+            var metricElements = document.querySelectorAll('[data-metric]');
+            Array.prototype.forEach.call(metricElements, function (element) {
+                var metricPath = element.getAttribute('data-metric');
+                var value = readMetric(data, metricPath);
+                if (value === undefined || value === null || value === '') return;
+                var prefix = element.getAttribute('data-metric-prefix') || '';
+                var suffix = element.getAttribute('data-metric-suffix') || '';
+                element.textContent = prefix + value + suffix;
             });
-        });
-    })
+        }
+
+        function loadMetricData() {
+            var cacheBust = 't=' + Math.floor(Date.now() / 3600000);
+            var metricsUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/site-metrics/metrics.json?' + cacheBust;
+            $.getJSON(metricsUrl).done(applyMetricData);
+        }
+
+        if (window.jQuery) {
+            $(document).ready(loadMetricData);
+        } else {
+            document.addEventListener('DOMContentLoaded', loadMetricData);
+        }
+    })();
 </script>

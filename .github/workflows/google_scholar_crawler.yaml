@@ -1,29 +1,43 @@
-name: Get Citation Data
+name: Update Site Metrics
 
-on: 
- page_build: 
+on:
+ workflow_dispatch:
  schedule:
-  - cron:  '0 8 * * *'
+  - cron: '17 3 * * *'
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install requirements
       run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
+        python -m pip install --upgrade pip
+        pip install -r scripts/requirements-metrics.txt
+
+    - name: Update metrics
       run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
+        python scripts/update_metrics.py \
+          --output results/metrics.json \
+          --previous-url "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/site-metrics/metrics.json"
+      env:
+        GOOGLE_SCHOLAR_ID: Qd_hX1cAAAAJ
+        GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Publish metrics branch
+      run: |
+        cd results
         git init
-        git config --local user.name "${GITHUB_ACTOR}"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        git add *.json
-        git commit -m "Updated Citation Data"
-        git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git add metrics.json
+        git commit -m "Update site metrics"
+        git push "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:site-metrics --force

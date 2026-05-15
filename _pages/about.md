@@ -38,24 +38,24 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 
 <section class="impact-strip" markdown="1">
 <div markdown="1">
-<strong>6111</strong>
+<strong data-metric="scholar.citations">{{ site.data.metrics.scholar.citations | default: 6111 }}</strong>
 <span>Google Scholar citations</span>
 </div>
 <div markdown="1">
-<strong>29</strong>
+<strong data-metric="scholar.h_index">{{ site.data.metrics.scholar.h_index | default: 29 }}</strong>
 <span>Google Scholar h-index</span>
 </div>
 <div markdown="1">
-<strong>41</strong>
+<strong data-metric="scholar.i10_index">{{ site.data.metrics.scholar.i10_index | default: 41 }}</strong>
 <span>Google Scholar i10-index</span>
 </div>
 <div markdown="1">
-<strong>6.2k+</strong>
+<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }}</strong>
 <span>GitHub stars on YuE</span>
 </div>
 </section>
 
-<p class="metric-note">Citation metrics are from <a href="https://scholar.google.com/citations?user=Qd_hX1cAAAAJ">Google Scholar</a>, captured on May 16, 2026. Live counts may change.</p>
+<p class="metric-note">Citation metrics are from <a href="https://scholar.google.com/citations?user=Qd_hX1cAAAAJ">Google Scholar</a>, captured on <span data-metric="scholar.updated_at">{{ site.data.metrics.scholar.updated_at | default: "May 16, 2026" }}</span>. The page refreshes these numbers automatically.</p>
 
 <span class='anchor' id='research-areas'></span>
 
@@ -112,7 +112,7 @@ MAP's public projects combine research prototypes and community infrastructure, 
 
 <div class="work-grid" markdown="1">
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill">6.2k stars</span></div>
+<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span></div>
 ### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
 Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
 </div>
@@ -156,7 +156,7 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2024</span><span class="topic-pill">Expert AGI benchmark</span><span class="cite-pill">GS cites 2303</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2024</span><span class="topic-pill">Expert AGI benchmark</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
 #### [MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI](https://doi.org/10.1109/cvpr52733.2024.00913)
 Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., **Ruibin Yuan**, et al.
 
@@ -164,7 +164,7 @@ Large-scale multimodal benchmark across college-level disciplines and expert rea
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2024 Main</span><span class="topic-pill">Unified multimodal LLM</span><span class="cite-pill">GS cites 298</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2024 Main</span><span class="topic-pill">Unified multimodal LLM</span><span class="cite-pill" data-metric="publications.anygpt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.anygpt.citations | default: 298 }}</span></div>
 #### [AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling](https://doi.org/10.18653/v1/2024.acl-long.521)
 Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., **Ruibin Yuan**, et al.
 
@@ -172,7 +172,7 @@ Unified discrete sequence modeling for language, image, audio, and speech modali
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill">GS cites 74</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill" data-metric="publications.cmmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.cmmmu.citations | default: 74 }}</span></div>
 #### [CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark](https://doi.org/10.48550/arxiv.2401.11944)
 Xiang Yue, Tianyu Zheng, Yuansheng Ni, Yubo Wang, et al., **Ruibin Yuan**, et al.
 
@@ -180,7 +180,7 @@ Chinese multimodal benchmark extending expert-level evaluation across discipline
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2023</span><span class="topic-pill">Open instruction data</span><span class="cite-pill">GS cites 46</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2023</span><span class="topic-pill">Open instruction data</span><span class="cite-pill" data-metric="publications.coig.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.coig.citations | default: 46 }}</span></div>
 #### [Chinese Open Instruction Generalist: A Preliminary Release](https://doi.org/10.48550/arxiv.2304.07987)
 Hao Cheng, Sirui Zhang, Jize Zhang, Feng Jiang, **Ruibin Yuan**, et al.
 
@@ -192,7 +192,7 @@ Open Chinese instruction data and training work for generalist language and mult
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2024</span><span class="topic-pill">Music representation</span><span class="cite-pill">GS cites 329</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2024</span><span class="topic-pill">Music representation</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
 #### [MERT: Acoustic Music Understanding Model with Large-Scale Self-supervised Training](https://doi.org/10.48550/arxiv.2306.00107)
 Yizhi Li*, **Ruibin Yuan***, Ge Zhang*, Yinghao Ma*, et al.
 
@@ -200,7 +200,7 @@ Large-scale self-supervised acoustic music model for transferable music understa
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2023</span><span class="topic-pill">Music benchmark</span><span class="cite-pill">GS cites 59</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2023</span><span class="topic-pill">Music benchmark</span><span class="cite-pill" data-metric="publications.marble.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.marble.citations | default: 59 }}</span></div>
 #### [MARBLE: Music Audio Representation Benchmark for Universal Evaluation](https://doi.org/10.48550/arxiv.2306.10548)
 **Ruibin Yuan***, Yinghao Ma*, Yizhi Li*, Ge Zhang*, et al.
 
@@ -208,7 +208,7 @@ Unified benchmark for evaluating music audio representations across diverse MIR 
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill">GS cites 19</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill" data-metric="publications.clamp2.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp2.citations | default: 19 }}</span></div>
 #### [CLaMP 2: Multimodal Music Information Retrieval Across 101 Languages Using Large Language Models](https://doi.org/10.18653/v1/2025.findings-naacl.27)
 Yongqi Wang, **Ruibin Yuan**, Ge Zhang, Yinghao Ma, et al.
 
@@ -216,7 +216,7 @@ Multilingual music information retrieval across text, audio, and symbolic music 
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Speech SSL for music</span><span class="cite-pill">GS cites 16</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Speech SSL for music</span><span class="cite-pill" data-metric="publications.speech_ssl_music.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.speech_ssl_music.citations | default: 16 }}</span></div>
 #### [On the Effectiveness of Speech Self-supervised Learning for Music](https://doi.org/10.48550/arxiv.2307.05161)
 Yinghao Ma, **Ruibin Yuan**, Yizhi Li, Ge Zhang, et al.
 
@@ -224,7 +224,7 @@ Empirical study of how speech self-supervised representations transfer into musi
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Lyrics transcription</span><span class="cite-pill">GS cites 43</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Lyrics transcription</span><span class="cite-pill" data-metric="publications.lyricwhiz.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.lyricwhiz.citations | default: 43 }}</span></div>
 #### [LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT](https://doi.org/10.48550/arxiv.2306.17103)
 Le Zhuo, **Ruibin Yuan**, Jiahao Pan, Yinghao Ma, et al.
 
@@ -236,7 +236,7 @@ Multilingual zero-shot lyrics transcription using speech recognition and LLM pos
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill">GS cites 125</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
 #### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
 **Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
 
@@ -244,7 +244,7 @@ Music-language modeling that treats symbolic music as a native language for unde
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill">GS cites 67</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill" data-metric="publications.composerx.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.composerx.citations | default: 67 }}</span></div>
 #### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.48550/arxiv.2404.18081)
 **Ruibin Yuan**, et al.
 
@@ -252,7 +252,7 @@ Multi-agent symbolic composition framework for structured music creation with la
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill">GS cites 35</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill" data-metric="publications.mupt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mupt.citations | default: 35 }}</span></div>
 #### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://doi.org/10.48550/arxiv.2404.06393)
 **Ruibin Yuan**, et al.
 
@@ -260,7 +260,7 @@ Generative pretraining for symbolic music modeling and controllable composition.
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-interspeech">Interspeech 2022</span><span class="topic-pill">Voice conversion</span><span class="cite-pill">GS cites 13</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-interspeech">Interspeech 2022</span><span class="topic-pill">Voice conversion</span><span class="cite-pill" data-metric="publications.deid_vc.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.deid_vc.citations | default: 13 }}</span></div>
 #### [DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion](https://doi.org/10.21437/interspeech.2022-11036)
 **Ruibin Yuan**, Yuxuan Wu, Jacob Li, Jaxter Kim.
 
