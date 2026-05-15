@@ -108,18 +108,59 @@ h1:before, .anchor:before {
     font-size: .8em;
 }
 
+body {
+    background:
+        radial-gradient(circle at 14% 0%, rgba(31, 166, 129, .08), transparent 25rem),
+        linear-gradient(180deg, #f8fbfa 0, #ffffff 30rem);
+}
+
+.page__content {
+    color: #304052;
+
+    h2 {
+        margin-top: 2.15rem;
+        margin-bottom: .8rem;
+        color: #132337;
+        font-size: 1.45rem;
+        line-height: 1.2;
+    }
+
+    h3 {
+        color: #17364f;
+    }
+}
+
 .profile-hero {
-    margin: 0 0 1.35rem;
-    padding: .45rem 0 1.35rem;
-    border-bottom: 1px solid #dfe7ee;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 12.5rem;
+    gap: 1.1rem;
+    align-items: center;
+    margin: .15rem 0 1.15rem;
+    padding: 1.25rem;
+    border: 1px solid #d7e8e2;
+    border-radius: 16px;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(16, 185, 129, .18), transparent 15rem),
+        linear-gradient(135deg, #ffffff 0%, #f4fbf8 100%);
+    box-shadow: 0 18px 45px rgba(23, 54, 79, .08);
+
+    .hero-kicker {
+        margin: 0 0 .45rem;
+        color: #047857;
+        font-size: .75rem;
+        font-weight: 800;
+        line-height: 1.35;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
 
     h1 {
         margin-top: 0;
-        margin-bottom: .55rem;
-        font-size: 2.3rem;
+        margin-bottom: .6rem;
+        font-size: 2.48rem;
         line-height: 1.04;
         letter-spacing: 0;
-        color: #182033;
+        color: #102033;
     }
 
     p {
@@ -132,28 +173,76 @@ h1:before, .anchor:before {
     .btn {
         margin-top: .35rem;
         margin-right: .35rem;
-        border-radius: 6px;
+        border-radius: 999px;
+    }
+}
+
+.hero-copy {
+    min-width: 0;
+}
+
+.hero-actions {
+    margin-top: .85rem;
+}
+
+.hero-identity {
+    justify-self: end;
+    width: 100%;
+    padding: .85rem;
+    border: 1px solid rgba(4, 120, 87, .14);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .78);
+    box-shadow: 0 12px 28px rgba(23, 54, 79, .08);
+    text-align: center;
+
+    img {
+        display: block;
+        width: 7.2rem;
+        height: 7.2rem;
+        margin: 0 auto .65rem;
+        border-radius: 999px;
+        border: 4px solid #fff;
+        box-shadow: 0 8px 22px rgba(23, 54, 79, .18);
+        object-fit: cover;
+    }
+
+    strong,
+    span {
+        display: block;
+    }
+
+    strong {
+        color: #132337;
+        font-size: .92rem;
+        line-height: 1.25;
+    }
+
+    span {
+        margin-top: .25rem;
+        color: #647587;
+        font-size: .75rem;
+        line-height: 1.35;
     }
 }
 
 .impact-strip {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: .65rem;
-    margin: .9rem 0 .55rem;
+    gap: .75rem;
+    margin: 1rem 0 .55rem;
 
     > div {
         min-width: 0;
-        padding: .85rem .9rem;
-        border: 1px solid #d9e3ec;
-        border-left: 4px solid #2b7a78;
-        border-radius: 8px;
-        background: #fbfdff;
+        padding: .9rem .95rem;
+        border: 1px solid #d9e9e3;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, .88);
+        box-shadow: 0 10px 24px rgba(23, 54, 79, .055);
     }
 
     strong {
         display: block;
-        font-size: 1.55rem;
+        font-size: 1.62rem;
         line-height: 1;
         color: #122132;
     }
@@ -180,8 +269,8 @@ h1:before, .anchor:before {
 .scholar-snapshot,
 .work-grid {
     display: grid;
-    gap: .85rem;
-    margin: 1rem 0 2rem;
+    gap: .95rem;
+    margin: 1rem 0 2.05rem;
 }
 
 .research-grid {
@@ -201,15 +290,16 @@ h1:before, .anchor:before {
 .work-card,
 .publication-card,
 .collab-panel {
-    border: 1px solid #d9e1ea;
-    border-radius: 8px;
-    background: #fbfcfe;
+    border: 1px solid #dde7ef;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 10px 28px rgba(23, 54, 79, .055);
 }
 
 .research-card {
     position: relative;
     min-width: 0;
-    padding: 1rem 1rem .9rem;
+    padding: 1.05rem 1.05rem .95rem;
     overflow: hidden;
 
     &:before {
@@ -283,8 +373,7 @@ h1:before, .anchor:before {
 .scholar-snapshot > div,
 .work-card {
     min-width: 0;
-    padding: .95rem 1rem;
-    background: #fbfcfe;
+    padding: 1rem 1.05rem;
 }
 
 .scholar-snapshot h3,
@@ -309,6 +398,16 @@ h1:before, .anchor:before {
     gap: .35rem;
     align-items: center;
     margin-bottom: .45rem;
+}
+
+.work-card {
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: #c7ded6;
+        box-shadow: 0 16px 34px rgba(23, 54, 79, .09);
+    }
 }
 
 .project-type,
@@ -338,13 +437,32 @@ h1:before, .anchor:before {
 
 .publication-list {
     display: grid;
-    gap: .8rem;
+    gap: .9rem;
     margin: .7rem 0 1.55rem;
 }
 
 .publication-card {
     min-width: 0;
-    padding: .95rem 1.05rem 1rem;
+    position: relative;
+    padding: 1rem 1.1rem 1.05rem;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        background: #10b981;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: #c7ded6;
+        box-shadow: 0 16px 34px rgba(23, 54, 79, .09);
+    }
 
     h4 {
         margin: .55rem 0 .35rem;
@@ -425,7 +543,7 @@ h1:before, .anchor:before {
 
 .collab-panel {
     margin: .75rem 0 1.8rem;
-    padding: 1rem 1.1rem;
+    padding: 1.05rem 1.15rem;
 
     p {
         line-height: 1.65;
@@ -475,8 +593,8 @@ h1:before, .anchor:before {
     min-width: 0;
     padding: .75rem .85rem .55rem;
     border: 1px solid #e1e8ef;
-    border-radius: 8px;
-    background: #fcfdff;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .78);
 
     h2 {
         margin: 0 0 .45rem;
@@ -532,6 +650,15 @@ h1:before, .anchor:before {
 }
 
 @media (max-width: 720px) {
+    .profile-hero {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .hero-identity {
+        justify-self: stretch;
+    }
+
     .impact-strip,
     .research-grid,
     .scholar-snapshot,

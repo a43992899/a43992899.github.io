@@ -10,19 +10,30 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<section class="profile-hero" markdown="1">
+<section class="profile-hero">
+<div class="hero-copy" markdown="1">
 
+<p class="hero-kicker">Open Music AGI · Multimodal Foundation Models · Creative AI</p>
 # Ruibin Yuan
 
 I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research sits at the intersection of music generation, music understanding, multimodal LLMs, and the open data and systems needed to make creative AI genuinely useful.
 
 I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open research infrastructure.
 
+<div class="hero-actions" markdown="1">
 [Download CV](/files/Ruibin_Yuan_CV.pdf){: .btn .btn--primary}
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
 [GitHub Profile](https://github.com/a43992899){: .btn}
 [MAP](https://huggingface.co/m-a-p){: .btn}
+</div>
 
+</div>
+<aside class="hero-identity">
+<img src="/images/WechatIMG24.jpg" alt="Ruibin Yuan" />
+<strong>Teaching AGI music</strong>
+<span>HKUST PhD · MAP cofounder</span>
+<span>Hong Kong · remote collaboration</span>
+</aside>
 </section>
 
 <section class="impact-strip" markdown="1">
