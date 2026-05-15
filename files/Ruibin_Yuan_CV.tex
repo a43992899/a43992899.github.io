@@ -13,6 +13,9 @@
 \IfFontExistsTF{Times New Roman}
   {\setmainfont{Times New Roman}}
   {\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Apple Symbols}
+  {\newfontfamily{\iconfont}{Apple Symbols}}
+  {\newfontfamily{\iconfont}{TeX Gyre Termes}}
 
 \definecolor{ink}{HTML}{1F2933}
 \definecolor{muted}{HTML}{52606D}
@@ -42,7 +45,14 @@
 \newcommand{\cvsubtle}[1]{{\color{muted}#1}}
 \newcommand{\role}[1]{\textit{#1}}
 \newcommand{\cvstrong}[1]{\textbf{#1}}
-\newcommand{\link}[2]{\href{#1}{#2}}
+\newcommand{\cvicon}[1]{{\scriptsize\color{accent}{\iconfont #1}}}
+\newcommand{\cvmutedicon}[1]{{\scriptsize\color{muted}{\iconfont #1}}}
+\newcommand{\externallinkicon}{\raisebox{0.2ex}{\scriptsize\color{accent}$\nearrow$}}
+\newcommand{\linkglyph}{\,{\externallinkicon}}
+\newcommand{\link}[2]{\href{#1}{#2\linkglyph}}
+\newcommand{\contactlink}[3]{\href{#1}{\raisebox{0.05ex}{\cvicon{#2}}\hspace{0.22em}#3}}
+\newcommand{\mailcontactlink}[2]{\href{#1}{\raisebox{0.05ex}{\scriptsize\color{accent}\texttt{@}}\hspace{0.22em}#2}}
+\newcommand{\webcontactlink}[2]{\href{#1}{\externallinkicon\hspace{0.22em}#2}}
 \newcommand{\daterange}[1]{{\color{muted}#1}}
 \newcommand{\entry}[4]{%
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
@@ -64,16 +74,16 @@
 
 \vspace{4pt}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-\href{mailto:ruibiny@alumni.cmu.edu}{ruibiny@alumni.cmu.edu} \, | \,
-\href{mailto:a43992899@gmail.com}{a43992899@gmail.com}
+\mailcontactlink{mailto:ruibiny@alumni.cmu.edu}{ruibiny@alumni.cmu.edu} \, | \,
+\mailcontactlink{mailto:a43992899@gmail.com}{a43992899@gmail.com}
 &
-Hong Kong
+\cvmutedicon{⌖}\hspace{0.22em}Hong Kong
 \\
-\href{https://github.com/a43992899}{github.com/a43992899} \, | \,
-\href{https://scholar.google.com/citations?user=Qd_hX1cAAAAJ}{Google Scholar} \, | \,
-\href{https://huggingface.co/m-a-p}{MAP Research Community}
+\webcontactlink{https://github.com/a43992899}{github.com/a43992899} \, | \,
+\webcontactlink{https://scholar.google.com/citations?user=Qd_hX1cAAAAJ}{Google Scholar} \, | \,
+\webcontactlink{https://huggingface.co/m-a-p}{MAP Research Community}
 &
-+852 46830974 \, | \, +86 18033231161
+\cvmutedicon{☎}\hspace{0.22em}+852 46830974 \, | \, +86 18033231161
 \end{tabularx}
 
 \vspace{3pt}
