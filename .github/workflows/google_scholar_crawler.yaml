@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: '3.x'
 
@@ -29,7 +29,7 @@ jobs:
         python scripts/update_metrics.py \
           --output results/metrics.json \
           --previous-url "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/site-metrics/metrics.json" \
-          --scholar-timeout-seconds 75
+          --scholar-timeout-seconds 180
       env:
         GOOGLE_SCHOLAR_ID: Qd_hX1cAAAAJ
         GITHUB_TOKEN: ${{ github.token }}
