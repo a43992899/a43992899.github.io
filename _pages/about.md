@@ -152,6 +152,58 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 
 ## Selected Publications and Manuscripts
 
+### Flagship Music and Audio Generation
+
+<div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span></div>
+#### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://openreview.net/forum?id=hZy6YG2Ij8)
+**Ruibin Yuan**, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
+
+Open foundation model family for long-form lyrics-to-song generation; ICLR 2026 poster.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Anything-to-audio</span></div>
+#### [AudioX: A Unified Framework for Anything-to-Audio Generation](https://openreview.net/forum?id=qjJWxK3yWo)
+Zeyue Tian, Zhaoyang Liu, Yizhu Jin, **Ruibin Yuan**, Liumeng Xue, Xu Tan, Qifeng Chen, Wei Xue, Yike Guo.
+
+Unified diffusion framework for multimodal-conditioned audio and music generation; ICLR 2026 poster.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-siggraph">SIGGRAPH 2026</span><span class="topic-pill">Audio understanding/generation/editing</span></div>
+#### [Audio-Omni: Extending Multi-modal Understanding to Versatile Audio Generation and Editing](https://zeyuet.github.io/Audio-Omni/)
+Zeyue Tian, Binxin Yang, Zhaoyang Liu, Jiexuan Zhang, **Ruibin Yuan**, Hubery Yin, Qifeng Chen, Chen Li, Jing Lv, Wei Xue, Yike Guo.
+
+Unified framework spanning general sound, music, speech understanding, generation, and editing; SIGGRAPH 2026.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2025</span><span class="topic-pill">Video-to-music generation</span></div>
+#### [VidMuse: A Simple Video-to-Music Generation Framework with Long-Short-Term Modeling](https://openaccess.thecvf.com/content/CVPR2025/papers/Tian_VidMuse_A_Simple_Video-to-Music_Generation_Framework_with_Long-Short-Term_Modeling_CVPR_2025_paper.pdf)
+Zeyue Tian*, Zhaoyang Liu*, **Ruibin Yuan**, Jiahao Pan, Qifeng Liu, Xu Tan, Qifeng Chen, Wei Xue, Yike Guo.
+
+Video-conditioned music generation with long-short-term visual modeling; CVPR 2025.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2025</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill" data-metric="publications.mupt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mupt.citations | default: 35 }}</span></div>
+#### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://proceedings.iclr.cc/paper_files/paper/2025/hash/73f6f8897896f7bda86ea7d1ebc1dc4f-Abstract-Conference.html)
+Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou, Ka Man Lo, Jiaheng Liu, **Ruibin Yuan**, et al.
+
+Generative pretraining for symbolic music modeling and controllable composition.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
+#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
+**Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
+
+Music-language modeling that treats symbolic music as a native language for understanding and generation.
+</div>
+</div>
+
 ### High-Impact Multimodal and LLM Work
 
 <div class="publication-list" markdown="1">
@@ -180,11 +232,11 @@ Query refinement for stronger retrieval-augmented generation.
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill" data-metric="publications.cmmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.cmmmu.citations | default: 74 }}</span></div>
-#### [CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark](https://doi.org/10.48550/arxiv.2401.11944)
-Xiang Yue, Tianyu Zheng, Yuansheng Ni, Yubo Wang, et al., **Ruibin Yuan**, et al.
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Expressive S2ST</span></div>
+#### [UniSS: Unified Expressive Speech-to-Speech Translation with Your Voice](https://openreview.net/forum?id=5o0ZvYzh6B)
+Sitong Cheng, Weizhen Bian, Xinsheng Wang, **Ruibin Yuan**, Jianyi Chen, Shunshun Yin, Yike Guo, Wei Xue.
 
-Chinese multimodal benchmark extending expert-level evaluation across disciplines and cultural contexts.
+Single-stage expressive speech-to-speech translation preserving content, speaker identity, emotion, and duration; ICLR 2026 poster.
 </div>
 
 <div class="publication-card" markdown="1">
@@ -194,34 +246,7 @@ Yuelin Bai, Xeron Du, Yiming Liang, Leo Jin, Junting Zhou, et al., **Ruibin Yuan
 
 High-quality Chinese instruction data construction and fine-tuning.
 </div>
-</div>
 
-### Music Foundation Models and Generation
-
-<div class="publication-list" markdown="1">
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2025</span><span class="topic-pill">Open full-song generation</span></div>
-#### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://arxiv.org/abs/2503.08638)
-**Ruibin Yuan**, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
-
-Open foundation model for long-form lyrics-to-song generation.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2025</span><span class="topic-pill">Symbolic pretraining</span><span class="cite-pill" data-metric="publications.mupt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mupt.citations | default: 35 }}</span></div>
-#### [MuPT: A Generative Symbolic Music Pretrained Transformer](https://proceedings.iclr.cc/paper_files/paper/2025/hash/73f6f8897896f7bda86ea7d1ebc1dc4f-Abstract-Conference.html)
-Xingwei Qu, Yuelin Bai, Yinghao Ma, Ziya Zhou, Ka Man Lo, Jiaheng Liu, **Ruibin Yuan**, et al.
-
-Generative pretraining for symbolic music modeling and controllable composition.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
-#### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://doi.org/10.48550/arxiv.2402.16153)
-**Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
-
-Music-language modeling that treats symbolic music as a native language for understanding and generation.
-</div>
 </div>
 
 ### Music Understanding and MIR
@@ -260,23 +285,23 @@ Multilingual music information retrieval across text, audio, and symbolic music 
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Speech SSL for music</span><span class="cite-pill" data-metric="publications.speech_ssl_music.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.speech_ssl_music.citations | default: 16 }}</span></div>
-#### [On the Effectiveness of Speech Self-supervised Learning for Music](https://doi.org/10.48550/arxiv.2307.05161)
-Yinghao Ma, **Ruibin Yuan**, Yizhi Li, Ge Zhang, et al.
-
-Empirical study of how speech self-supervised representations transfer into music tasks.
-</div>
-
-<div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2023</span><span class="topic-pill">Lyrics transcription</span><span class="cite-pill" data-metric="publications.lyricwhiz.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.lyricwhiz.citations | default: 43 }}</span></div>
 #### [LyricWhiz: Robust Multilingual Zero-shot Lyrics Transcription by Whispering to ChatGPT](https://doi.org/10.48550/arxiv.2306.17103)
 Le Zhuo, **Ruibin Yuan**, Jiahao Pan, Yinghao Ma, et al.
 
 Multilingual zero-shot lyrics transcription using speech recognition and LLM post-processing.
 </div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2025</span><span class="topic-pill">Music structure analysis</span></div>
+#### [SongFormer: Scaling Music Structure Analysis with Heterogeneous Supervision](https://arxiv.org/abs/2510.02797)
+Chunbo Hao, **Ruibin Yuan**, Jixun Yao, Qixin Deng, Xinyi Bai, Wei Xue, Lei Xie.
+
+Large-scale heterogeneous supervision for music structure analysis, with SongFormDB and SongFormBench.
+</div>
 </div>
 
-### Other Selected Work
+### Selected Benchmarks, Data, and Earlier Work
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
@@ -285,6 +310,14 @@ Multilingual zero-shot lyrics transcription using speech recognition and LLM pos
 **Ruibin Yuan**, et al.
 
 Multi-agent symbolic composition framework for structured music creation with language models.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2026</span><span class="topic-pill">Global music QA</span></div>
+#### [Voices of Civilizations: A Multilingual QA Benchmark for Global Music Understanding](https://arxiv.org/abs/2603.00533)
+Shangda Wu, Ziya Zhou, Yongyi Zang, Yutong Zheng, Dafang Liang, **Ruibin Yuan**, Qiuqiang Kong.
+
+Multilingual benchmark for music understanding across cultural and linguistic contexts.
 </div>
 
 <div class="publication-card" markdown="1">
