@@ -23,6 +23,21 @@ visitor_stats:
   api_url                :
   public_dashboard_url   :
 
+comments:
+  provider               : "giscus"
+  giscus:
+    repo                 : "a43992899/a43992899.github.io"
+    repo_id              : "R_kgDON3iyWg"
+    category             : "General"
+    category_id          : "DIC_kwDON3iyWs4C9Iak"
+    mapping              : "pathname"
+    strict               : "0"
+    reactions_enabled    : "1"
+    emit_metadata        : "0"
+    input_position       : "bottom"
+    theme                : "preferred_color_scheme"
+    lang                 : "zh-CN"
+
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
@@ -137,6 +152,14 @@ defaults:
     values:
       layout: default
       author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      comments: true
 
 
 # Sass/SCSS

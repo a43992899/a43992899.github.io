@@ -1,0 +1,22 @@
+{% if site.comments.provider == "giscus" and site.comments.giscus %}
+  {% assign giscus = site.comments.giscus %}
+  <section class="page__comments blog-comments" id="comments">
+    <h2 class="page__comments-title">Comments</h2>
+    <p class="blog-comments__note">Comments are powered by GitHub Discussions. If the box does not load, GitHub may be blocking third-party scripts or the Giscus app still needs authorization for this repository.</p>
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ giscus.repo }}"
+      data-repo-id="{{ giscus.repo_id }}"
+      data-category="{{ giscus.category }}"
+      data-category-id="{{ giscus.category_id }}"
+      data-mapping="{{ giscus.mapping | default: 'pathname' }}"
+      data-strict="{{ giscus.strict | default: '0' }}"
+      data-reactions-enabled="{{ giscus.reactions_enabled | default: '1' }}"
+      data-emit-metadata="{{ giscus.emit_metadata | default: '0' }}"
+      data-input-position="{{ giscus.input_position | default: 'bottom' }}"
+      data-theme="{{ giscus.theme | default: 'preferred_color_scheme' }}"
+      data-lang="{{ giscus.lang | default: 'zh-CN' }}"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+{% endif %}

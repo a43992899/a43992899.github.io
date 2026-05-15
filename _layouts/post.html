@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="blog-post">
+  <header class="blog-post__header">
+    <p class="blog-post__eyebrow">Blog</p>
+    <h1>{{ page.title }}</h1>
+    <p class="blog-post__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}
+    </p>
+    {% if page.excerpt %}
+      <p class="blog-post__excerpt">{{ page.excerpt | markdownify | strip_html }}</p>
+    {% endif %}
+    {% if page.translation_key %}
+      <nav class="blog-lang-switch" aria-label="Article language versions">
+        {% assign sibling_posts = site.posts | where: "translation_key", page.translation_key | sort: "lang_order" %}
+        {% for sibling in sibling_posts %}
+          {% if sibling.url == page.url %}
+            <span class="blog-lang-switch__item blog-lang-switch__item--active">{{ sibling.lang_label | default: sibling.lang }}</span>
+          {% else %}
+            <a class="blog-lang-switch__item" href="{{ sibling.url | relative_url }}">{{ sibling.lang_label | default: sibling.lang }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="blog-post__tags">
+        {% for tag in page.tags %}
+          <span>{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="blog-post__content">
+    {{ content }}
+  </div>
+
+  {% if page.comments %}
+    {% include comments.html %}
+  {% endif %}
+</div>
