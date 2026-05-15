@@ -280,27 +280,23 @@ Current ideas I am especially excited about:
 [Buy Me a Coffee](https://buymeacoffee.com/ruibin){: .btn}
 </div>
 
+<section class="compact-profile-grid" markdown="1">
+<div class="compact-profile-section" markdown="1">
 <span class='anchor' id='experience'></span>
 
 ## Experience
 
-<div class="timeline-list" markdown="1">
+<div class="timeline-list compact-timeline" markdown="1">
 <div markdown="1">
 **Qwen**<br>
-Research Intern, Qwen Music. Supervisor: [Jin Xu](https://scholar.google.com/citations?user=COYDNmYAAAAJ).<br>
+Research Intern, Qwen Music.<br>
 <span>2025.04 - present · Remote</span>
 </div>
 
 <div markdown="1">
 **Moonshot.ai**<br>
-Research Intern. Supervisor: [Xu Tan](https://scholar.google.com/citations?user=tob-U1oAAAAJ).<br>
+Research Intern.<br>
 <span>2024.09 - 2025.04 · Remote</span>
-</div>
-
-<div markdown="1">
-**BAAI**<br>
-Part-time Research Intern. Supervisor: [Jie Fu](https://scholar.google.com/citations?user=66osleIAAAAJ).<br>
-<span>2022 - 2023 · Remote</span>
 </div>
 
 <div markdown="1">
@@ -315,31 +311,31 @@ Intern Machine Learning Engineer.<br>
 <span>2019.12 - 2020.04 · Shanghai</span>
 </div>
 </div>
+</div>
 
+<div class="compact-profile-section" markdown="1">
 <span class='anchor' id='education'></span>
 
 ## Education
 
-<div class="timeline-list" markdown="1">
+<div class="timeline-list compact-timeline" markdown="1">
 <div markdown="1">
 **Hong Kong University of Science and Technology**<br>
-PhD in Artificial Intelligence. Advisors: Jie Fu, Wei Xue, Yike Guo.<br>
+PhD in Artificial Intelligence.<br>
 <span>2023.09 - present · Hong Kong</span>
 </div>
 
 <div markdown="1">
 **Carnegie Mellon University**<br>
-M.S. in Music and Technology, Computer Science Emphasis. Advisors: Roger B. Dannenberg, Gus Xia, Riccardo Schulz.<br>
+M.S. in Music and Technology, Computer Science Emphasis.<br>
 <span>2021.09 - 2023.05 · Pittsburgh</span>
 </div>
-
-<div markdown="1">
-**Beijing University of Posts and Telecommunications**<br>
-B.S. in Electronic Science and Technology.<br>
-<span>2016.09 - 2020.06 · Beijing</span>
 </div>
 </div>
+</section>
 
+<section class="music-note" markdown="1">
 ## Music
 
-Lead guitarist and cofounder of BUPT Slow Blues Band, president of BUPT Guitar Club, and longtime believer that intelligence without music is missing something essential.
+Lead guitarist, band cofounder, guitar club organizer, and longtime believer that intelligence without music is missing something essential.
+</section>

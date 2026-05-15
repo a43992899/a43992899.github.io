@@ -464,11 +464,79 @@ h1:before, .anchor:before {
     }
 }
 
+.compact-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.1rem 0 1.25rem;
+}
+
+.compact-profile-section {
+    min-width: 0;
+    padding: .75rem .85rem .55rem;
+    border: 1px solid #e1e8ef;
+    border-radius: 8px;
+    background: #fcfdff;
+
+    h2 {
+        margin: 0 0 .45rem;
+        font-size: 1rem;
+        line-height: 1.25;
+        color: #17364f;
+    }
+}
+
+.compact-timeline {
+    margin: 0;
+
+    > div {
+        padding: .45rem 0;
+        border-bottom: 1px solid #edf1f6;
+        font-size: .86rem;
+        line-height: 1.45;
+        color: #3f4e5f;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    strong {
+        font-size: .88rem;
+        color: #1d2b3a;
+    }
+
+    span {
+        color: #788696;
+        font-size: .78rem;
+    }
+}
+
+.music-note {
+    margin: .8rem 0 1.3rem;
+    padding-top: .7rem;
+    border-top: 1px solid #edf1f6;
+    color: #4b5a68;
+
+    h2 {
+        margin: 0 0 .35rem;
+        font-size: 1rem;
+        color: #17364f;
+    }
+
+    p {
+        margin: 0;
+        font-size: .88rem;
+        line-height: 1.55;
+    }
+}
+
 @media (max-width: 720px) {
     .impact-strip,
     .research-grid,
     .scholar-snapshot,
-    .work-grid {
+    .work-grid,
+    .compact-profile-grid {
         grid-template-columns: 1fr;
     }
 
