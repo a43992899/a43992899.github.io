@@ -11,7 +11,9 @@ import sys
 import urllib.error
 import urllib.request
 from datetime import datetime
+from multiprocessing import get_context
 from pathlib import Path
+from queue import Empty
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -103,30 +105,12 @@ def publication_title(publication: dict[str, Any]) -> str:
     return str(bib.get("title") or publication.get("title") or "").strip()
 
 
-def update_scholar_with_scholarly(metrics: dict[str, Any], errors: list[str]) -> bool:
-    scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", DEFAULT_SCHOLAR_ID)
-    try:
-        from scholarly import scholarly  # type: ignore
+def build_scholar_payload(scholar_id: str) -> dict[str, Any]:
+    from scholarly import scholarly  # type: ignore
 
-        author = scholarly.search_author_id(scholar_id)
-        author = scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
-    except Exception as exc:  # noqa: BLE001
-        errors.append(f"Google Scholar update failed: {exc}")
-        return False
-
-    scholar = metrics.setdefault("scholar", {})
-    scholar.update(
-        {
-            "source": "Google Scholar",
-            "profile_url": f"https://scholar.google.com/citations?user={scholar_id}",
-            "updated_at": today_label(),
-            "citations": author.get("citedby", scholar.get("citations")),
-            "h_index": author.get("hindex", scholar.get("h_index")),
-            "i10_index": author.get("i10index", scholar.get("i10_index")),
-        }
-    )
-
-    publications = metrics.setdefault("publications", {})
+    author = scholarly.search_author_id(scholar_id)
+    author = scholarly.fill(author, sections=["basics", "indices", "counts", "publications"])
+    publication_metrics: dict[str, dict[str, int]] = {}
     scholar_publications = author.get("publications", [])
     for key, matchers in PUBLICATION_MATCHERS.items():
         best_citations = None
@@ -140,7 +124,65 @@ def update_scholar_with_scholarly(metrics: dict[str, Any], errors: list[str]) ->
                 if best_citations is None or citations > best_citations:
                     best_citations = citations
         if best_citations is not None:
-            publications.setdefault(key, {})["citations"] = best_citations
+            publication_metrics[key] = {"citations": best_citations}
+
+    return {
+        "scholar": {
+            "source": "Google Scholar",
+            "profile_url": f"https://scholar.google.com/citations?user={scholar_id}",
+            "updated_at": today_label(),
+            "citations": author.get("citedby"),
+            "h_index": author.get("hindex"),
+            "i10_index": author.get("i10index"),
+        },
+        "publications": publication_metrics,
+    }
+
+
+def scholar_worker(queue: Any, scholar_id: str) -> None:
+    try:
+        queue.put({"ok": True, "payload": build_scholar_payload(scholar_id)})
+    except Exception as exc:  # noqa: BLE001
+        queue.put({"ok": False, "error": str(exc)})
+
+
+def update_scholar_with_scholarly(
+    metrics: dict[str, Any],
+    errors: list[str],
+    timeout_seconds: int,
+) -> bool:
+    scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", DEFAULT_SCHOLAR_ID)
+    context = get_context("spawn")
+    queue = context.Queue()
+    process = context.Process(target=scholar_worker, args=(queue, scholar_id))
+    process.start()
+    process.join(timeout_seconds)
+
+    if process.is_alive():
+        process.terminate()
+        process.join(5)
+        errors.append(f"Google Scholar update timed out after {timeout_seconds}s")
+        return False
+
+    try:
+        result = queue.get_nowait()
+    except Empty:
+        errors.append("Google Scholar update failed without returning a result")
+        return False
+
+    if not result.get("ok"):
+        errors.append(f"Google Scholar update failed: {result.get('error')}")
+        return False
+
+    payload = result["payload"]
+    scholar = metrics.setdefault("scholar", {})
+    for key, value in payload["scholar"].items():
+        if value is not None:
+            scholar[key] = value
+
+    publications = metrics.setdefault("publications", {})
+    for key, value in payload["publications"].items():
+        publications.setdefault(key, {}).update(value)
 
     return True
 
@@ -150,6 +192,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--previous-url", default="")
     parser.add_argument("--skip-scholar", action="store_true")
+    parser.add_argument("--scholar-timeout-seconds", type=int, default=75)
     args = parser.parse_args()
 
     metrics = load_json(DEFAULT_METRICS)
@@ -163,7 +206,7 @@ def main() -> int:
 
     update_github_metrics(metrics, errors)
     if not args.skip_scholar:
-        update_scholar_with_scholarly(metrics, errors)
+        update_scholar_with_scholarly(metrics, errors, args.scholar_timeout_seconds)
 
     metrics["updated_at"] = today_label()
     if errors:

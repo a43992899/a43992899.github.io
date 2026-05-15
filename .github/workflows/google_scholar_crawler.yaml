@@ -11,6 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4
 
@@ -27,7 +28,8 @@ jobs:
       run: |
         python scripts/update_metrics.py \
           --output results/metrics.json \
-          --previous-url "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/site-metrics/metrics.json"
+          --previous-url "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/site-metrics/metrics.json" \
+          --scholar-timeout-seconds 75
       env:
         GOOGLE_SCHOLAR_ID: Qd_hX1cAAAAJ
         GITHUB_TOKEN: ${{ github.token }}
