@@ -152,7 +152,7 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 #### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://openreview.net/forum?id=hZy6YG2Ij8)
 **Ruibin Yuan**, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
 
@@ -160,7 +160,7 @@ Open foundation model family for long-form lyrics-to-song generation; ICLR 2026 
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Anything-to-audio</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Anything-to-audio</span><span class="cite-pill" data-metric="publications.audiox.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.audiox.citations | default: 55 }}</span></div>
 #### [AudioX: A Unified Framework for Anything-to-Audio Generation](https://openreview.net/forum?id=qjJWxK3yWo)
 Zeyue Tian, Zhaoyang Liu, Yizhu Jin, **Ruibin Yuan**, Liumeng Xue, Xu Tan, Qifeng Chen, Wei Xue, Yike Guo.
 

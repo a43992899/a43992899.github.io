@@ -20,6 +20,9 @@
                 var suffix = element.getAttribute('data-metric-suffix') || '';
                 element.textContent = prefix + value + suffix;
             });
+            document.dispatchEvent(new CustomEvent('siteMetricsUpdated', {
+                detail: { metrics: data }
+            }));
         }
 
         function loadMetricData() {
