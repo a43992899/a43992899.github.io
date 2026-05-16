@@ -79,47 +79,55 @@
     });
   }
 
-  function sequentialIndices(length) {
-    var values = [];
-
-    for (var index = 0; index < length; index += 1) {
-      values.push(index);
-    }
-
-    return values;
+  function renderPlainText(label, text) {
+    label.textContent = text;
   }
 
   function renderObfuscatedEmail(button, label) {
-    var hint = button.querySelector(".js-email-hint");
+    var status = button.querySelector(".js-email-status");
+    var container = button.closest(".protected-email");
+    var card = container ? container.querySelector(".js-email-card") : null;
 
     button.classList.add("is-obfuscated");
     button.classList.remove("is-revealed");
+    button.classList.remove("is-shuffling");
     button.setAttribute("aria-label", "Click to reveal email address");
     button.setAttribute("title", "Click to reveal email address");
-    if (hint) {
-      hint.textContent = "Email";
+    if (status) {
+      status.textContent = "reveal";
     }
-    label.textContent = "click to reveal";
+    if (card) {
+      card.hidden = true;
+    }
+    label.textContent = "";
   }
 
   function revealEmail(button, label, email) {
-    var hint = button.querySelector(".js-email-hint");
+    var status = button.querySelector(".js-email-status");
+    var container = button.closest(".protected-email");
+    var card = container ? container.querySelector(".js-email-card") : null;
     var chars = scrambledCharsFromDataset(button);
 
     button.classList.add("is-shuffling");
+    if (status) {
+      status.textContent = "revealing";
+    }
+    if (card) {
+      card.hidden = false;
+    }
     if (chars) {
       renderText(label, chars, shuffleIndices(chars.length));
     }
 
     window.setTimeout(function () {
-      renderText(label, email, sequentialIndices(email.length));
+      renderPlainText(label, email);
       button.classList.remove("is-obfuscated");
       button.classList.remove("is-shuffling");
       button.classList.add("is-revealed");
-      if (hint) {
-        hint.textContent = "Email";
+      if (status) {
+        status.textContent = "copy";
       }
-      button.setAttribute("aria-label", email + " (click to copy)");
+      button.setAttribute("aria-label", "Email revealed; click to copy");
       button.setAttribute("title", "Click to copy email address");
     }, 180);
   }
@@ -169,13 +177,13 @@
 
     scrambleButtons.forEach(function (button) {
       var chars = scrambledCharsFromDataset(button);
-      var label = button.querySelector(".js-email-label");
+      var container = button.closest(".protected-email");
+      var label = container ? container.querySelector(".js-email-label") : button.querySelector(".js-email-label");
 
       if (!chars || !label) {
         return;
       }
 
-      var container = button.closest(".protected-email");
       var copyButton = container ? container.querySelector(".js-protected-email-copy") : null;
 
       renderObfuscatedEmail(button, label);

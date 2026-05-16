@@ -589,19 +589,21 @@ body {
 }
 
 .protected-email {
-    display: flex;
-    align-items: center;
-    gap: .28rem;
-    white-space: normal;
+    display: grid;
+    grid-template-columns: 1.25em minmax(0, 1fr);
+    column-gap: .35rem;
+    row-gap: .28rem;
+    align-items: start;
 }
 
 .protected-email__icon {
     display: inline-flex;
     width: 1.25em;
+    padding-top: .12rem;
     color: inherit;
 }
 
-.email-scramble,
+.protected-email__trigger,
 .email-copy,
 .protected-email-icon {
     border: 0;
@@ -612,72 +614,114 @@ body {
     line-height: 1.2;
 }
 
-.author__urls-wrapper .email-scramble,
+.author__urls-wrapper .protected-email__trigger,
 .author__urls-wrapper .email-copy,
 .author__urls-wrapper .protected-email-icon {
-    display: inline-grid;
+    display: inline-flex;
     width: auto;
-    max-width: calc(100% - 1.6rem);
     margin-bottom: 0;
-    padding: .04rem .08rem;
+    padding: .02rem 0;
 }
 
-.email-scramble {
-    display: inline-grid;
-    grid-template-columns: auto;
-    max-width: 100%;
-    min-width: 0;
-    gap: .05rem;
-    padding: .05rem .12rem;
-    border-radius: 5px;
-    color: #21546b;
-    font-size: .9em;
+.protected-email__trigger {
+    grid-column: 2;
+    align-items: center;
+    gap: .42rem;
+    justify-self: start;
     text-decoration: none;
 
     &:hover,
     &:focus-visible {
-        background: #eef7fb;
         color: #10394f;
         outline: 0;
+
+        .protected-email__badge {
+            background: #e6f6f1;
+            border-color: #b9ddd1;
+            color: #0f766e;
+        }
     }
 
     &.is-obfuscated {
-        color: #64748b;
+        .protected-email__badge {
+            color: #4f6477;
+        }
     }
 
     &.is-revealed {
-        color: #1f4f69;
+        color: #21546b;
     }
 
     &.is-shuffling {
-        color: #9a5a19;
+        .protected-email__badge {
+            background: #fff7e8;
+            border-color: #eac678;
+            color: #9a5a19;
+        }
     }
 }
 
-.email-scramble__hint {
-    font-family: inherit;
+.protected-email__label {
     font-weight: 700;
-    white-space: nowrap;
 }
 
-.email-scramble__text {
+.protected-email__badge {
     display: inline-flex;
+    align-items: center;
+    min-height: 1.25rem;
+    padding: .08rem .38rem;
+    border: 1px solid #d8e6e1;
+    border-radius: 999px;
+    background: #f7fbf9;
+    color: #526477;
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: .02em;
+}
+
+.protected-email__card {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .34rem;
+    width: min(100%, 11.5rem);
+    max-width: 100%;
+    min-width: 0;
+    padding: .34rem .42rem;
+    border: 1px solid #d7e8e2;
+    border-radius: 8px;
+    background: rgba(247, 251, 249, .9);
+    box-shadow: 0 8px 18px rgba(23, 54, 79, .06);
+}
+
+.protected-email__card[hidden] {
+    display: none;
+}
+
+.protected-email__address {
+    display: block;
     max-width: 100%;
     min-width: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-wrap: anywhere;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: .76rem;
+    line-height: 1.32;
     letter-spacing: 0;
+    color: #184f54;
 }
 
 .email-scramble__char {
-    flex: 0 0 .62em;
+    display: inline-block;
+    width: .62em;
     text-align: center;
     white-space: pre;
     transition: color .18s ease, transform .18s ease;
 }
 
-.email-scramble.is-shuffling .email-scramble__char {
+.protected-email__trigger.is-shuffling ~ .protected-email__card .email-scramble__char {
     transform: translateY(-1px);
 }
 
@@ -1239,26 +1283,51 @@ html[data-theme="dark"] {
         color: #8ee8d2;
     }
 
-    .email-scramble {
+    .protected-email__trigger {
         color: #b7eadb;
 
         &:hover,
         &:focus-visible {
-            background: #1e2a35;
             color: #f1f7fb;
+
+            .protected-email__badge {
+                background: #173a36;
+                border-color: #2e756d;
+                color: #99f6e4;
+            }
         }
 
-        &.is-obfuscated {
-            color: #93a9bb;
+        &.is-obfuscated .protected-email__badge {
+            color: #a7b8c8;
         }
 
-        &.is-revealed {
-            color: #b7eadb;
+        &.is-revealed .protected-email__badge {
+            background: #173a36;
+            border-color: #2e756d;
+            color: #99f6e4;
         }
 
-        &.is-shuffling {
+        &.is-shuffling .protected-email__badge {
+            background: #352a18;
+            border-color: #6b5422;
             color: #f5c16c;
         }
+    }
+
+    .protected-email__badge {
+        border-color: #354758;
+        background: #17222c;
+        color: #a7b8c8;
+    }
+
+    .protected-email__card {
+        border-color: #2d4550;
+        background: rgba(20, 29, 37, .92);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, .22);
+    }
+
+    .protected-email__address {
+        color: #b7eadb;
     }
 
     .email-copy,

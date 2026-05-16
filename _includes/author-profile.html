@@ -35,11 +35,14 @@
       {% if author.protected_email and author.protected_email.scrambled_chars and author.protected_email.order %}
         <li class="protected-email">
           <span class="protected-email__icon"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></span>
-          <a href="#" role="button" class="js-protected-email email-scramble" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Click to reveal email address" title="Click to reveal email address">
-            <span class="js-email-hint email-scramble__hint">Email</span>
-            <span class="js-email-label email-scramble__text">click to reveal</span>
+          <a href="#" role="button" class="js-protected-email protected-email__trigger" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Click to reveal email address" title="Click to reveal email address">
+            <span class="protected-email__label">Email</span>
+            <span class="js-email-status protected-email__badge">reveal</span>
           </a>
-          <a href="#" role="button" class="js-protected-email-copy email-copy is-hidden" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Copy email address" title="Copy email address" aria-hidden="true" tabindex="-1"><i class="fas fa-fw fa-copy" aria-hidden="true"></i></a>
+          <div class="js-email-card protected-email__card" hidden>
+            <span class="js-email-label protected-email__address"></span>
+            <a href="#" role="button" class="js-protected-email-copy email-copy" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Copy email address" title="Copy email address"><i class="fas fa-fw fa-copy" aria-hidden="true"></i></a>
+          </div>
         </li>
       {% endif %}
       {% if author.keybase %}
