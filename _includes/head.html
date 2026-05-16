@@ -10,12 +10,17 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   (function() {
     try {
-      var storedTheme = localStorage.getItem('theme');
-      var theme = storedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      localStorage.removeItem('theme');
+      localStorage.removeItem('theme-mode');
+      var mode = 'system';
+      var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = mode === 'dark' || (mode !== 'light' && systemDark) ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.setAttribute('data-theme-mode', mode === 'light' || mode === 'dark' ? mode : 'system');
       document.documentElement.style.colorScheme = theme;
     } catch (error) {
       document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.setAttribute('data-theme-mode', 'system');
     }
   })();
 </script>

@@ -376,6 +376,7 @@ body {
         display: inline-block;
         margin: .15rem .25rem .1rem 0;
         padding: .18rem .45rem;
+        border: 1px solid transparent;
         border-radius: 999px;
         background: #edf5f4;
         color: #225f5d;
@@ -461,6 +462,7 @@ body {
     align-items: center;
     min-height: 1.45rem;
     padding: .16rem .48rem;
+    border: 1px solid transparent;
     border-radius: 999px;
     font-size: .72rem;
     font-weight: 700;
@@ -1116,70 +1118,80 @@ body {
 html[data-theme="dark"] {
     body {
         background:
-            radial-gradient(circle at 12% 0%, rgba(45, 212, 191, .13), transparent 24rem),
-            linear-gradient(180deg, #0c1118 0, #101720 34rem);
-        color: #d7e1eb;
+            radial-gradient(circle at 10% 0%, rgba(45, 212, 191, .12), transparent 24rem),
+            radial-gradient(circle at 92% 14rem, rgba(251, 191, 36, .07), transparent 20rem),
+            linear-gradient(180deg, #101418 0, #14191f 34rem);
+        color: #dfe7ef;
     }
 
     .masthead,
     .greedy-nav,
     .site-footer--personal {
-        border-color: #223244;
-        background: rgba(13, 19, 28, .96);
-        color: #d7e1eb;
+        border-color: #2c3844;
+        background: rgba(17, 22, 28, .96);
+        color: #e2eaf2;
     }
 
     .greedy-nav a {
-        color: #d7e1eb;
+        color: #dce6ee;
 
         &:hover {
-            color: #8bd7c5;
+            color: #8ee8d2;
         }
     }
 
     .greedy-nav .visible-links a:before {
-        background: #34d399;
+        background: #2dd4bf;
+    }
+
+    .greedy-nav button {
+        background: #263342;
+        color: #f1f7fb;
     }
 
     .greedy-nav .hidden-links {
-        border-color: #26384a;
-        background: #121b26;
+        border-color: #2d3947;
+        background: #161d25;
         box-shadow: 0 16px 32px rgba(0, 0, 0, .35);
 
         &:after {
-            border-color: #121b26 transparent;
+            border-color: #161d25 transparent;
         }
     }
 
     .theme-toggle {
-        border-color: #2f4a5c;
-        background: #172331;
-        color: #e8f4ef;
+        border-color: #394858;
+        background: #1b2530;
+        color: #e6eef6;
     }
 
     .theme-toggle__icon {
-        background: #facc15;
+        background: #f4c95d;
 
         &:after {
             top: .08rem;
             right: .08rem;
             width: .38rem;
             height: .38rem;
-            background: #172331;
+            background: #1b2530;
         }
     }
 
     a {
-        color: #72d6ff;
+        color: #7dd3fc;
+
+        &:hover {
+            color: #99f6e4;
+        }
     }
 
     .page__content {
-        color: #d5dee8;
+        color: #dfe7ef;
 
         h1,
         h2,
         h3 {
-            color: #f1f7fb;
+            color: #f3f7fb;
         }
     }
 
@@ -1187,22 +1199,27 @@ html[data-theme="dark"] {
     .author__content,
     .author__urls,
     .sidebar {
-        color: #c8d5e1;
+        color: #cbd7e3;
     }
 
     .author__name,
     .author__bio,
     .author__urls a,
     .author__urls_sm a {
-        color: #dce8f3;
+        color: #e4edf5;
+    }
+
+    .author__urls i,
+    .author__urls_sm i {
+        color: #8ee8d2;
     }
 
     .email-scramble {
-        color: #bfe9dc;
+        color: #b7eadb;
 
         &:hover,
         &:focus-visible {
-            background: #142233;
+            background: #1e2a35;
             color: #f1f7fb;
         }
 
@@ -1216,7 +1233,7 @@ html[data-theme="dark"] {
         &:hover,
         &:focus-visible,
         &.is-copied {
-            background: #142233;
+            background: #1e2a35;
             color: #f1f7fb;
         }
     }
@@ -1227,25 +1244,39 @@ html[data-theme="dark"] {
     .research-card,
     .work-card,
     .publication-card,
-    .compact-profile,
+    .collab-panel,
+    .compact-profile-section,
     .visitor-stats,
     .blog-index-hero,
     .blog-index-card {
-        border-color: #26384a;
+        border-color: #2c3947;
         background:
-            linear-gradient(135deg, rgba(20, 31, 44, .96), rgba(14, 23, 34, .94)),
-            radial-gradient(circle at 100% 0%, rgba(20, 184, 166, .13), transparent 16rem);
+            radial-gradient(circle at 100% 0%, rgba(45, 212, 191, .1), transparent 15rem),
+            linear-gradient(135deg, rgba(24, 31, 39, .98), rgba(17, 23, 31, .97));
         box-shadow: 0 18px 36px rgba(0, 0, 0, .22);
     }
 
+    .profile-hero {
+        border-color: #354453;
+        background:
+            radial-gradient(circle at 100% 0%, rgba(45, 212, 191, .14), transparent 17rem),
+            radial-gradient(circle at 0% 100%, rgba(244, 201, 93, .08), transparent 15rem),
+            linear-gradient(135deg, rgba(27, 35, 43, .98), rgba(16, 22, 30, .97));
+    }
+
     .hero-identity {
+        background: rgba(22, 29, 37, .78);
+
         img {
-            border-color: #172331;
+            border-color: #222f3c;
         }
     }
 
     .profile-hero {
-        .hero-kicker,
+        .hero-kicker {
+            color: #79dec8;
+        }
+
         h1 {
             color: #f2f9fb;
         }
@@ -1257,14 +1288,19 @@ html[data-theme="dark"] {
 
     .hero-identity strong,
     .impact-strip strong,
+    .research-card h3,
     .work-card h3,
+    .work-card h3 a,
     .publication-card h4,
+    .publication-card h4 a,
     .compact-timeline strong,
     .visitor-stats__grid strong,
     .blog-index-card h2,
+    .blog-index-card h2 a,
     .blog-post__header h1,
+    .blog-post__content h2,
     .blog-post__content strong {
-        color: #f1f7fb;
+        color: #f2f7fb;
     }
 
     .hero-identity span,
@@ -1273,33 +1309,86 @@ html[data-theme="dark"] {
     .research-card p,
     .work-card p,
     .publication-card p,
+    .collab-panel p,
+    .collab-panel li,
     .compact-timeline > div,
     .music-note,
+    .music-note p,
     .visitor-stats p,
     .blog-index-hero p,
     .blog-index-card p,
     .blog-post__excerpt,
     .blog-post__content,
     .blog-comments__note {
-        color: #c7d2de;
+        color: #c8d3df;
     }
 
-    .research-card span,
-    .topic-pill,
-    .star-pill,
-    .cite-pill,
+    .hero-actions .btn,
+    .collab-panel .btn {
+        background: #16796c;
+        color: #f4fffb !important;
+
+        &:hover {
+            background: #1c9584;
+        }
+    }
+
+    .research-card span {
+        border-color: #314151;
+        background: #1a2632;
+        color: #cad9e7;
+    }
+
+    .area-music-generation span {
+        border-color: #654031;
+        background: #301f1a;
+        color: #f1b79f;
+    }
+
+    .area-music-understanding span,
+    .project-type {
+        border-color: #28584f;
+        background: #132d2a;
+        color: #9de7d3;
+    }
+
+    .area-multimodal span,
+    .topic-pill {
+        border-color: #344866;
+        background: #182536;
+        color: #c9dbf6;
+    }
+
+    .area-systems span {
+        border-color: #5f4562;
+        background: #2b2231;
+        color: #e2bce9;
+    }
+
+    .star-pill {
+        border-color: #5b4721;
+        background: #2e2515;
+        color: #f2cf85;
+    }
+
+    .cite-pill {
+        border-color: #65402c;
+        background: #302119;
+        color: #efb68c;
+    }
+
     .blog-index-card__tags span,
     .blog-post__tags span,
     .blog-language-nav a,
     .blog-lang-switch__item {
-        border-color: #2d4a5d;
-        background: #142233;
-        color: #bfe9dc;
+        border-color: #344353;
+        background: #1a2632;
+        color: #cde4dc;
     }
 
     .blog-lang-switch__item--active {
-        border-color: #34d399;
-        background: #059669;
+        border-color: #2dd4bf;
+        background: #0f766e;
         color: #fff;
     }
 
@@ -1308,13 +1397,42 @@ html[data-theme="dark"] {
     .compact-timeline > div,
     .music-note,
     .site-footer--personal {
-        border-color: #26384a;
+        border-color: #2d3947;
     }
 
     .blog-index-card__meta,
     .blog-post__meta,
     .visitor-stats__grid small {
-        color: #94a9bb;
+        color: #9dafc0;
+    }
+
+    .compact-profile-section h2,
+    .music-note h2,
+    .site-footer__identity strong,
+    .visitor-stats__eyebrow,
+    .blog-index-hero__kicker,
+    .blog-post__eyebrow {
+        color: #8ee8d2;
+    }
+
+    .compact-timeline span,
+    .site-footer__identity span {
+        color: #a8b6c5;
+    }
+
+    .timeline-list > div,
+    .compact-timeline > div {
+        border-color: #2a3644;
+    }
+
+    .work-card:hover,
+    .publication-card:hover {
+        border-color: #3f5b61;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, .28);
+    }
+
+    .publication-card:before {
+        background: #2dd4bf;
     }
 
 }
