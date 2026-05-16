@@ -590,8 +590,8 @@ body {
 
 .protected-email {
     display: flex;
-    align-items: flex-start;
-    gap: .24rem;
+    align-items: center;
+    gap: .28rem;
     white-space: normal;
 }
 
@@ -615,18 +615,20 @@ body {
 .author__urls-wrapper .email-scramble,
 .author__urls-wrapper .email-copy,
 .author__urls-wrapper .protected-email-icon {
-    display: inline-flex;
+    display: inline-grid;
     width: auto;
+    max-width: calc(100% - 1.6rem);
     margin-bottom: 0;
     padding: .04rem .08rem;
 }
 
 .email-scramble {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .08rem .34rem;
-    padding: .04rem .08rem;
+    display: inline-grid;
+    grid-template-columns: auto;
+    max-width: 100%;
+    min-width: 0;
+    gap: .05rem;
+    padding: .05rem .12rem;
     border-radius: 5px;
     color: #21546b;
     font-size: .9em;
@@ -653,14 +655,17 @@ body {
 }
 
 .email-scramble__hint {
-    flex: 0 0 100%;
     font-family: inherit;
+    font-weight: 700;
     white-space: nowrap;
 }
 
 .email-scramble__text {
     display: inline-flex;
-    min-width: 19ch;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
     letter-spacing: 0;
 }
