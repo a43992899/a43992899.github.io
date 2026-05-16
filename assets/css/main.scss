@@ -108,10 +108,17 @@ h1:before, .anchor:before {
     font-size: .8em;
 }
 
+html {
+    background-color: #ffffff;
+}
+
 body {
+    min-height: 100vh;
+    background-color: #ffffff;
     background:
         radial-gradient(circle at 14% 0%, rgba(31, 166, 129, .08), transparent 25rem),
-        linear-gradient(180deg, #f8fbfa 0, #ffffff 30rem);
+        linear-gradient(180deg, #f8fbfa 0, #ffffff 30rem),
+        #ffffff;
     transition: background-color .2s ease, color .2s ease;
 }
 
@@ -1185,11 +1192,15 @@ body {
 }
 
 html[data-theme="dark"] {
+    background-color: #14191f;
+
     body {
+        background-color: #14191f;
         background:
             radial-gradient(circle at 10% 0%, rgba(45, 212, 191, .12), transparent 24rem),
             radial-gradient(circle at 92% 14rem, rgba(251, 191, 36, .07), transparent 20rem),
-            linear-gradient(180deg, #101418 0, #14191f 34rem);
+            linear-gradient(180deg, #101418 0, #14191f 34rem),
+            #14191f;
         color: #dfe7ef;
     }
 
