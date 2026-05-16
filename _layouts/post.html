@@ -20,7 +20,7 @@ layout: default
           {% if sibling.url == page.url %}
             <span class="blog-lang-switch__item blog-lang-switch__item--active">{{ sibling.lang_label | default: sibling.lang }}</span>
           {% else %}
-            <a class="blog-lang-switch__item" href="{{ sibling.url | relative_url }}">{{ sibling.lang_label | default: sibling.lang }}</a>
+            <a class="blog-lang-switch__item" href="{{ sibling.url | relative_url }}" target="_self">{{ sibling.lang_label | default: sibling.lang }}</a>
           {% endif %}
         {% endfor %}
       </nav>

@@ -19,7 +19,7 @@ Some longer thoughts on music intelligence, open foundation models, research pro
 {% for post in site.posts %}
   <article class="blog-index-card">
     <p class="blog-index-card__meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.reading_time %} · {{ post.reading_time }}{% endif %}</p>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.url | relative_url }}" target="_self">{{ post.title }}</a></h2>
     {% if post.excerpt %}
       <p>{{ post.excerpt | markdownify | strip_html | truncate: 220 }}</p>
     {% endif %}
