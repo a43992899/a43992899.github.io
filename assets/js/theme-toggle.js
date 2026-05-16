@@ -6,8 +6,23 @@
 
   function storedMode() {
     try {
-      localStorage.removeItem(legacyStorageKey);
-      localStorage.removeItem(storageKey);
+      var mode = localStorage.getItem(storageKey) || localStorage.getItem(legacyStorageKey);
+
+      if (mode === 'light' || mode === 'dark') {
+        localStorage.setItem(storageKey, mode);
+        localStorage.removeItem(legacyStorageKey);
+        return mode;
+      }
+
+      if (mode === 'system') {
+        localStorage.removeItem(legacyStorageKey);
+        return 'system';
+      }
+
+      if (mode) {
+        localStorage.removeItem(legacyStorageKey);
+        localStorage.removeItem(storageKey);
+      }
     } catch (error) {
       // Ignore storage failures; the theme should still follow the system.
     }
@@ -18,7 +33,12 @@
   function setStoredMode(mode) {
     try {
       localStorage.removeItem(legacyStorageKey);
-      localStorage.removeItem(storageKey);
+
+      if (mode === 'light' || mode === 'dark') {
+        localStorage.setItem(storageKey, mode);
+      } else {
+        localStorage.removeItem(storageKey);
+      }
     } catch (error) {
       // Ignore storage failures; the visual toggle should still work for this page.
     }
@@ -60,11 +80,13 @@
     var isDark = theme === 'dark';
     var label = button.querySelector('[data-theme-toggle-label]');
     var followsSystem = mode === 'system';
-    var nextLabel = followsSystem ? (isDark ? 'Light' : 'Dark') : 'Auto';
+    var system = systemTheme();
+    var nextLabel = followsSystem ? (isDark ? 'Light' : 'Dark') : (mode !== system ? (system === 'dark' ? 'Dark' : 'Light') : 'Auto');
+    var nextTarget = nextLabel.toLowerCase();
 
     button.setAttribute('aria-pressed', followsSystem ? 'false' : 'true');
-    button.setAttribute('aria-label', followsSystem ? 'Switch theme temporarily' : 'Follow system theme');
-    button.setAttribute('title', followsSystem ? 'Following system theme' : 'Return to system theme');
+    button.setAttribute('aria-label', nextLabel === 'Auto' ? 'Return to system theme' : 'Switch to ' + nextTarget + ' theme');
+    button.setAttribute('title', followsSystem ? 'Following system theme; click for ' + nextTarget : 'Manual ' + theme + ' theme; click for ' + nextTarget);
     if (label) label.textContent = nextLabel;
   }
 
@@ -86,9 +108,14 @@
   function nextMode() {
     var currentMode = root.getAttribute('data-theme-mode') || storedMode();
     var currentTheme = root.getAttribute('data-theme') || themeFromMode(currentMode);
+    var system = systemTheme();
 
     if (currentMode === 'system') {
       return currentTheme === 'dark' ? 'light' : 'dark';
+    }
+
+    if (currentMode !== system) {
+      return system;
     }
 
     return 'system';
