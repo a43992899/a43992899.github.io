@@ -21,7 +21,6 @@ I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, develo
 I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open research infrastructure.
 
 <div class="hero-actions" markdown="1">
-[Request CV](#cv-request){: .btn .btn--primary}
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
 [GitHub Profile](https://github.com/a43992899){: .btn}
 [MAP](https://huggingface.co/m-a-p){: .btn}
@@ -66,7 +65,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 ### Music Generation
 Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
 
-<span>YuE</span><span>Qwen Music</span><span>ChatMusician</span><span>MuPT</span>
+<span>YuE</span><span>Qwen-Omni</span><span>ChatMusician</span><span>MuPT</span>
 </div>
 
 <div class="research-card area-music-understanding" markdown="1">
@@ -91,21 +90,6 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 </div>
 </section>
 
-<section class="scholar-snapshot" markdown="1">
-<div markdown="1">
-### Scholar Snapshot
-Google Scholar lists my profile around **Artificial Intelligence**, **Music Generation**, **Music Information Retrieval**, and **Computer Music**.
-</div>
-<div markdown="1">
-### Most Cited Directions
-The strongest citation signals come from multimodal expert benchmarks, unified multimodal LLMs, retrieval-augmented generation, and music representation learning: MMMU, Qwen-Omni, AnyGPT, RQ-RAG, MERT, MARBLE, and open instruction/data releases.
-</div>
-<div markdown="1">
-### Open-Source Footprint
-MAP's public projects combine research prototypes and community infrastructure, with [YuE](https://github.com/multimodal-art-projection/YuE) alone attracting more than 6.2k GitHub stars.
-</div>
-</section>
-
 <span class='anchor' id='work'></span>
 
 ## Selected Work
@@ -118,9 +102,9 @@ Open full-song music generation foundation model, designed as an open alternativ
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Foundation model</span><span class="star-pill">Qwen Music</span></div>
-### Qwen Music
-Foundation model research for music generation, with additional work on audio and music understanding capabilities in the Qwen-Omni series.
+<div class="project-meta"><span class="project-type">Omni-modal foundation models</span><span class="star-pill">Qwen-Omni</span></div>
+### [Qwen-Omni Series](https://github.com/QwenLM/Qwen3-Omni)
+Omni-modal foundation model work across text, image, audio, video, and real-time speech interaction, spanning the Qwen2.5-Omni and Qwen3-Omni line.
 </div>
 
 <div class="work-card" markdown="1">
@@ -345,7 +329,7 @@ Zero-shot pseudo voice conversion for privacy-preserving speaker de-identificati
 </div>
 </div>
 
-See [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list, or request the full CV below for recruiting, institutional, or research collaboration use.
+See [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list.
 
 <span class='anchor' id='collaborate'></span>
 
@@ -368,43 +352,6 @@ Current ideas I am especially excited about:
 [Buy Me a Coffee](https://buymeacoffee.com/ruibin){: .btn}
 </div>
 
-<span class='anchor' id='cv-request'></span>
-
-## Request CV
-
-<section class="cv-request-panel" markdown="1">
-For a full academic CV, please send a short request with your affiliation and intended use. I review requests manually before sharing the PDF.
-
-<form id="cv-request-form" class="cv-request-form" data-email-user="{{ site.author.protected_email.user_b64 }}" data-email-domain="{{ site.author.protected_email.domain_b64 }}">
-<label>
-<span>Full name</span>
-<input type="text" name="name" autocomplete="name" required>
-</label>
-<label>
-<span>Institution / affiliation</span>
-<input type="text" name="institution" autocomplete="organization" required>
-</label>
-<label>
-<span>Institutional email</span>
-<input type="email" name="requester_email" autocomplete="email" required>
-</label>
-<label>
-<span>Role / title</span>
-<input type="text" name="role" autocomplete="organization-title">
-</label>
-<label class="cv-request-form__wide">
-<span>Purpose</span>
-<textarea name="purpose" rows="4" required placeholder="Recruiting, fellowship review, invited talk, collaboration, grant review, etc."></textarea>
-</label>
-<label class="cv-request-form__wide">
-<span>Profile or institution page</span>
-<input type="url" name="profile_url" placeholder="https://">
-</label>
-<button type="submit" class="btn btn--primary">Prepare CV Request</button>
-<p id="cv-request-status" class="cv-request-status">This opens a local email draft. The CV is shared manually after the request is reviewed.</p>
-</form>
-</section>
-
 <section class="compact-profile-grid" markdown="1">
 <div class="compact-profile-section" markdown="1">
 <span class='anchor' id='experience'></span>
@@ -414,7 +361,7 @@ For a full academic CV, please send a short request with your affiliation and in
 <div class="timeline-list compact-timeline" markdown="1">
 <div markdown="1">
 **Qwen**<br>
-Research Intern, Qwen Music.<br>
+Research Intern, Qwen-Omni Series.<br>
 <span>2025.04 - present · Remote</span>
 </div>
 

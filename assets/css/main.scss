@@ -318,7 +318,6 @@ body {
 }
 
 .research-grid,
-.scholar-snapshot,
 .work-grid {
     display: grid;
     gap: .95rem;
@@ -329,16 +328,11 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.scholar-snapshot {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .research-card,
-.scholar-snapshot > div,
 .work-card,
 .publication-card,
 .collab-panel {
@@ -422,13 +416,11 @@ body {
     color: #704766;
 }
 
-.scholar-snapshot > div,
 .work-card {
     min-width: 0;
     padding: 1rem 1.05rem;
 }
 
-.scholar-snapshot h3,
 .work-card h3 {
     margin-top: 0;
     margin-bottom: .35rem;
@@ -437,7 +429,6 @@ body {
     color: #17364f;
 }
 
-.scholar-snapshot p,
 .work-card p {
     margin-bottom: 0;
     line-height: 1.58;
@@ -707,82 +698,6 @@ body {
         font-size: .88rem;
         line-height: 1.55;
     }
-}
-
-.cv-request-panel {
-    margin: .9rem 0 1.7rem;
-    padding: 1.05rem 1.15rem;
-    border: 1px solid #dbe7e4;
-    border-radius: 12px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, .94), rgba(246, 250, 249, .92));
-    box-shadow: 0 12px 28px rgba(23, 54, 79, .06);
-
-    p {
-        margin-top: 0;
-        color: #405064;
-        line-height: 1.6;
-    }
-}
-
-.cv-request-form {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .7rem;
-    margin-top: .85rem;
-
-    label {
-        min-width: 0;
-        margin: 0;
-        color: #27394d;
-        font-size: .82rem;
-        font-weight: 800;
-        line-height: 1.35;
-    }
-
-    span {
-        display: block;
-        margin-bottom: .25rem;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        min-width: 0;
-        border: 1px solid #cedbd9;
-        border-radius: 8px;
-        background: #fff;
-        color: #1e2b3a;
-        font-size: .9rem;
-        line-height: 1.35;
-        box-shadow: inset 0 1px 2px rgba(23, 54, 79, .04);
-
-        &:focus {
-            border-color: #2f9d7e;
-            outline: 2px solid rgba(47, 157, 126, .14);
-        }
-    }
-
-    textarea {
-        resize: vertical;
-    }
-
-    .btn {
-        justify-self: start;
-        margin-top: .15rem;
-        border-radius: 7px;
-    }
-}
-
-.cv-request-form__wide,
-.cv-request-status {
-    grid-column: 1 / -1;
-}
-
-.cv-request-status {
-    margin: .1rem 0 0;
-    color: #667486;
-    font-size: .8rem;
-    line-height: 1.45;
 }
 
 .site-footer--personal {
@@ -1186,11 +1101,9 @@ html[data-theme="dark"] {
     .hero-identity,
     .impact-strip > div,
     .research-card,
-    .scholar-snapshot > div,
     .work-card,
     .publication-card,
     .compact-profile,
-    .cv-request-panel,
     .visitor-stats,
     .blog-index-hero,
     .blog-index-card {
@@ -1234,12 +1147,10 @@ html[data-theme="dark"] {
     .impact-strip span,
     .metric-note,
     .research-card p,
-    .scholar-snapshot p,
     .work-card p,
     .publication-card p,
     .compact-timeline > div,
     .music-note,
-    .cv-request-panel p,
     .visitor-stats p,
     .blog-index-hero p,
     .blog-index-card p,
@@ -1282,23 +1193,6 @@ html[data-theme="dark"] {
         color: #94a9bb;
     }
 
-    .cv-request-form {
-        label {
-            color: #dce8f3;
-        }
-
-        input,
-        textarea {
-            border-color: #33475c;
-            background: #0f1721;
-            color: #e5edf5;
-
-            &:focus {
-                border-color: #34d399;
-                outline-color: rgba(52, 211, 153, .22);
-            }
-        }
-    }
 }
 
 @media (max-width: 720px) {
@@ -1313,10 +1207,8 @@ html[data-theme="dark"] {
 
     .impact-strip,
     .research-grid,
-    .scholar-snapshot,
     .work-grid,
     .compact-profile-grid,
-    .cv-request-form,
     .visitor-stats__grid {
         grid-template-columns: 1fr;
     }

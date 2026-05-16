@@ -18,9 +18,6 @@ main:
   - title: "Collaborate"
     url: "/#collaborate"
 
-  - title: "CV"
-    url: "/#cv-request"
-
   - title: "Experience"
     url: "/#experience"
 
