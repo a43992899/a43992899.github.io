@@ -91,13 +91,21 @@
 
   function renderObfuscatedEmail(button, label) {
     var chars = scrambledCharsFromDataset(button);
+    var hint = button.querySelector(".js-email-hint");
 
     button.classList.add("is-obfuscated");
     button.classList.remove("is-revealed");
+    button.setAttribute("aria-label", "Click to unscramble email address");
+    button.setAttribute("title", "Click to unscramble email address");
+    if (hint) {
+      hint.textContent = "Email (click to unscramble)";
+    }
     renderText(label, chars, shuffleIndices(chars.length));
   }
 
   function revealEmail(button, label, email) {
+    var hint = button.querySelector(".js-email-hint");
+
     button.classList.add("is-shuffling");
 
     window.setTimeout(function () {
@@ -105,6 +113,9 @@
       button.classList.remove("is-obfuscated");
       button.classList.remove("is-shuffling");
       button.classList.add("is-revealed");
+      if (hint) {
+        hint.textContent = "Email (click to copy)";
+      }
       button.setAttribute("aria-label", email + " (click to copy)");
       button.setAttribute("title", "Click to copy email address");
     }, 180);

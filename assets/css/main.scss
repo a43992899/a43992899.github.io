@@ -590,9 +590,9 @@ body {
 
 .protected-email {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: .24rem;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .protected-email__icon {
@@ -624,10 +624,11 @@ body {
 .email-scramble {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: .08rem .34rem;
     padding: .04rem .08rem;
     border-radius: 5px;
     color: #21546b;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
     font-size: .9em;
     text-decoration: none;
 
@@ -651,9 +652,16 @@ body {
     }
 }
 
+.email-scramble__hint {
+    flex: 0 0 100%;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
 .email-scramble__text {
     display: inline-flex;
     min-width: 19ch;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
     letter-spacing: 0;
 }
 
