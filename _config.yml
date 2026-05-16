@@ -53,8 +53,8 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ"
   protected_email  :
-    user_b64       : "YTQzOTkyODk5"
-    domain_b64     : "Z21haWwuY29t"
+    scrambled_chars : "93.am9m@4i2o9g9c8al"
+    order           : "7,2,15,0,11,4,18,9,1,13,5,17,3,10,8,16,6,12,14"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              : "https://a43992899.github.io"
   bitbucket        :

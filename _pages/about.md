@@ -96,33 +96,45 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 
 <div class="work-grid" markdown="1">
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span></div>
+<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 ### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
 Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Omni-modal foundation models</span><span class="star-pill">Qwen-Omni</span></div>
-### [Qwen-Omni Series](https://github.com/QwenLM/Qwen3-Omni)
-Omni-modal foundation model work across text, image, audio, video, and real-time speech interaction, spanning the Qwen2.5-Omni and Qwen3-Omni line.
+<div class="project-meta"><span class="project-type">Omni-modal foundation models</span><span class="star-pill">Qwen-Omni</span><span class="cite-pill" data-metric="publications.qwen3_omni.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.qwen3_omni.citations | default: 854 }}</span></div>
+### [Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) / [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804)
+Omni-modal foundation model work across text, image, audio, video, and real-time speech interaction, focused on the Qwen3-Omni and Qwen3.5-Omni line.
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL Findings</span></div>
-### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329)
-Symbolic music LLM research, large-scale music-language data, and advanced music understanding evaluation.
+<div class="project-meta"><span class="project-type">Audio foundation models</span><span class="star-pill">Technical Reports</span><span class="cite-pill" data-metric="publications.kimi_audio.citations" data-metric-prefix="Kimi GS cites ">Kimi GS cites {{ site.data.metrics.publications.kimi_audio.citations | default: 195 }}</span></div>
+### [Kimi-Audio](https://arxiv.org/abs/2504.18425) / [Spark-TTS](https://arxiv.org/abs/2503.01710)
+High-impact audio and speech foundation-model reports spanning general audio understanding and efficient LLM-based text-to-speech.
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span></div>
+<div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL / ISMIR</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
+### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329) / [ComposerX](https://doi.org/10.5281/zenodo.14877425)
+Symbolic music LLM research, multi-agent composition, large-scale music-language data, and advanced music understanding evaluation.
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="MERT GS cites ">MERT GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
 ### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927) and [MARBLE](https://marble-bm.shef.ac.uk)
 Self-supervised music audio representation learning and unified benchmark design for music understanding.
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Multimodal benchmark</span><span class="star-pill">CVPR</span></div>
-### [MMMU / CMMMU](https://mmmu-benchmark.github.io)
-Expert-level multimodal understanding benchmarks for testing reasoning across university-level disciplines and Chinese multimodal settings.
+<div class="project-meta"><span class="project-type">Expert reasoning benchmarks</span><span class="star-pill">CVPR / NeurIPS / CoRR</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="MMMU GS cites ">MMMU GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
+### [MMMU](https://mmmu-benchmark.github.io) / [SuperGPQA](https://openreview.net/forum?id=6WgflzYQpf) / [CMMMU](https://openreview.net/forum?id=vpWnXKXqP8)
+Expert-level multimodal and graduate-discipline benchmarks for testing reasoning across university-level subjects, with CMMMU tracked as the Chinese CoRR benchmark.
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Omni/audio reasoning benchmarks</span><span class="star-pill">NeurIPS 2025</span><span class="cite-pill" data-metric="publications.mmar.citations" data-metric-prefix="MMAR GS cites ">MMAR GS cites {{ site.data.metrics.publications.mmar.citations | default: 83 }}</span></div>
+### [MMAR](https://neurips.cc/virtual/2025/loc/san-diego/poster/121526) / [OmniBench](https://nips.cc/virtual/2025/poster/121644)
+Benchmarks for audio-language reasoning and omni-language evaluation across speech, audio, music, vision, and text.
 </div>
 
 <div class="work-card" markdown="1">
@@ -164,11 +176,19 @@ Unified framework spanning general sound, music, speech understanding, generatio
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2025</span><span class="topic-pill">Video-to-music generation</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2025</span><span class="topic-pill">Video-to-music generation</span><span class="cite-pill" data-metric="publications.vidmuse.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.vidmuse.citations | default: 59 }}</span></div>
 #### [VidMuse: A Simple Video-to-Music Generation Framework with Long-Short-Term Modeling](https://openaccess.thecvf.com/content/CVPR2025/papers/Tian_VidMuse_A_Simple_Video-to-Music_Generation_Framework_with_Long-Short-Term_Modeling_CVPR_2025_paper.pdf)
 Zeyue Tian*, Zhaoyang Liu*, **Ruibin Yuan**, Jiahao Pan, Qifeng Liu, Xu Tan, Qifeng Chen, Wei Xue, Yike Guo.
 
 Video-conditioned music generation with long-short-term visual modeling; CVPR 2025.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-icassp">ICASSP 2025</span><span class="topic-pill">Music editing</span><span class="cite-pill" data-metric="publications.editing_music.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.editing_music.citations | default: 21 }}</span></div>
+#### [Editing Music with Melody and Text: Using ControlNet for Diffusion Transformer](https://doi.org/10.1109/ICASSP49660.2025.10890309)
+Siyuan Hou, Shansong Liu, **Ruibin Yuan**, Wei Xue, Ying Shan, Mangsuo Zhao, Chao Zhang.
+
+Melody- and text-conditioned music editing with ControlNet-style conditioning for diffusion transformers.
 </div>
 
 <div class="publication-card" markdown="1">
@@ -200,6 +220,22 @@ Large-scale multimodal benchmark across college-level disciplines and expert rea
 </div>
 
 <div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Technical Report 2025</span><span class="topic-pill">Omni-modal LLM</span><span class="cite-pill" data-metric="publications.qwen3_omni.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.qwen3_omni.citations | default: 854 }}</span></div>
+#### [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765)
+Qwen Team, Jin Xu, Zhifang Guo, Hangrui Hu, Yunfei Chu, et al., **Ruibin Yuan**, et al.
+
+Natively end-to-end omni-modal foundation model for text, image, audio, video, and real-time speech interaction.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Technical Report 2026</span><span class="topic-pill">Scaled omni-modal LLM</span><span class="cite-pill" data-metric="publications.qwen35_omni.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.qwen35_omni.citations | default: 27 }}</span></div>
+#### [Qwen3.5-Omni Technical Report](https://arxiv.org/abs/2604.15804)
+Qwen Team, **Ruibin Yuan**, et al.
+
+Scaled omni-modal model family with long-context audio-visual understanding, speech interaction, and audio-visual grounding.
+</div>
+
+<div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2024 Main</span><span class="topic-pill">Unified multimodal LLM</span><span class="cite-pill" data-metric="publications.anygpt.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.anygpt.citations | default: 298 }}</span></div>
 #### [AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling](https://doi.org/10.18653/v1/2024.acl-long.521)
 Jun Zhan, Junqi Dai, Jiasheng Ye, Yunhua Zhou, et al., **Ruibin Yuan**, et al.
@@ -208,7 +244,7 @@ Unified discrete sequence modeling for language, image, audio, and speech modali
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2025</span><span class="topic-pill">Omni-language evaluation</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2025</span><span class="topic-pill">Omni-language evaluation</span><span class="cite-pill" data-metric="publications.omnibench.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.omnibench.citations | default: 67 }}</span></div>
 #### [OmniBench: Towards The Future of Universal Omni-Language Models](https://nips.cc/virtual/2025/poster/121644)
 Yizhi Li, Ge Zhang, Yinghao Ma, **Ruibin Yuan**, Kang Zhu, Hangyu Guo, et al.
 
@@ -224,6 +260,38 @@ Query refinement for stronger retrieval-augmented generation.
 </div>
 
 <div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Technical Report 2025</span><span class="topic-pill">General audio foundation model</span><span class="cite-pill" data-metric="publications.kimi_audio.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.kimi_audio.citations | default: 195 }}</span></div>
+#### [Kimi-Audio Technical Report](https://arxiv.org/abs/2504.18425)
+Kimi Team, et al., **Ruibin Yuan**, et al.
+
+General audio foundation model report covering speech, sound, music, and audio interaction.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2025</span><span class="topic-pill">Graduate-level LLM evaluation</span><span class="cite-pill" data-metric="publications.supergpqa.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.supergpqa.citations | default: 169 }}</span></div>
+#### [SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines](https://openreview.net/forum?id=6WgflzYQpf)
+M-A-P Team, Xinrun Du, Yifan Yao, Kaijing Ma, Bingli Wang, et al., **Ruibin Yuan**, et al.
+
+Large-scale graduate-discipline benchmark for encyclopedic LLM evaluation; NeurIPS 2025 Datasets and Benchmarks.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Technical Report 2025</span><span class="topic-pill">Text-to-speech foundation model</span><span class="cite-pill" data-metric="publications.spark_tts.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.spark_tts.citations | default: 161 }}</span></div>
+#### [Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens](https://arxiv.org/abs/2503.01710)
+Xinsheng Wang, Mingqi Jiang, Ziyang Ma, Ziyu Zhang, Songxiang Liu, et al., **Ruibin Yuan**, et al.
+
+Efficient LLM-based TTS with single-stream decoupled speech tokens and controllable voice synthesis.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-neurips">NeurIPS 2025</span><span class="topic-pill">Audio reasoning benchmark</span><span class="cite-pill" data-metric="publications.mmar.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mmar.citations | default: 83 }}</span></div>
+#### [MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix](https://neurips.cc/virtual/2025/loc/san-diego/poster/121526)
+Ziyang Ma, Yinghao Ma, Yanqiao Zhu, Chen Yang, Yi-Wen Chao, et al., **Ruibin Yuan**, et al.
+
+Audio-language reasoning benchmark spanning speech, audio, music, and mixed-modality questions; NeurIPS 2025.
+</div>
+
+<div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Expressive S2ST</span></div>
 #### [UniSS: Unified Expressive Speech-to-Speech Translation with Your Voice](https://openreview.net/forum?id=5o0ZvYzh6B)
 Sitong Cheng, Weizhen Bian, Xinsheng Wang, **Ruibin Yuan**, Jianyi Chen, Shunshun Yin, Yike Guo, Wei Xue.
@@ -232,7 +300,15 @@ Single-stage expressive speech-to-speech translation preserving content, speaker
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Instruction data quality</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">CoRR 2024</span><span class="topic-pill">Chinese multimodal benchmark</span><span class="cite-pill" data-metric="publications.cmmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.cmmmu.citations | default: 74 }}</span></div>
+#### [CMMMU: A Chinese Massive Multi-discipline Multimodal Understanding Benchmark](https://openreview.net/forum?id=vpWnXKXqP8)
+Ge Zhang, Xinrun Du, Bei Chen, Yiming Liang, Tongxu Luo, et al., **Ruibin Yuan**, et al.
+
+Chinese multimodal benchmark extending MMMU-style expert reasoning across disciplines; checked as CoRR 2024 rather than CVPR.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Instruction data quality</span><span class="cite-pill" data-metric="publications.coig_cqia.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.coig_cqia.citations | default: 57 }}</span></div>
 #### [COIG-CQIA: Quality is All You Need for Chinese Instruction Fine-tuning](https://aclanthology.org/2025.findings-naacl.457/)
 Yuelin Bai, Xeron Du, Yiming Liang, Leo Jin, Junting Zhou, et al., **Ruibin Yuan**, et al.
 
@@ -261,7 +337,15 @@ Unified benchmark for evaluating music audio representations across diverse MIR 
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2025</span><span class="topic-pill">Universal music retrieval</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">Survey 2024</span><span class="topic-pill">Music foundation models</span><span class="cite-pill" data-metric="publications.foundation_models_music.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.foundation_models_music.citations | default: 79 }}</span></div>
+#### [Foundation Models for Music: A Survey](https://arxiv.org/abs/2408.14340)
+Yinghao Ma, Anders Oland, Anton Ragni, Chris Donahue, Chenghua Lin, et al., **Ruibin Yuan**, et al.
+
+Comprehensive survey of representation, generation, multimodal learning, agents, datasets, and evaluation for music foundation models.
+</div>
+
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2025</span><span class="topic-pill">Universal music retrieval</span><span class="cite-pill" data-metric="publications.clamp3.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp3.citations | default: 40 }}</span></div>
 #### [CLaMP 3: Universal Music Information Retrieval Across Unaligned Modalities and Unseen Languages](https://aclanthology.org/2025.findings-acl.133/)
 Shangda Wu, Zhancheng Guo, **Ruibin Yuan**, Junyan Jiang, Seungheon Doh, Gus Xia, Juhan Nam, et al.
 
