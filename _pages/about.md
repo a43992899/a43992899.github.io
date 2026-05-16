@@ -200,7 +200,7 @@ Generative pretraining for symbolic music modeling and controllable composition.
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2024</span><span class="topic-pill">Symbolic music LLM</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
 #### [ChatMusician: Understanding and Generating Music Intrinsically with LLM](https://aclanthology.org/2024.findings-acl.373/)
 **Ruibin Yuan**, Hanfeng Lin, Yi Wang, Zeyue Tian, et al.
 
@@ -308,7 +308,7 @@ Chinese multimodal benchmark extending MMMU-style expert reasoning across discip
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Instruction data quality</span><span class="cite-pill" data-metric="publications.coig_cqia.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.coig_cqia.citations | default: 57 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL 2025</span><span class="topic-pill">Instruction data quality</span><span class="cite-pill" data-metric="publications.coig_cqia.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.coig_cqia.citations | default: 57 }}</span></div>
 #### [COIG-CQIA: Quality is All You Need for Chinese Instruction Fine-tuning](https://aclanthology.org/2025.findings-naacl.457/)
 Yuelin Bai, Xeron Du, Yiming Liang, Leo Jin, Junting Zhou, et al., **Ruibin Yuan**, et al.
 
@@ -345,7 +345,7 @@ Comprehensive survey of representation, generation, multimodal learning, agents,
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-acl">ACL Findings 2025</span><span class="topic-pill">Universal music retrieval</span><span class="cite-pill" data-metric="publications.clamp3.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp3.citations | default: 40 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-acl">ACL 2025</span><span class="topic-pill">Universal music retrieval</span><span class="cite-pill" data-metric="publications.clamp3.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp3.citations | default: 40 }}</span></div>
 #### [CLaMP 3: Universal Music Information Retrieval Across Unaligned Modalities and Unseen Languages](https://aclanthology.org/2025.findings-acl.133/)
 Shangda Wu, Zhancheng Guo, **Ruibin Yuan**, Junyan Jiang, Seungheon Doh, Gus Xia, Juhan Nam, et al.
 
@@ -353,7 +353,7 @@ Universal music information retrieval across unaligned modalities and unseen lan
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL Findings 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill" data-metric="publications.clamp2.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp2.citations | default: 19 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-naacl">NAACL 2025</span><span class="topic-pill">Multilingual music retrieval</span><span class="cite-pill" data-metric="publications.clamp2.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.clamp2.citations | default: 19 }}</span></div>
 #### [CLaMP 2: Multimodal Music Information Retrieval Across 101 Languages Using Large Language Models](https://doi.org/10.18653/v1/2025.findings-naacl.27)
 Shangda Wu, Yashan Wang, **Ruibin Yuan**, Zhancheng Guo, Xu Tan, Ge Zhang, et al.
 
