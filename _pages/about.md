@@ -16,9 +16,9 @@ redirect_from:
 <p class="hero-kicker">Open Music AGI · Multimodal Foundation Models · Creative AI</p>
 # Ruibin Yuan
 
-I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research sits at the intersection of music generation, music understanding, multimodal LLMs, and the open data and systems needed to make creative AI genuinely useful.
+I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research focuses on foundation models for music generation and understanding, audio and multimodal foundation models, and the data and evaluation needed to make creative AI genuinely useful.
 
-I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open research infrastructure.
+I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open foundation-model releases, datasets, and benchmarks.
 
 <div class="hero-actions" markdown="1">
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
@@ -420,7 +420,7 @@ See [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for
 ## Let's Build Together
 
 <div class="collab-panel" markdown="1">
-I am always open to collaboration with people who care about open music AI, large-scale training, evaluation, and creative tools. The shortest informal version of what I am exploring lives in my [GitHub profile README](https://github.com/a43992899), and the more academic version lives here.
+I am always open to collaboration with people who care about open music AI, foundation models, evaluation, and creative tools. The shortest informal version of what I am exploring lives in my [GitHub profile README](https://github.com/a43992899), and the more academic version lives here.
 
 Current ideas I am especially excited about:
 
