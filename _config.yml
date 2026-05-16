@@ -26,17 +26,19 @@ visitor_stats:
 comments:
   provider               : "giscus"
   giscus:
+    enabled              : true
     repo                 : "a43992899/a43992899.github.io"
     repo_id              : "R_kgDON3iyWg"
     category             : "General"
     category_id          : "DIC_kwDON3iyWs4C9Iak"
+    fallback_url         : "https://github.com/a43992899/a43992899.github.io/discussions"
     mapping              : "pathname"
     strict               : "0"
     reactions_enabled    : "1"
     emit_metadata        : "0"
     input_position       : "bottom"
     theme                : "preferred_color_scheme"
-    lang                 : "zh-CN"
+    lang                 : "en"
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
