@@ -13,9 +13,6 @@ excerpt: "A personal note on MERT, ChatMusician, YuE, and why music intelligence
 reading_time: "10 min read"
 comments: true
 lang: en
-lang_label: English
-lang_order: 2
-translation_key: teaching-agi-music
 ---
 
 This note grew out of a recent slide deck titled *Scaling Open Foundation Models for Music*. That title is accurate, but it sounds more mechanical than the thing I actually care about.
