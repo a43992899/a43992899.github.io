@@ -65,7 +65,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 ### Music Generation
 Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
 
-<span>YuE</span><span>Qwen-Omni</span><span>ChatMusician</span><span>MuPT</span>
+<span>YuE</span><span>ChatMusician</span><span>MuPT</span><span>AudioX</span>
 </div>
 
 <div class="research-card area-music-understanding" markdown="1">
@@ -77,9 +77,9 @@ Self-supervised music audio representation, multilingual MIR, cross-modal retrie
 
 <div class="research-card area-multimodal" markdown="1">
 ### Multimodal LLMs and Benchmarks
-Discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
+Omni-modal foundation models, discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
 
-<span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>OmniBench</span>
+<span>Qwen-Omni</span><span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>OmniBench</span>
 </div>
 
 <div class="research-card area-systems" markdown="1">
