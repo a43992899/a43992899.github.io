@@ -638,6 +638,14 @@ body {
         outline: 0;
     }
 
+    &.is-obfuscated {
+        color: #64748b;
+    }
+
+    &.is-revealed {
+        color: #1f4f69;
+    }
+
     &.is-shuffling {
         color: #9a5a19;
     }
@@ -677,6 +685,10 @@ body {
         opacity: 1;
         outline: 0;
     }
+}
+
+.email-copy.is-hidden {
+    display: none !important;
 }
 
 .protected-email-icon {
@@ -1221,6 +1233,14 @@ html[data-theme="dark"] {
         &:focus-visible {
             background: #1e2a35;
             color: #f1f7fb;
+        }
+
+        &.is-obfuscated {
+            color: #93a9bb;
+        }
+
+        &.is-revealed {
+            color: #b7eadb;
         }
 
         &.is-shuffling {

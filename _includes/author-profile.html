@@ -35,10 +35,10 @@
       {% if author.protected_email and author.protected_email.scrambled_chars and author.protected_email.order %}
         <li class="protected-email">
           <span class="protected-email__icon"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></span>
-          <a href="#" role="button" class="js-protected-email email-scramble" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Scramble protected email" title="Shuffle email characters">
+          <a href="#" role="button" class="js-protected-email email-scramble" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Reveal protected email" title="Reveal protected email">
             <span class="js-email-label email-scramble__text">email</span>
           </a>
-          <a href="#" role="button" class="js-protected-email-copy email-copy" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Copy email address" title="Copy email address"><i class="fas fa-fw fa-copy" aria-hidden="true"></i></a>
+          <a href="#" role="button" class="js-protected-email-copy email-copy is-hidden" data-email-chars="{{ author.protected_email.scrambled_chars }}" data-email-order="{{ author.protected_email.order }}" aria-label="Copy email address" title="Copy email address" aria-hidden="true" tabindex="-1"><i class="fas fa-fw fa-copy" aria-hidden="true"></i></a>
         </li>
       {% endif %}
       {% if author.keybase %}
