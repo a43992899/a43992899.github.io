@@ -377,42 +377,6 @@ Large-scale heterogeneous supervision for music structure analysis, with SongFor
 </div>
 </div>
 
-### Selected Benchmarks, Data, and Earlier Work
-
-<div class="publication-list" markdown="1">
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2024</span><span class="topic-pill">Multi-agent composition</span><span class="cite-pill" data-metric="publications.composerx.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.composerx.citations | default: 67 }}</span></div>
-#### [ComposerX: Multi-Agent Symbolic Music Composition with LLMs](https://doi.org/10.5281/zenodo.14877425)
-**Ruibin Yuan**, et al.
-
-Multi-agent symbolic composition framework for structured music creation with language models.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-ismir">ISMIR 2024</span><span class="topic-pill">Music reasoning evaluation</span></div>
-#### [Can LLMs "Reason" in Music? An Evaluation of LLMs' Capability of Music Understanding and Generation](https://doi.org/10.5281/zenodo.14877281)
-Ziya Zhou, Yuhang Wu, Zhiyue Wu, Xinyue Zhang, **Ruibin Yuan**, Yinghao Ma, et al.
-
-Evaluation of LLMs on symbolic music understanding, generation, and multi-step music reasoning.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">Preprint 2026</span><span class="topic-pill">Global music QA</span></div>
-#### [Voices of Civilizations: A Multilingual QA Benchmark for Global Music Understanding](https://arxiv.org/abs/2603.00533)
-Shangda Wu, Ziya Zhou, Yongyi Zang, Yutong Zheng, Dafang Liang, **Ruibin Yuan**, Qiuqiang Kong.
-
-Multilingual benchmark for music understanding across cultural and linguistic contexts.
-</div>
-
-<div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-interspeech">Interspeech 2022</span><span class="topic-pill">Voice conversion</span><span class="cite-pill" data-metric="publications.deid_vc.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.deid_vc.citations | default: 13 }}</span></div>
-#### [DeID-VC: Speaker De-identification via Zero-shot Pseudo Voice Conversion](https://doi.org/10.21437/interspeech.2022-11036)
-**Ruibin Yuan**, Yuxuan Wu, Jacob Li, Jaxter Kim.
-
-Zero-shot pseudo voice conversion for privacy-preserving speaker de-identification.
-</div>
-</div>
-
 See [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ) for the complete publication list.
 
 <span class='anchor' id='collaborate'></span>
