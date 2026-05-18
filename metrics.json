@@ -1,0 +1,66 @@
+{
+  "updated_at": "May 18, 2026",
+  "scholar": {
+    "source": "Google Scholar",
+    "profile_url": "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ",
+    "updated_at": "May 16, 2026",
+    "citations": 6111,
+    "h_index": 29,
+    "i10_index": 41
+  },
+  "github": {
+    "yue": {
+      "repo": "multimodal-art-projection/YuE",
+      "stars": 6216,
+      "stars_display": "6.2k+",
+      "updated_at": "May 18, 2026"
+    }
+  },
+  "publications": {
+    "mmmu": {
+      "citations": 2303
+    },
+    "anygpt": {
+      "citations": 298
+    },
+    "rq_rag": {
+      "citations": 277
+    },
+    "cmmmu": {
+      "citations": 74
+    },
+    "coig": {
+      "citations": 46
+    },
+    "mert": {
+      "citations": 329
+    },
+    "marble": {
+      "citations": 59
+    },
+    "clamp2": {
+      "citations": 19
+    },
+    "speech_ssl_music": {
+      "citations": 16
+    },
+    "lyricwhiz": {
+      "citations": 43
+    },
+    "chatmusician": {
+      "citations": 125
+    },
+    "composerx": {
+      "citations": 67
+    },
+    "mupt": {
+      "citations": 35
+    },
+    "deid_vc": {
+      "citations": 13
+    }
+  },
+  "update_errors": [
+    "Google Scholar update timed out after 180s"
+  ]
+}
