@@ -102,9 +102,9 @@ Open full-song music generation foundation model, designed as an open alternativ
 </div>
 
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music generation model</span><span class="star-pill">Core Contributor</span></div>
+<div class="project-meta"><span class="project-type">Music generation model</span><span class="star-pill">Core Contributor</span><span class="star-pill">Artificial Analysis #3</span></div>
 ### [Qwen-Music](https://arxiv.org/abs/2607.11699)
-Full-song music generation model for text-to-music and cover-song generation, with explicit melody planning and high-fidelity stereo rendering.
+Full-song generation model evaluated anonymously as JazzCat, ranking #3 on the Artificial Analysis Music with Vocals leaderboard. Professional blind tests also preferred Qwen-Music over Suno V5 (55.4% vs. 44.6%).
 </div>
 
 <div class="work-card" markdown="1">
@@ -158,11 +158,11 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-arxiv">arXiv 2026</span><span class="topic-pill">Full-song generation</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">arXiv 2026</span><span class="topic-pill">Full-song generation</span><span class="star-pill">Artificial Analysis #3</span></div>
 #### [Qwen-Music Technical Report](https://arxiv.org/abs/2607.11699)
 Qwen Team — Core Contributors (alphabetical by given name): Jin Xu*, Kangdi Wang, **Ruibin Yuan**, Shun Lei, Xiong Wang, et al.
 
-Full-song generation model supporting text-to-music and cover-song generation, with Melody-CoT for explicit melody planning and high-fidelity stereo rendering.
+Full-song generation model supporting text-to-music and cover-song generation, with Melody-CoT for explicit melody planning and high-fidelity stereo rendering. Evaluated anonymously as JazzCat, it ranked #3 on the Artificial Analysis Music with Vocals leaderboard and beat Suno V5 in professional blind testing (55.4% vs. 44.6%).
 </div>
 
 <div class="publication-card" markdown="1">
