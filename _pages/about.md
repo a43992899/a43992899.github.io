@@ -160,7 +160,7 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-arxiv">arXiv 2026</span><span class="topic-pill">Full-song generation</span><span class="star-pill">Artificial Analysis #3</span></div>
 #### [Qwen-Music Technical Report](https://arxiv.org/abs/2607.11699)
-Qwen Team — Core Contributors (alphabetical by given name): Jin Xu*, Kangdi Wang, **Ruibin Yuan (Co-Lead)**, Shun Lei, Xiong Wang, et al.
+Qwen Team — Core Contributors (alphabetical by given name): Jin Xu*, Kangdi Wang, **Ruibin Yuan**, Shun Lei, Xiong Wang, et al.
 
 Full-song generation model supporting text-to-music and cover-song generation, with Melody-CoT for explicit melody planning and high-fidelity stereo rendering. Evaluated anonymously as JazzCat, it ranked #3 on the Artificial Analysis Music with Vocals leaderboard and beat Suno V5 in professional blind testing (55.4% vs. 44.6%).
 </div>
