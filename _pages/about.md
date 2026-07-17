@@ -65,7 +65,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 ### Music Generation
 Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
 
-<span>YuE</span><span>ChatMusician</span><span>MuPT</span><span>AudioX</span>
+<span>YuE</span><span>Qwen-Music</span><span>ChatMusician</span><span>MuPT</span><span>AudioX</span>
 </div>
 
 <div class="research-card area-music-understanding" markdown="1">
@@ -99,6 +99,12 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 <div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 ### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
 Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Music generation model</span><span class="star-pill">Core Contributor</span></div>
+### [Qwen-Music](https://arxiv.org/abs/2607.11699)
+Full-song music generation model for text-to-music and cover-song generation, with explicit melody planning and high-fidelity stereo rendering.
 </div>
 
 <div class="work-card" markdown="1">
@@ -151,6 +157,14 @@ Open research community for multimodal art, music intelligence, datasets, checkp
 ### Flagship Music and Audio Generation
 
 <div class="publication-list" markdown="1">
+<div class="publication-card" markdown="1">
+<div class="pub-card-top"><span class="venue-badge venue-arxiv">arXiv 2026</span><span class="topic-pill">Full-song generation</span></div>
+#### [Qwen-Music Technical Report](https://arxiv.org/abs/2607.11699)
+Qwen Team — Core Contributors (alphabetical by given name): Jin Xu*, Kangdi Wang, **Ruibin Yuan**, Shun Lei, Xiong Wang, et al.
+
+Full-song generation model supporting text-to-music and cover-song generation, with Melody-CoT for explicit melody planning and high-fidelity stereo rendering.
+</div>
+
 <div class="publication-card" markdown="1">
 <div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 #### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://openreview.net/forum?id=hZy6YG2Ij8)
@@ -409,12 +423,12 @@ Current ideas I am especially excited about:
 <div class="timeline-list compact-timeline" markdown="1">
 <div markdown="1">
 **Qwen**<br>
-Research Intern, Qwen-Omni Series.<br>
+Research Intern — Qwen-Music (Core Contributor) and Qwen-Omni Series.<br>
 <span>2025.04 - present · Remote</span>
 </div>
 
 <div markdown="1">
-**Moonshot.ai**<br>
+**Kimi.ai (Moonshot AI)**<br>
 Research Intern.<br>
 <span>2024.09 - 2025.04 · Remote</span>
 </div>
