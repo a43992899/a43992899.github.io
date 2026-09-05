@@ -1,0 +1,129 @@
+{
+  "updated_at": "September 5, 2026",
+  "scholar": {
+    "source": "Google Scholar",
+    "profile_url": "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ",
+    "updated_at": "September 3, 2026",
+    "citations": 8296,
+    "h_index": 31,
+    "i10_index": 44
+  },
+  "github": {
+    "yue": {
+      "repo": "multimodal-art-projection/YuE",
+      "stars": 6415,
+      "stars_display": "6.4k+",
+      "updated_at": "September 5, 2026"
+    }
+  },
+  "publications": {
+    "mmmu": {
+      "citations": 2910
+    },
+    "anygpt": {
+      "citations": 335
+    },
+    "rq_rag": {
+      "citations": 335
+    },
+    "cmmmu": {
+      "citations": 89
+    },
+    "coig": {
+      "citations": 50
+    },
+    "mert": {
+      "citations": 436
+    },
+    "marble": {
+      "citations": 84
+    },
+    "clamp2": {
+      "citations": 26
+    },
+    "speech_ssl_music": {
+      "citations": 18
+    },
+    "lyricwhiz": {
+      "citations": 49
+    },
+    "chatmusician": {
+      "citations": 152
+    },
+    "composerx": {
+      "citations": 76
+    },
+    "mupt": {
+      "citations": 46
+    },
+    "deid_vc": {
+      "citations": 15
+    },
+    "qwen3_omni": {
+      "citations": 1337
+    },
+    "qwen35_omni": {
+      "citations": 211
+    },
+    "kimi_audio": {
+      "citations": 270
+    },
+    "supergpqa": {
+      "citations": 237
+    },
+    "spark_tts": {
+      "citations": 214
+    },
+    "mmar": {
+      "citations": 134
+    },
+    "foundation_models_music": {
+      "citations": 89
+    },
+    "coig_cqia": {
+      "citations": 62
+    },
+    "omnibench": {
+      "citations": 114
+    },
+    "yue": {
+      "citations": 109
+    },
+    "audiox": {
+      "citations": 89
+    },
+    "audio_omni": {
+      "citations": 9
+    },
+    "vidmuse": {
+      "citations": 73
+    },
+    "uniss": {
+      "citations": 5
+    },
+    "songformer": {
+      "citations": 16
+    },
+    "voices_of_civilizations": {
+      "citations": 1
+    },
+    "map_neo": {
+      "citations": 71
+    },
+    "map_music2vec": {
+      "citations": 50
+    },
+    "clamp3": {
+      "citations": 60
+    },
+    "songeval": {
+      "citations": 55
+    },
+    "editing_music": {
+      "citations": 26
+    }
+  },
+  "update_errors": [
+    "Google Scholar update failed: 'NoneType' object has no attribute 'get'"
+  ]
+}
