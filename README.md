@@ -12,3 +12,7 @@ bundle exec jekyll build
 ```
 
 The full CV PDF and LaTeX source are kept in the private `a43992899/ruibin-yuan-cv` repository. The public homepage exposes a request form instead of hosting downloadable CV files.
+
+## Visual Design
+
+The homepage and blog share an editorial design with warm ivory and terracotta in day mode, and charcoal-green with champagne accents at night. Content remains in `_pages/`, `_posts/`, and `_data/`; edit theme tokens and responsive presentation in `_sass/_editorial.scss`. See [visual design and maintenance](docs/visual-design.md) for colors, layout, accessibility, and verification scope.

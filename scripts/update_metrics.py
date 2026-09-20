@@ -89,9 +89,9 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
 
 
 def compact_stars(stars: int) -> str:
-    if stars >= 1000:
-        return f"{stars / 1000:.1f}k+"
-    return str(stars)
+    if stars >= 10000:
+        return f"{stars // 100 / 10:.1f}k+"
+    return f"{stars:,}"
 
 
 def fetch_json(url: str, token: str | None = None) -> dict[str, Any]:
@@ -117,6 +117,7 @@ def update_github_metrics(metrics: dict[str, Any], errors: list[str]) -> None:
             "stars": stars,
             "stars_display": compact_stars(stars),
             "updated_at": today_label(),
+            "observed_at": datetime.now(LOCAL_TZ).isoformat(timespec="seconds"),
         }
     except Exception as exc:  # noqa: BLE001
         errors.append(f"GitHub stars update failed: {exc}")

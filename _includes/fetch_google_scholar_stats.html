@@ -1,5 +1,14 @@
 <script>
     (function () {
+        var initialGithubMetric = {{ site.data.metrics.github.yue | jsonify }};
+
+        function githubDataIsOlder(data) {
+            var incoming = data && data.github && data.github.yue;
+            if (!incoming) return false;
+            var currentTime = Date.parse(initialGithubMetric.observed_at || initialGithubMetric.updated_at);
+            var incomingTime = Date.parse(incoming.observed_at || incoming.updated_at);
+            return !isNaN(currentTime) && (isNaN(incomingTime) || incomingTime < currentTime);
+        }
         function readMetric(data, path) {
             return path.split('.').reduce(function (current, part) {
                 if (current && Object.prototype.hasOwnProperty.call(current, part)) {
@@ -14,6 +23,7 @@
             var metricElements = document.querySelectorAll('[data-metric]');
             Array.prototype.forEach.call(metricElements, function (element) {
                 var metricPath = element.getAttribute('data-metric');
+                if (metricPath.indexOf("github.yue.") === 0 && githubDataIsOlder(data)) return;
                 var value = readMetric(data, metricPath);
                 if (value === undefined || value === null || value === '') return;
                 var prefix = element.getAttribute('data-metric-prefix') || '';

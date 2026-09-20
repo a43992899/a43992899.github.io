@@ -16,9 +16,10 @@ redirect_from:
 <p class="hero-kicker">Open Music AGI · Multimodal Foundation Models · Creative AI</p>
 # Ruibin Yuan
 
+
 I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research focuses on foundation models for music generation and understanding, audio and multimodal foundation models, and the data and evaluation needed to make creative AI genuinely useful.
 
-I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open foundation-model releases, datasets, and benchmarks.
+I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE2](https://map-yue2.github.io/), [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open foundation-model releases, datasets, and benchmarks.
 
 <div class="hero-actions" markdown="1">
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
@@ -49,8 +50,8 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 <span>Google Scholar i10-index</span>
 </div>
 <div markdown="1">
-<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }}</strong>
-<span>GitHub stars on YuE</span>
+<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
+<span>GitHub stars · YuE / YuE2</span>
 </div>
 </section>
 
@@ -65,7 +66,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 ### Music Generation
 Full-song generation, symbolic music LLMs, text and melody control, and open alternatives for high-fidelity creative music systems.
 
-<span>YuE</span><span>Qwen-Music</span><span>ChatMusician</span><span>MuPT</span><span>AudioX</span>
+<span>YuE2</span><span>YuE</span><span>Qwen-Music</span><span>ChatMusician</span><span>MuPT</span><span>AudioX</span>
 </div>
 
 <div class="research-card area-music-understanding" markdown="1">
@@ -96,7 +97,13 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 
 <div class="work-grid" markdown="1">
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
+<div class="project-meta"><span class="project-type">Music foundation model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" GitHub stars">{{ site.data.metrics.github.yue.stars_display }} GitHub stars</span></div>
+### [YuE2](https://map-yue2.github.io/)
+Music generation competitive with Suno v5 on WildSongBench, with editable melody-and-chord planning, zero-shot covers, and agentic music editing. [Models](https://huggingface.co/m-a-p/YuE2-3B) · [Code](https://github.com/multimodal-art-projection/YuE) · [Benchmark](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md)
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 ### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
 Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
 </div>
@@ -166,7 +173,7 @@ Full-song generation model supporting text-to-music and cover-song generation, w
 </div>
 
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "6.2k+" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-iclr">ICLR 2026</span><span class="topic-pill">Open full-song generation</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 #### [YuE: Scaling Open Foundation Models for Long-Form Music Generation](https://openreview.net/forum?id=hZy6YG2Ij8)
 **Ruibin Yuan**, Hanfeng Lin, Shuyue Guo, Ge Zhang, Jiahao Pan, et al.
 
