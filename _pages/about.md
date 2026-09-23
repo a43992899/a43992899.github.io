@@ -97,15 +97,9 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 
 <div class="work-grid" markdown="1">
 <div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music foundation model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" GitHub stars">{{ site.data.metrics.github.yue.stars_display }} GitHub stars</span></div>
-### [YuE2](https://map-yue2.github.io/)
-Music generation competitive with Suno v5 on WildSongBench, with editable melody-and-chord planning, zero-shot covers, and agentic music editing. [Models](https://huggingface.co/m-a-p/YuE2-3B) · [Code](https://github.com/multimodal-art-projection/YuE) · [Benchmark](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md)
-</div>
-
-<div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Open music model</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" stars">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }} stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
-### [YuE / OpenSuno](https://github.com/multimodal-art-projection/YuE)
-Open full-song music generation foundation model, designed as an open alternative in the direction of systems such as Suno and Udio.
+<div class="project-meta"><span class="project-type">Open music foundation models</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" GitHub stars">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }} GitHub stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="YuE GS cites ">YuE GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
+### [YuE](https://github.com/multimodal-art-projection/YuE) &amp; [YuE2](https://map-yue2.github.io/)
+YuE is an open foundation model for full-song music generation. YuE2 adds editable melody-and-chord planning, zero-shot covers, and agentic music editing, with competitive WildSongBench results against Suno v5. [Models](https://huggingface.co/m-a-p/YuE2-3B) · [Code](https://github.com/multimodal-art-projection/YuE) · [Benchmark](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md)
 </div>
 
 <div class="work-card" markdown="1">

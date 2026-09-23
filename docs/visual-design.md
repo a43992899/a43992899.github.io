@@ -34,9 +34,9 @@ A clean Jekyll build and browser validation passed for all three existing pages:
 
 All 12 source files under `_pages/`, `_posts/`, `_data/`, and `images/` matched the original SHA-256 digests. Rendered main content matched the baseline on all three pages, including 56 links and one image in total. Eight additional configuration, template, and integration files were confirmed unchanged. Generated CSS is smaller than the baseline; no JavaScript libraries or external resources were added.
 
-## YuE2 content (September 21, 2026)
+## YuE and YuE2 content (September 2026)
 
-Following review, the standalone YuE2 feature, latest-release badge, and featured sorting were removed. The original editorial stylesheet and citation-based project sorting are restored. YuE2 remains an ordinary Selected Work entry, a normal research tag, and a mention in the biography. It uses the same styling as the other projects; there is no dedicated hero or Trending scoreboard.
+Following review, the standalone YuE2 feature, latest-release badge, and featured sorting were removed. The original editorial stylesheet and citation-based project sorting are restored. On September 23, YuE and YuE2 were merged into one ordinary Selected Work card, with separate links to the YuE repository and YuE2 project page. The card displays their shared repository star count once and labels the citation count as YuE's publication only. YuE2 remains a normal research tag and a mention in the biography. The card uses the same styling as the other projects; there is no dedicated hero or Trending scoreboard.
 
 The verified GitHub count remains 9,885 as observed on September 20, 2026 at 23:59:45 +08:00 via the [official repository API](https://api.github.com/repos/multimodal-art-projection/YuE). Stars belong to the shared YuE/YuE2 repository. Counts remain exact below 10,000; larger values use a floored one-decimal `k+` label. Metric timestamps prevent stale branch data from replacing the build-time snapshot. The YuE2 project description scopes its Suno v5 comparison to [WildSongBench](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md). Scholar metrics remain unchanged.
 
