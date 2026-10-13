@@ -128,11 +128,7 @@ html[data-theme="dark"] .theme-toggle__icon::after { display: none; }
 .page__content .impact-secondary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin: 22px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .impact-secondary span { white-space: nowrap; }
 .impact-secondary strong { margin-left: 4px; color: var(--body); font-weight: 600; font-variant-numeric: tabular-nums; }
-.impact-recognition { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
-.impact-recognition-project { padding-top: 2px; color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: .06em; }
-.impact-recognition-title { font-size: 13px; font-weight: 600; line-height: 1.6; }
-.page__content .impact-recognition p { margin: 4px 0 0; font-size: 12px; line-height: 1.7; }
-.impact-sources { margin: 14px 0 0 72px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.impact-sources { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
 .impact-sources summary { width: fit-content; cursor: pointer; color: var(--sage); }
 .impact-sources summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .impact-sources > div { padding: 16px 0 0; }
@@ -141,6 +137,12 @@ html[data-theme="dark"] .theme-toggle__icon::after { display: none; }
 .download-breakdown li { display: flex; justify-content: space-between; gap: 14px; padding: 5px 0; border-bottom: 1px solid var(--line); }
 .download-breakdown a { overflow-wrap: anywhere; }
 .download-breakdown span { flex-shrink: 0; font-variant-numeric: tabular-nums; }
+/* Project-specific recognition and evidence stay with the corresponding work. */
+.project-sources { margin-top: 14px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.project-sources summary { width: fit-content; cursor: pointer; color: var(--sage); }
+.project-sources summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-sources > div { padding-top: 10px; }
+.page__content .project-sources p { margin: 0 0 8px; font-size: 11px; line-height: 1.8; }
 /* Research and projects share a restrained, consistent hierarchy. */
 .research-grid, .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 0 0 24px; }
 .research-grid { counter-reset: research; gap: 0 32px; }
@@ -288,10 +290,6 @@ td, th { border-color: var(--line); }
   .impact-label { font-size: 11px; }
   .impact-context { font-size: 10px; }
   .page__content .impact-secondary { gap: 5px 16px; margin-top: 20px; font-size: 10px; }
-  .impact-recognition { grid-template-columns: 1fr; gap: 5px; margin-top: 18px; padding-top: 15px; }
-  .impact-recognition-title { font-size: 12px; }
-  .page__content .impact-recognition p { font-size: 11px; }
-  .impact-sources { margin-left: 0; }
   .page__content > h2 { margin-top: 48px; font-size: 29px; gap: 14px; }
   .research-grid, .work-grid, .compact-profile-grid { grid-template-columns: 1fr; }
   .research-grid { gap: 0; }

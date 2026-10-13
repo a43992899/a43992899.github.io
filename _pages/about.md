@@ -150,7 +150,15 @@ Self-supervised music audio representation learning and unified benchmark design
 ### [MMMU](https://mmmu-benchmark.github.io) / [SuperGPQA](https://openreview.net/forum?id=6WgflzYQpf) / [CMMMU](https://openreview.net/forum?id=vpWnXKXqP8)
 Expert-level multimodal and graduate-discipline benchmarks for testing reasoning across university-level subjects, with CMMMU tracked as the Chinese CoRR benchmark.
 
-**MMMU: [{{ site.data.research_impact.mmmu.award }}]({{ site.data.research_impact.mmmu.award_url }}).** Used in official model evaluations by **OpenAI, Anthropic and Google**. [Evaluation sources](#impact-sources). Publicly highlighted by [Jeff Dean]({{ site.data.research_impact.attention.jeff_dean.source }}).
+**MMMU: [{{ site.data.research_impact.mmmu.award }}]({{ site.data.research_impact.mmmu.award_url }}).** Used in official model evaluations by {% for lab in site.data.research_impact.mmmu.evaluations %}[{{ lab.name }}]({{ lab.url }}){% unless forloop.last %}, {% endunless %}{% endfor %}. Publicly highlighted by [Jeff Dean]({{ site.data.research_impact.attention.jeff_dean.source }}).
+
+<details class="project-sources" id="mmmu-sources">
+<summary>Evaluation sources</summary>
+<div>
+<p>Official evaluations: {% for lab in site.data.research_impact.mmmu.evaluations %}<a href="{{ lab.url }}">{{ lab.example }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}.</p>
+<p>Jeff Dean's MMMU post is <a href="{{ site.data.research_impact.attention.jeff_dean.evidence }}">also reproduced in the first author's talk, slide 25</a>.</p>
+</div>
+</details>
 </div>
 
 <div class="work-card" markdown="1">
