@@ -21,7 +21,7 @@ I am Chief Scientist at ACE Studio and a PhD student in Artificial Intelligence 
 
 I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE2](https://map-yue2.github.io/), [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open foundation-model releases, datasets, and benchmarks.
 
-At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/abs/2607.11699), which reached #3 on the Artificial Analysis Music with Vocals leaderboard, and worked on the music capabilities of the [Qwen-Omni series](https://github.com/QwenLM/Qwen3-Omni).
+At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/abs/2607.11699), which reached #3 on the Artificial Analysis Music with Vocals leaderboard, and worked on the music capabilities of the [Qwen-Omni series](https://github.com/QwenLM/Qwen3-Omni). Previously, at Kimi.ai (Moonshot AI), I worked on [YuE](https://github.com/multimodal-art-projection/YuE) and [Kimi-Audio](https://arxiv.org/abs/2504.18425).
 
 <div class="hero-actions" markdown="1">
 [Google Scholar](https://scholar.google.com/citations?user=Qd_hX1cAAAAJ){: .btn}
