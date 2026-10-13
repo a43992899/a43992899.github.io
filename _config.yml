@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Ruibin Yuan (袁锐斌)"
-description              : "PhD student in Artificial Intelligence at HKUST. Open music AGI, multimodal foundation models, and AI music generation."
+description              : "Chief Scientist at ACE Studio and PhD student in Artificial Intelligence at HKUST. Open music AGI, multimodal foundation models, and AI music generation."
 url                      : "https://a43992899.github.io"
 repository               : "a43992899/a43992899.github.io"
 google_scholar_stats_use_cdn : true
@@ -49,9 +49,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Ruibin Yuan (袁锐斌)"
   avatar           : "images/WechatIMG24.jpg"
-  bio              : "Open music AGI, multimodal foundation models, and AI music generation."
+  bio              : "Chief Scientist at ACE Studio. Open music AGI, multimodal foundation models, and AI music generation."
   location         : "Hong Kong"
-  employer         : "HKUST / MAP"
+  employer         : "ACE Studio"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ"
   protected_email  :

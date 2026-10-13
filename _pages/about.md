@@ -17,7 +17,7 @@ redirect_from:
 # Ruibin Yuan
 
 
-I am a PhD student in Artificial Intelligence at HKUST, an AI researcher, developer, and musician working on open music AGI. My research focuses on foundation models for music generation and understanding, audio and multimodal foundation models, and the data and evaluation needed to make creative AI genuinely useful.
+I am Chief Scientist at ACE Studio and a PhD student in Artificial Intelligence at HKUST. As an AI researcher, developer, and musician, I work on open music AGI. My research focuses on foundation models for music generation and understanding, audio and multimodal foundation models, and the data and evaluation needed to make creative AI genuinely useful.
 
 I co-founded the [Multimodal Art Projection Research Community](https://huggingface.co/m-a-p), lead MAP's multimodal and AI music direction, and have led or contributed to [YuE2](https://map-yue2.github.io/), [YuE](https://github.com/multimodal-art-projection/YuE), MERT, MARBLE, ChatMusician, MMMU/CMMMU, COIG, and other open foundation-model releases, datasets, and benchmarks.
 
@@ -31,6 +31,7 @@ I co-founded the [Multimodal Art Projection Research Community](https://huggingf
 <aside class="hero-identity">
 <img src="/images/WechatIMG24.jpg" alt="Ruibin Yuan" />
 <strong>Teaching AGI music</strong>
+<span>Chief Scientist · ACE Studio</span>
 <span>HKUST PhD · MAP cofounder</span>
 <span>Hong Kong · remote collaboration</span>
 </aside>
@@ -423,9 +424,15 @@ Current ideas I am especially excited about:
 
 <div class="timeline-list compact-timeline" markdown="1">
 <div markdown="1">
+**ACE Studio**<br>
+Chief Scientist.<br>
+<span>2026.08 - present</span>
+</div>
+
+<div markdown="1">
 **Qwen**<br>
 Research Intern — Qwen-Music (Co-Lead, Core Contributor) and Qwen-Omni Series.<br>
-<span>2025.04 - present · Remote</span>
+<span>2025.04 - 2026.07 · Remote</span>
 </div>
 
 <div markdown="1">
