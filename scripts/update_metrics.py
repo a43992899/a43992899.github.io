@@ -81,6 +81,31 @@ def load_previous_from_url(url: str) -> dict[str, Any] | None:
         return None
 
 
+def metric_observed_at(metric: dict[str, Any]) -> datetime:
+    for value in (metric.get("observed_at"), metric.get("updated_at")):
+        if not value:
+            continue
+        try:
+            observed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        except ValueError:
+            try:
+                observed = datetime.strptime(str(value), "%B %d, %Y")
+            except ValueError:
+                continue
+        return observed if observed.tzinfo else observed.replace(tzinfo=LOCAL_TZ)
+    return datetime.min.replace(tzinfo=LOCAL_TZ)
+
+
+def merge_previous_metrics(
+    baseline: dict[str, Any], previous: dict[str, Any]
+) -> dict[str, Any]:
+    merged = copy.deepcopy(previous)
+    current_scholar = baseline.get("scholar", {})
+    if metric_observed_at(current_scholar) > metric_observed_at(previous.get("scholar", {})):
+        merged["scholar"] = copy.deepcopy(current_scholar)
+    return merged
+
+
 def write_json(path: Path, data: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
@@ -154,6 +179,7 @@ def build_scholar_payload(scholar_id: str) -> dict[str, Any]:
             "source": "Google Scholar",
             "profile_url": f"https://scholar.google.com/citations?user={scholar_id}",
             "updated_at": today_label(),
+            "observed_at": datetime.now(LOCAL_TZ).isoformat(timespec="seconds"),
             "citations": author.get("citedby"),
             "h_index": author.get("hindex"),
             "i10_index": author.get("i10index"),
@@ -222,7 +248,7 @@ def main() -> int:
     if args.previous_url:
         previous = load_previous_from_url(args.previous_url)
         if previous:
-            metrics = previous
+            metrics = merge_previous_metrics(metrics, previous)
 
     metrics = copy.deepcopy(metrics)
     errors: list[str] = []

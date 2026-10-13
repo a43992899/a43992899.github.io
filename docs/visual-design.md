@@ -50,6 +50,14 @@ The navigation overrides the legacy 250px minimum width so its overflow menu sta
 
 Validation: 24 homepage layouts (light/dark at 320, 360, 390, 572, 600, 601, 768, 960, 961, 1024, 1199 and 1440 CSS pixels) passed in the Codex in-app browser. No horizontal overflow, menu/theme overlap, or name/portrait overlap was observed; portraits stayed square with 6px corners. At 320px, the controls have a 12px gap, the overflow menu opens within the viewport, and selecting Work closes the menu and places its heading below the sticky header. The portrait asset and all page content are unchanged by this refinement.
 
+## Scholar metric freshness (October 13, 2026)
+
+The verified profile snapshot is 9,185 citations, h-index 31 and i10-index 49, observed on October 13, 2026 at 15:16:51 +08:00. It is stored in `_data/metrics.json`; the homepage fallback text uses the same values. The profile table was read earlier that day and the citation total was also confirmed by the user's Scholar screenshot. A later refresh attempt did not complete, so it is not recorded as a new observation. Individual publication counts retain their existing snapshot and are not represented as newly verified.
+
+The `site-metrics` branch updates independently. Its top-level `updated_at` can change when GitHub stars refresh even if Scholar fails. Both the browser and Python updater therefore compare the Scholar group's own `observed_at`, falling back to its `updated_at`, and preserve the newer snapshot. A newer observation is accepted even if citation counts decrease. Successful Scholar fetches now record an exact observation timestamp. The profile capture-date note refers only to the profile metrics.
+
+The updater pins `bibtexparser<2` because scholarly 1.x imports the removed `bibtexparser.bibdatabase` API; the unbounded dependency had prevented updates since the previous snapshot. On failure, the newest verified Scholar data are retained with their original date. To update manually, change the Scholar object and its real observation timestamp, build, and verify the rendered numbers after the asynchronous refresh. Do not relabel an old Scholar snapshot with the workflow run date.
+
 ## Publishing
 
 GitHub Pages builds the repository root on the `main` branch and serves [a43992899.github.io](https://a43992899.github.io/). Commit the reviewed source changes and push `main` to publish; generated `_site/` output is not committed. After each release, verify that the Pages deployment corresponds to the pushed commit and has succeeded, then check the live homepage, stylesheet, portrait, and narrow-screen navigation. The site-metrics branch updates statistics independently and is not the Pages source.

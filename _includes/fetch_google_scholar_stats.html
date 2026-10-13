@@ -1,11 +1,11 @@
 <script>
     (function () {
         var initialGithubMetric = {{ site.data.metrics.github.yue | jsonify }};
+        var initialScholarMetric = {{ site.data.metrics.scholar | jsonify }};
 
-        function githubDataIsOlder(data) {
-            var incoming = data && data.github && data.github.yue;
+        function metricDataIsOlder(current, incoming) {
             if (!incoming) return false;
-            var currentTime = Date.parse(initialGithubMetric.observed_at || initialGithubMetric.updated_at);
+            var currentTime = Date.parse(current.observed_at || current.updated_at);
             var incomingTime = Date.parse(incoming.observed_at || incoming.updated_at);
             return !isNaN(currentTime) && (isNaN(incomingTime) || incomingTime < currentTime);
         }
@@ -23,7 +23,8 @@
             var metricElements = document.querySelectorAll('[data-metric]');
             Array.prototype.forEach.call(metricElements, function (element) {
                 var metricPath = element.getAttribute('data-metric');
-                if (metricPath.indexOf("github.yue.") === 0 && githubDataIsOlder(data)) return;
+                if (metricPath.indexOf("github.yue.") === 0 && metricDataIsOlder(initialGithubMetric, data.github && data.github.yue)) return;
+                if (metricPath.indexOf("scholar.") === 0 && metricDataIsOlder(initialScholarMetric, data.scholar)) return;
                 var value = readMetric(data, metricPath);
                 if (value === undefined || value === null || value === '') return;
                 var prefix = element.getAttribute('data-metric-prefix') || '';
