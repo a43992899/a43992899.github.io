@@ -479,5 +479,6 @@ M.S. in Music and Technology, Computer Science Emphasis.<br>
 <section class="music-note" markdown="1">
 ## Music
 
-Lead guitarist, band cofounder, guitar club organizer, and longtime believer that intelligence without music is missing something essential.
+Lead guitarist and cofounder of BUPT Slow Blues Band (2016–2021). [Listen to our album](https://music.163.com/#/album?id=87161044).<br>
+President of BUPT Guitar Club (2017–2018).
 </section>
