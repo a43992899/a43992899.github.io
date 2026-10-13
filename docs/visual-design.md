@@ -74,3 +74,7 @@ The **#8** Scholar claim is scoped to public profiles tagged Music Generation, o
 MMMU is a **CVPR 2024 Best Paper Award Candidate**, corroborated by [first author Xiang Yue's publication list](https://xiangyue9607.github.io/publication.html) and [talk, slide 25](https://xiangyue9607.github.io/pdf/Learning_to_Reason_with_LLMs.pdf#page=25); do not shorten this to Best Paper winner. Official evaluation evidence links to OpenAI's GPT-4o mini announcement, Anthropic's Claude Opus 4.5 system card §2.20, and Google DeepMind's 2023 research review, all reporting original MMMU rather than MMMU-Pro.
 
 Social attention is project-specific: the owner-provided screenshot at `images/evidence/chatmusician-lecun-quote.jpg` shows Yann LeCun quote-posting ChatMusician with “Fun.” Jeff Dean's [MMMU post](https://x.com/JeffDean/status/1732418506241790197) is visually reproduced in Xiang Yue's talk, slide 25; it supports “publicly introduced/highlighted MMMU.” Neither item is presented as a personal endorsement, institutional partnership or endorsement of performance claims. All public sources are linked in the homepage's expandable evidence section.
+
+## Music affiliation privacy (October 13, 2026)
+
+Keep the public homepage institution-neutral in its music experience. Retain Slow Blues Band, the lead guitarist/cofounder role (2016–2021), the guitar club presidency (2017–2018), and the original album link. Do not reintroduce institutional affiliations when updating or restoring these entries from older source material.
