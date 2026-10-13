@@ -78,17 +78,17 @@ Self-supervised music audio representation, multilingual MIR, cross-modal retrie
 </div>
 
 <div class="research-card area-multimodal" markdown="1">
-### Multimodal LLMs and Benchmarks
-Omni-modal foundation models, discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
+### LLMs and Multimodal Benchmarks
+Omni-modal foundation models, retrieval-augmented generation, discrete multimodal modeling, expert-level reasoning benchmarks, Chinese multimodal evaluation, and generalist instruction data.
 
-<span>Qwen-Omni</span><span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>OmniBench</span>
+<span>Qwen-Omni</span><span>MMMU</span><span>CMMMU</span><span>AnyGPT</span><span>RQ-RAG</span><span>OmniBench</span>
 </div>
 
 <div class="research-card area-systems" markdown="1">
 ### Open Research Infrastructure
 Open datasets, reproducible training pipelines, benchmark design, community releases, and tooling for researchers and builders.
 
-<span>MAP</span><span>COIG</span><span>RQ-RAG</span><span>Open data</span>
+<span>MAP</span><span>COIG</span><span>Open data</span>
 </div>
 </section>
 
