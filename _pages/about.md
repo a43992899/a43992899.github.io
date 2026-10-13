@@ -39,38 +39,32 @@ At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/
 </aside>
 </section>
 
-<section class="impact-strip" id="research-impact" markdown="1">
-<div markdown="1">
-<strong data-metric="scholar.citations">{{ site.data.metrics.scholar.citations | default: 9185 }}</strong>
-<span>Google Scholar citations</span>
-</div>
-<div markdown="1">
-<strong>{{ site.data.research_impact.mert.downloads_display }}</strong>
-<span>MERT / MERT2 · Hugging Face downloads</span>
-<small>Cumulative · Oct 13, 2026</small>
-</div>
-<div markdown="1">
-<strong>#{{ site.data.research_impact.scholar_music_generation.rank }}</strong>
-<span>Google Scholar · Music Generation</span>
-<small>By total profile citations · Oct 13, 2026</small>
-</div>
-<div markdown="1">
-<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
-<span>GitHub stars · YuE / YuE2</span>
-</div>
-<div markdown="1">
-<strong data-metric="scholar.h_index">{{ site.data.metrics.scholar.h_index | default: 31 }}</strong>
-<span>Google Scholar h-index</span>
-</div>
-<div markdown="1">
-<strong data-metric="scholar.i10_index">{{ site.data.metrics.scholar.i10_index | default: 49 }}</strong>
-<span>Google Scholar i10-index</span>
-</div>
+<section class="research-impact" id="research-impact" aria-label="Research impact">
+  <div class="impact-strip">
+    <div class="impact-stat">
+      <strong data-metric="scholar.citations">{{ site.data.metrics.scholar.citations | default: 9185 }}</strong>
+      <span class="impact-label">Research citations</span>
+      <span class="impact-context">Google Scholar</span>
+    </div>
+    <div class="impact-stat">
+      <strong>{{ site.data.research_impact.mert.downloads_display }}</strong>
+      <span class="impact-label">MERT / MERT2 downloads</span>
+      <span class="impact-context">Hugging Face · cumulative</span>
+    </div>
+    <div class="impact-stat">
+      <strong>#{{ site.data.research_impact.scholar_music_generation.rank }}</strong>
+      <span class="impact-label">Music Generation rank</span>
+      <span class="impact-context">Scholar · total profile citations</span>
+    </div>
+    <div class="impact-stat">
+      <strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
+      <span class="impact-label">YuE / YuE2 stars</span>
+      <span class="impact-context">GitHub</span>
+    </div>
+  </div>
+  <p class="impact-secondary"><span>Google Scholar</span><span>h-index <strong data-metric="scholar.h_index">{{ site.data.metrics.scholar.h_index | default: 31 }}</strong></span><span>i10-index <strong data-metric="scholar.i10_index">{{ site.data.metrics.scholar.i10_index | default: 49 }}</strong></span></p>
+  {% include research-impact.html %}
 </section>
-
-<p class="metric-note">Profile citation metrics are from <a href="https://scholar.google.com/citations?user=Qd_hX1cAAAAJ">Google Scholar</a>, captured on <span data-metric="scholar.updated_at">{{ site.data.metrics.scholar.updated_at | default: "October 13, 2026" }}</span>. The page refreshes these numbers automatically.</p>
-
-{% include research-impact.html %}
 
 <span class='anchor' id='research-areas'></span>
 

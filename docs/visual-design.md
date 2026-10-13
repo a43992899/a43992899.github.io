@@ -65,7 +65,7 @@ GitHub Pages builds the repository root on the `main` branch and serves [a439928
 
 ## Research impact evidence (October 13, 2026)
 
-The impact strip retains citations, GitHub stars, h-index and i10-index, and adds MERT-series cumulative downloads and a dated Music Generation label rank. Six metrics use three columns on desktop and two on narrow screens. A concise MMMU award/adoption statement sits below, followed by an accessible native disclosure containing source links and the per-model download breakdown. Existing biography, project descriptions and experience remain intact; relevant work/publication cards receive additive evidence.
+The impact block presents four headline metrics: citations, MERT-series cumulative downloads, Music Generation label rank, and YuE/YuE2 GitHub stars. They occupy one four-column desktop row and a balanced two-by-two grid at 800px and below. h-index and i10-index remain visible together in a compact secondary row. Short sentence-case labels and consistent small context text replace the former six large metrics and uneven date text. MMMU award/adoption uses a single aligned recognition row. The native “Sources & methodology” disclosure preserves exact snapshot dates, Scholar freshness text, statistical scope, source links and the per-model download breakdown. Existing biography, project descriptions, data and experience remain intact.
 
 `_data/research_impact.json` owns these curated historical observations. They intentionally have no `data-metric` binding, so the existing live Scholar/GitHub refresh cannot relabel their dates or overwrite a label rank. To refresh MERT, sum `downloadsAllTime` for all official `m-a-p` MERT/MERT2 repositories, check pagination and preserve a dated per-repository breakdown. Do not use the rolling `downloads` value as cumulative downloads or equate downloads to unique users. The October 13 20:59:41 +08:00 snapshot totals **8,615,710**, displayed as **8.6M+**, across six repositories; exclude music2vec, mirrors and third-party derivatives.
 
@@ -78,3 +78,7 @@ Social attention is project-specific: the owner-provided screenshot at `images/e
 ## Music affiliation privacy (October 13, 2026)
 
 Keep the public homepage institution-neutral in its music experience. Retain Slow Blues Band, the lead guitarist/cofounder role (2016–2021), the guitar club presidency (2017–2018), and the original album link. Do not reintroduce institutional affiliations when updating or restoring these entries from older source material.
+
+## Stylesheet freshness (October 13, 2026)
+
+The main stylesheet URL in `_includes/head.html` carries an explicit release query (`?v=20261013-impact`) so newly deployed HTML does not reuse an older cached stylesheet. Bump this version whenever changing stylesheet rules, and verify the exact versioned CSS served by Pages against the local build. A user screenshot showed the former four-column rules combined with six-metric markup although a fresh public fetch matched the new three-column CSS; client-side stale CSS is the likely cause, not a confirmed browser-cache trace.

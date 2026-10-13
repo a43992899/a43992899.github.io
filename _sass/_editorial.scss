@@ -115,20 +115,28 @@ html[data-theme="dark"] .theme-toggle__icon::after { display: none; }
 .hero-actions .btn, .collab-panel .btn { margin: 0; padding: 10px 17px; border: 1px solid var(--line); border-radius: 3px; background: transparent; box-shadow: none; color: var(--ink) !important; font: 500 11px/1.7 var(--sans); text-decoration: none; transition: background .18s ease, border-color .18s ease; }
 .hero-actions .btn:first-child { background: var(--ink); border-color: var(--ink); color: var(--paper) !important; }
 .hero-actions .btn:hover, .collab-panel .btn:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent) !important; }
-.impact-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 0; margin: 0; padding: 28px 0; border-block: 1px solid var(--line); }
-.impact-strip > div { min-width: 0; padding: 0 20px; border-right: 1px solid var(--line); }
-.impact-strip > div:nth-child(3n+1) { padding-left: 0; }
-.impact-strip > div:nth-child(3n) { border-right: 0; }
-.impact-strip strong { display: block; color: var(--ink); font: 400 40px/1.1 var(--serif); letter-spacing: -.04em; font-variant-numeric: lining-nums tabular-nums; }
-.impact-strip span { display: block; max-width: 160px; margin-top: 10px; color: var(--muted); font-size: 10px; line-height: 1.5; letter-spacing: .08em; text-transform: uppercase; }
-.metric-note { margin: 14px 0 0 !important; color: var(--muted); font-size: 10px !important; line-height: 1.7 !important; }
-.impact-strip small { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; line-height: 1.5; }
-.impact-recognition { margin: 22px 0 10px; padding-left: 18px; border-left: 2px solid var(--accent); }
-.impact-recognition p { margin: 0; font-size: 13px; line-height: 1.8; }
-.impact-sources { margin: 12px 0 28px; color: var(--muted); font-size: 12px; }
-.impact-sources summary { cursor: pointer; color: var(--sage); }
+/* Four headline metrics; detailed provenance stays in the disclosure. */
+.research-impact { margin: 0; padding: 28px 0 18px; border-block: 1px solid var(--line); scroll-margin-top: 112px; }
+.impact-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; }
+.impact-stat { min-width: 0; padding: 0 22px; border-left: 1px solid var(--line); }
+.impact-stat:first-child { padding-left: 0; border-left: 0; }
+.impact-stat:last-child { padding-right: 0; }
+.impact-stat > strong { display: block; margin-bottom: 10px; color: var(--ink); font: 400 42px/1.05 var(--serif); letter-spacing: -.04em; font-variant-numeric: lining-nums tabular-nums; }
+.impact-label, .impact-context { display: block; }
+.impact-label { color: var(--body); font-size: 12px; font-weight: 500; line-height: 1.5; }
+.impact-context { margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.page__content .impact-secondary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin: 22px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.impact-secondary span { white-space: nowrap; }
+.impact-secondary strong { margin-left: 4px; color: var(--body); font-weight: 600; font-variant-numeric: tabular-nums; }
+.impact-recognition { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+.impact-recognition-project { padding-top: 2px; color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: .06em; }
+.impact-recognition-title { font-size: 13px; font-weight: 600; line-height: 1.6; }
+.page__content .impact-recognition p { margin: 4px 0 0; font-size: 12px; line-height: 1.7; }
+.impact-sources { margin: 14px 0 0 72px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.impact-sources summary { width: fit-content; cursor: pointer; color: var(--sage); }
+.impact-sources summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .impact-sources > div { padding: 16px 0 0; }
-.impact-sources p { font-size: 12px; line-height: 1.8; }
+.page__content .impact-sources p { margin: 0 0 14px; font-size: 12px; line-height: 1.8; }
 .download-breakdown { margin: 0 0 14px; padding: 0; list-style: none; max-width: 540px; }
 .download-breakdown li { display: flex; justify-content: space-between; gap: 14px; padding: 5px 0; border-bottom: 1px solid var(--line); }
 .download-breakdown a { overflow-wrap: anywhere; }
@@ -246,6 +254,11 @@ td, th { border-color: var(--line); }
   .profile-hero h1 { font-size: 64px; }
   .site-footer__inner { padding-inline: 28px; }
 }
+@media (max-width: 800px) {
+  .impact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 0; }
+  .impact-stat:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .impact-stat:nth-child(even) { padding-right: 0; }
+}
 @media (max-width: 600px) {
   html { scroll-padding-top: 90px; }
   #main { padding: 32px 22px 20px; gap: 30px; }
@@ -266,13 +279,19 @@ td, th { border-color: var(--line); }
   .profile-hero p { font-size: 14px; }
   .hero-actions p { gap: 7px; }
   .hero-actions .btn { padding: 9px 12px; font-size: 10px; }
-  .impact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; padding: 0; }
-  .impact-strip > div { padding: 20px 12px; }
-  .impact-strip > div:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--line); }
-  .impact-strip > div:nth-child(even) { border-right: 0; padding-left: 22px; }
-  .impact-strip > div:not(:nth-last-child(-n+2)) { border-bottom: 1px solid var(--line); }
-  .impact-strip strong { font-size: 36px; }
-  .impact-strip span { font-size: 9px; }
+  .research-impact { padding: 22px 0 16px; scroll-margin-top: 94px; }
+  .impact-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 0; }
+  .impact-stat { padding: 0 14px; }
+  .impact-stat:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .impact-stat:nth-child(even) { padding-right: 0; }
+  .impact-stat > strong { font-size: 36px; margin-bottom: 8px; }
+  .impact-label { font-size: 11px; }
+  .impact-context { font-size: 10px; }
+  .page__content .impact-secondary { gap: 5px 16px; margin-top: 20px; font-size: 10px; }
+  .impact-recognition { grid-template-columns: 1fr; gap: 5px; margin-top: 18px; padding-top: 15px; }
+  .impact-recognition-title { font-size: 12px; }
+  .page__content .impact-recognition p { font-size: 11px; }
+  .impact-sources { margin-left: 0; }
   .page__content > h2 { margin-top: 48px; font-size: 29px; gap: 14px; }
   .research-grid, .work-grid, .compact-profile-grid { grid-template-columns: 1fr; }
   .research-grid { gap: 0; }
