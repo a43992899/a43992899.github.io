@@ -18,7 +18,7 @@ All tokens live in `_sass/_editorial.scss`. Display headings use local Iowan Old
 
 ## Layout and behavior
 
-The desktop layout uses a sticky author rail and a wide reading column. Below 960px the complete author information follows the main content, allowing the introduction to lead on small screens. Below 600px the portrait sits beside the name, metrics form two columns, and research, work, and experience become single-column sections. Existing navigation items remain available through the overflow menu.
+The desktop layout uses a sticky author rail and a wide reading column. The author rail renders `author.bio` once; `site.description` is reserved for page metadata and is not repeated in the contact list. Below 960px the complete author information follows the main content, allowing the introduction to lead on small screens. Below 600px the portrait sits beside the name, metrics form two columns, and research, work, and experience become single-column sections. Existing navigation items remain available through the overflow menu.
 
 The main stylesheet imports the existing template foundations followed by `editorial`. The former custom styles have been replaced rather than retained as a competing theme. Existing publication sorting, metric refresh, email protection, and comment scripts remain unchanged. `assets/js/editorial.js` adds reading progress, section highlighting, accessible overflow-menu state, Escape dismissal, and same-page anchor positioning that respects the sticky header and reduced-motion preferences. The default layout also supplies a keyboard skip link.
 
