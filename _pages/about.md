@@ -39,10 +39,24 @@ At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/
 </aside>
 </section>
 
-<section class="impact-strip" markdown="1">
+<section class="impact-strip" id="research-impact" markdown="1">
 <div markdown="1">
 <strong data-metric="scholar.citations">{{ site.data.metrics.scholar.citations | default: 9185 }}</strong>
 <span>Google Scholar citations</span>
+</div>
+<div markdown="1">
+<strong>{{ site.data.research_impact.mert.downloads_display }}</strong>
+<span>MERT / MERT2 · Hugging Face downloads</span>
+<small>Cumulative · Oct 13, 2026</small>
+</div>
+<div markdown="1">
+<strong>#{{ site.data.research_impact.scholar_music_generation.rank }}</strong>
+<span>Google Scholar · Music Generation</span>
+<small>By total profile citations · Oct 13, 2026</small>
+</div>
+<div markdown="1">
+<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
+<span>GitHub stars · YuE / YuE2</span>
 </div>
 <div markdown="1">
 <strong data-metric="scholar.h_index">{{ site.data.metrics.scholar.h_index | default: 31 }}</strong>
@@ -52,13 +66,11 @@ At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/
 <strong data-metric="scholar.i10_index">{{ site.data.metrics.scholar.i10_index | default: 49 }}</strong>
 <span>Google Scholar i10-index</span>
 </div>
-<div markdown="1">
-<strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
-<span>GitHub stars · YuE / YuE2</span>
-</div>
 </section>
 
 <p class="metric-note">Profile citation metrics are from <a href="https://scholar.google.com/citations?user=Qd_hX1cAAAAJ">Google Scholar</a>, captured on <span data-metric="scholar.updated_at">{{ site.data.metrics.scholar.updated_at | default: "October 13, 2026" }}</span>. The page refreshes these numbers automatically.</p>
+
+{% include research-impact.html %}
 
 <span class='anchor' id='research-areas'></span>
 
@@ -127,18 +139,24 @@ High-impact audio and speech foundation-model reports spanning general audio und
 <div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL / ISMIR</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
 ### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329) / [ComposerX](https://doi.org/10.5281/zenodo.14877425)
 Symbolic music LLM research, multi-agent composition, large-scale music-language data, and advanced music understanding evaluation.
+
+ChatMusician was publicly **quote-posted by Yann LeCun**, who commented “Fun.” [View the post](/images/evidence/chatmusician-lecun-quote.jpg).
 </div>
 
 <div class="work-card" markdown="1">
 <div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="MERT GS cites ">MERT GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
-### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927) and [MARBLE](https://marble-bm.shef.ac.uk)
+### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927), [MERT2](https://huggingface.co/m-a-p/MERT-v2-FullSong) and [MARBLE](https://marble-bm.shef.ac.uk)
 Self-supervised music audio representation learning and unified benchmark design for music understanding.
+
+**Core researcher and co-first author of MERT and MERT2.** The six official model repositories have **{{ site.data.research_impact.mert.downloads_display }} cumulative Hugging Face downloads**. [Download statistics](#impact-sources).
 </div>
 
 <div class="work-card" markdown="1">
 <div class="project-meta"><span class="project-type">Expert reasoning benchmarks</span><span class="star-pill">CVPR / NeurIPS / CoRR</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="MMMU GS cites ">MMMU GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
 ### [MMMU](https://mmmu-benchmark.github.io) / [SuperGPQA](https://openreview.net/forum?id=6WgflzYQpf) / [CMMMU](https://openreview.net/forum?id=vpWnXKXqP8)
 Expert-level multimodal and graduate-discipline benchmarks for testing reasoning across university-level subjects, with CMMMU tracked as the Chinese CoRR benchmark.
+
+**MMMU: [{{ site.data.research_impact.mmmu.award }}]({{ site.data.research_impact.mmmu.award_url }}).** Used in official model evaluations by **OpenAI, Anthropic and Google**. [Evaluation sources](#impact-sources). Publicly highlighted by [Jeff Dean]({{ site.data.research_impact.attention.jeff_dean.source }}).
 </div>
 
 <div class="work-card" markdown="1">
@@ -230,7 +248,7 @@ Music-language modeling that treats symbolic music as a native language for unde
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">
-<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2024</span><span class="topic-pill">Expert AGI benchmark</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
+<div class="pub-card-top"><span class="venue-badge venue-cvpr">CVPR 2024</span><span class="topic-pill">Expert AGI benchmark</span><span class="star-pill">Best Paper Award Candidate</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
 #### [MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI](https://doi.org/10.1109/cvpr52733.2024.00913)
 Xiang Yue*, Yuansheng Ni*, Kai Zhang*, Tianyu Zheng*, et al., **Ruibin Yuan**, et al.
 

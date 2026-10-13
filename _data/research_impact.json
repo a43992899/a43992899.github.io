@@ -1,0 +1,89 @@
+{
+  "as_of": "October 13, 2026",
+  "mert": {
+    "downloads_all_time": 8615710,
+    "downloads_display": "8.6M+",
+    "downloads_exact_display": "8,615,710",
+    "observed_at": "2026-10-13T20:59:41+08:00",
+    "source": "https://huggingface.co/api/models?author=m-a-p&search=MERT&limit=100&expand%5B%5D=downloads&expand%5B%5D=downloadsAllTime&expand%5B%5D=createdAt",
+    "repositories": [
+      {
+        "id": "m-a-p/MERT-v1-95M",
+        "url": "https://huggingface.co/m-a-p/MERT-v1-95M",
+        "downloads_all_time": 5388809,
+        "downloads_display": "5,388,809"
+      },
+      {
+        "id": "m-a-p/MERT-v2-FullSong",
+        "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong",
+        "downloads_all_time": 22539,
+        "downloads_display": "22,539"
+      },
+      {
+        "id": "m-a-p/MERT-v0",
+        "url": "https://huggingface.co/m-a-p/MERT-v0",
+        "downloads_all_time": 72663,
+        "downloads_display": "72,663"
+      },
+      {
+        "id": "m-a-p/MERT-v0-public",
+        "url": "https://huggingface.co/m-a-p/MERT-v0-public",
+        "downloads_all_time": 410779,
+        "downloads_display": "410,779"
+      },
+      {
+        "id": "m-a-p/MERT-v1-330M",
+        "url": "https://huggingface.co/m-a-p/MERT-v1-330M",
+        "downloads_all_time": 2717667,
+        "downloads_display": "2,717,667"
+      },
+      {
+        "id": "m-a-p/MERT-v2-30s",
+        "url": "https://huggingface.co/m-a-p/MERT-v2-30s",
+        "downloads_all_time": 3253,
+        "downloads_display": "3,253"
+      }
+    ]
+  },
+  "scholar_music_generation": {
+    "rank": 8,
+    "observed_at": "2026-10-13T17:12:20+08:00",
+    "source": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:music_generation",
+    "scope": "Public Google Scholar profiles tagged Music Generation, ranked by total profile citations",
+    "evidence": "Three consecutive first-page screenshots supplied by the profile owner on October 13, 2026"
+  },
+  "mmmu": {
+    "award": "CVPR 2024 Best Paper Award Candidate",
+    "award_url": "https://xiangyue9607.github.io/publication.html",
+    "evaluations": [
+      {
+        "name": "OpenAI",
+        "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+        "example": "GPT-4o mini: MMMU 59.4%"
+      },
+      {
+        "name": "Anthropic",
+        "url": "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf#page=33",
+        "example": "Claude Opus 4.5 system card, section 2.20: MMMU 80.72%"
+      },
+      {
+        "name": "Google",
+        "url": "https://deepmind.google/blog/2023-a-year-of-groundbreaking-advances-in-ai-and-computing/",
+        "example": "Gemini Ultra: MMMU 59.4%"
+      }
+    ]
+  },
+  "attention": {
+    "lecun": {
+      "project": "ChatMusician",
+      "event": "Quote-posted by Yann LeCun with the comment Fun",
+      "source": "/images/evidence/chatmusician-lecun-quote.jpg"
+    },
+    "jeff_dean": {
+      "project": "MMMU",
+      "event": "Publicly introduced by Jeff Dean",
+      "source": "https://x.com/JeffDean/status/1732418506241790197",
+      "evidence": "https://xiangyue9607.github.io/pdf/Learning_to_Reason_with_LLMs.pdf#page=25"
+    }
+  }
+}

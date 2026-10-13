@@ -61,3 +61,16 @@ The updater pins `bibtexparser<2` because scholarly 1.x imports the removed `bib
 ## Publishing
 
 GitHub Pages builds the repository root on the `main` branch and serves [a43992899.github.io](https://a43992899.github.io/). Commit the reviewed source changes and push `main` to publish; generated `_site/` output is not committed. After each release, verify that the Pages deployment corresponds to the pushed commit and has succeeded, then check the live homepage, stylesheet, portrait, and narrow-screen navigation. The site-metrics branch updates statistics independently and is not the Pages source.
+
+
+## Research impact evidence (October 13, 2026)
+
+The impact strip retains citations, GitHub stars, h-index and i10-index, and adds MERT-series cumulative downloads and a dated Music Generation label rank. Six metrics use three columns on desktop and two on narrow screens. A concise MMMU award/adoption statement sits below, followed by an accessible native disclosure containing source links and the per-model download breakdown. Existing biography, project descriptions and experience remain intact; relevant work/publication cards receive additive evidence.
+
+`_data/research_impact.json` owns these curated historical observations. They intentionally have no `data-metric` binding, so the existing live Scholar/GitHub refresh cannot relabel their dates or overwrite a label rank. To refresh MERT, sum `downloadsAllTime` for all official `m-a-p` MERT/MERT2 repositories, check pagination and preserve a dated per-repository breakdown. Do not use the rolling `downloads` value as cumulative downloads or equate downloads to unique users. The October 13 20:59:41 +08:00 snapshot totals **8,615,710**, displayed as **8.6M+**, across six repositories; exclude music2vec, mirrors and third-party derivatives.
+
+The **#8** Scholar claim is scoped to public profiles tagged Music Generation, ordered by total profile citations, from the owner's three continuous first-page screenshots observed October 13 at 17:12:20 +08:00. It is not a music-only citation ranking or comprehensive global researcher census. Refresh only with direct label-list evidence.
+
+MMMU is a **CVPR 2024 Best Paper Award Candidate**, corroborated by [first author Xiang Yue's publication list](https://xiangyue9607.github.io/publication.html) and [talk, slide 25](https://xiangyue9607.github.io/pdf/Learning_to_Reason_with_LLMs.pdf#page=25); do not shorten this to Best Paper winner. Official evaluation evidence links to OpenAI's GPT-4o mini announcement, Anthropic's Claude Opus 4.5 system card §2.20, and Google DeepMind's 2023 research review, all reporting original MMMU rather than MMMU-Pro.
+
+Social attention is project-specific: the owner-provided screenshot at `images/evidence/chatmusician-lecun-quote.jpg` shows Yann LeCun quote-posting ChatMusician with “Fun.” Jeff Dean's [MMMU post](https://x.com/JeffDean/status/1732418506241790197) is visually reproduced in Xiang Yue's talk, slide 25; it supports “publicly introduced/highlighted MMMU.” Neither item is presented as a personal endorsement, institutional partnership or endorsement of performance claims. All public sources are linked in the homepage's expandable evidence section.
