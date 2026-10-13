@@ -431,7 +431,9 @@ Chief Scientist.<br>
 
 <div markdown="1">
 **Qwen**<br>
-Research Intern — Qwen-Music (Co-Lead, Core Contributor) and Qwen-Omni Series.<br>
+Research Intern.<br>
+[**Qwen-Music**](https://arxiv.org/abs/2607.11699) — Co-Lead and Core Contributor; reached #3 on the Artificial Analysis Music with Vocals leaderboard.<br>
+Qwen-Omni Series — Music capabilities.<br>
 <span>2025.04 - 2026.07 · Remote</span>
 </div>
 
