@@ -48,6 +48,17 @@
     return Number(card.getAttribute("data-original-order")) || index;
   }
 
+  function featuredOrder(card) {
+    var value = card.getAttribute("data-featured-order");
+
+    if (value === null || value.trim() === "") {
+      return Infinity;
+    }
+
+    var order = Number(value);
+    return Number.isFinite(order) && order >= 0 ? order : Infinity;
+  }
+
   function sortContainer(container, metrics) {
     var cards = Array.prototype.filter.call(container.children, function (child) {
       return child.classList.contains("work-card") || child.classList.contains("publication-card");
@@ -58,6 +69,15 @@
     });
 
     cards.sort(function (left, right) {
+      if (container.classList.contains("work-grid")) {
+        var leftOrder = featuredOrder(left);
+        var rightOrder = featuredOrder(right);
+
+        if (leftOrder !== rightOrder) {
+          return leftOrder - rightOrder;
+        }
+      }
+
       var citationDelta = citationValue(right, metrics) - citationValue(left, metrics);
 
       if (citationDelta !== 0) {

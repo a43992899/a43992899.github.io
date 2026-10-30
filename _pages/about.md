@@ -53,8 +53,8 @@ At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/
     </div>
     <div class="impact-stat">
       <strong>#{{ site.data.research_impact.scholar_music_generation.rank }}</strong>
-      <span class="impact-label">Music Generation rank</span>
-      <span class="impact-context">Scholar · total profile citations</span>
+      <span class="impact-label">Google Scholar · Music Generation tag</span>
+      <span class="impact-context">Total profile citations · Oct 13, 2026</span>
     </div>
     <div class="impact-stat">
       <strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>
@@ -105,47 +105,19 @@ Open datasets, reproducible training pipelines, benchmark design, community rele
 ## Selected Work
 
 <div class="work-grid" markdown="1">
-<div class="work-card" markdown="1">
+<div class="work-card" data-featured-order="1" markdown="1">
 <div class="project-meta"><span class="project-type">Open music foundation models</span><span class="star-pill" data-metric="github.yue.stars_display" data-metric-suffix=" GitHub stars">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }} GitHub stars</span><span class="cite-pill" data-metric="publications.yue.citations" data-metric-prefix="YuE GS cites ">YuE GS cites {{ site.data.metrics.publications.yue.citations | default: 65 }}</span></div>
 ### [YuE](https://github.com/multimodal-art-projection/YuE) &amp; [YuE2](https://map-yue2.github.io/)
 YuE is an open foundation model for full-song music generation. YuE2 adds editable melody-and-chord planning, zero-shot covers, and agentic music editing, with competitive WildSongBench results against Suno v5. [Models](https://huggingface.co/m-a-p/YuE2-3B) · [Code](https://github.com/multimodal-art-projection/YuE) · [Benchmark](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md)
 </div>
 
-<div class="work-card" markdown="1">
+<div class="work-card" data-featured-order="2" markdown="1">
 <div class="project-meta"><span class="project-type">Music generation model</span><span class="star-pill">Co-Lead</span><span class="star-pill">Core Contributor</span><span class="star-pill">Artificial Analysis #3</span></div>
 ### [Qwen-Music](https://arxiv.org/abs/2607.11699)
-Full-song generation model evaluated anonymously as JazzCat, ranking #3 on the Artificial Analysis Music with Vocals leaderboard. Professional blind tests also preferred Qwen-Music over Suno V5 (55.4% vs. 44.6%).
+Full-song generation model evaluated anonymously as JazzCat, which reached #3 on the Artificial Analysis Music with Vocals leaderboard, as reported in July 2026. In the report’s professional blind tests, Qwen-Music was preferred over Suno V5 (55.4% vs. 44.6%).
 </div>
 
-<div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Omni-modal foundation models</span><span class="star-pill">Qwen-Omni</span><span class="cite-pill" data-metric="publications.qwen3_omni.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.qwen3_omni.citations | default: 854 }}</span></div>
-### [Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) / [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804)
-Omni-modal foundation model work across text, image, audio, video, and real-time speech interaction, focused on the Qwen3-Omni and Qwen3.5-Omni line.
-</div>
-
-<div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Audio foundation models</span><span class="star-pill">Technical Reports</span><span class="cite-pill" data-metric="publications.kimi_audio.citations" data-metric-prefix="Kimi GS cites ">Kimi GS cites {{ site.data.metrics.publications.kimi_audio.citations | default: 195 }}</span></div>
-### [Kimi-Audio](https://arxiv.org/abs/2504.18425) / [Spark-TTS](https://arxiv.org/abs/2503.01710)
-High-impact audio and speech foundation-model reports spanning general audio understanding and efficient LLM-based text-to-speech.
-</div>
-
-<div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL / ISMIR</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
-### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329) / [ComposerX](https://doi.org/10.5281/zenodo.14877425)
-Symbolic music LLM research, multi-agent composition, large-scale music-language data, and advanced music understanding evaluation.
-
-ChatMusician was publicly **quote-posted by Yann LeCun**, who commented “Fun.” [View the post](/images/evidence/chatmusician-lecun-quote.jpg).
-</div>
-
-<div class="work-card" markdown="1">
-<div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="MERT GS cites ">MERT GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
-### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927), [MERT2](https://huggingface.co/m-a-p/MERT-v2-FullSong) and [MARBLE](https://marble-bm.shef.ac.uk)
-Self-supervised music audio representation learning and unified benchmark design for music understanding.
-
-**Core researcher and co-first author of MERT and MERT2.** The six official model repositories have **{{ site.data.research_impact.mert.downloads_display }} cumulative Hugging Face downloads**. [Download statistics](#impact-sources).
-</div>
-
-<div class="work-card" markdown="1">
+<div class="work-card" data-featured-order="3" markdown="1">
 <div class="project-meta"><span class="project-type">Expert reasoning benchmarks</span><span class="star-pill">CVPR / NeurIPS / CoRR</span><span class="cite-pill" data-metric="publications.mmmu.citations" data-metric-prefix="MMMU GS cites ">MMMU GS cites {{ site.data.metrics.publications.mmmu.citations | default: 2303 }}</span></div>
 ### [MMMU](https://mmmu-benchmark.github.io) / [SuperGPQA](https://openreview.net/forum?id=6WgflzYQpf) / [CMMMU](https://openreview.net/forum?id=vpWnXKXqP8)
 Expert-level multimodal and graduate-discipline benchmarks for testing reasoning across university-level subjects, with CMMMU tracked as the Chinese CoRR benchmark.
@@ -159,6 +131,42 @@ Expert-level multimodal and graduate-discipline benchmarks for testing reasoning
 <p>Jeff Dean's MMMU post is <a href="{{ site.data.research_impact.attention.jeff_dean.evidence }}">also reproduced in the first author's talk, slide 25</a>.</p>
 </div>
 </details>
+</div>
+
+<div class="work-card" data-featured-order="4" markdown="1">
+<div class="project-meta"><span class="project-type">Omni-modal foundation models</span><span class="star-pill">Qwen-Omni</span><span class="cite-pill" data-metric="publications.qwen3_omni.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.qwen3_omni.citations | default: 854 }}</span></div>
+### [Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) / [Qwen3.5-Omni](https://arxiv.org/abs/2604.15804)
+Omni-modal foundation model work across text, image, audio, video, and real-time speech interaction, focused on the Qwen3-Omni and Qwen3.5-Omni line.
+</div>
+
+<div class="work-card" data-featured-order="5" markdown="1">
+<div class="project-meta"><span class="project-type">Music understanding</span><span class="star-pill">ICLR / NeurIPS</span><span class="cite-pill" data-metric="publications.mert.citations" data-metric-prefix="MERT GS cites ">MERT GS cites {{ site.data.metrics.publications.mert.citations | default: 329 }}</span></div>
+### [MERT](https://huggingface.co/collections/m-a-p/mert-65a2cb498448f47df2d9e927), [MERT2](https://huggingface.co/m-a-p/MERT-v2-FullSong) and [MARBLE](https://marble-bm.shef.ac.uk)
+Self-supervised music audio representation learning and unified benchmark design for music understanding.
+
+**Core researcher and co-first author of MERT and MERT2.** The six official model repositories have **{{ site.data.research_impact.mert.downloads_display }} cumulative Hugging Face downloads**. [Download statistics](#impact-sources).
+</div>
+
+<div class="work-card" data-featured-order="6" markdown="1">
+<div class="project-meta"><span class="project-type">Music LLM</span><span class="star-pill">ACL / ISMIR</span><span class="cite-pill" data-metric="publications.chatmusician.citations" data-metric-prefix="GS cites ">GS cites {{ site.data.metrics.publications.chatmusician.citations | default: 125 }}</span></div>
+### [ChatMusician](https://huggingface.co/collections/m-a-p/chatmusician-65de07b3b87b189c2a588329) / [ComposerX](https://doi.org/10.5281/zenodo.14877425)
+Symbolic music LLM research, multi-agent composition, large-scale music-language data, and advanced music understanding evaluation.
+
+ChatMusician was publicly **quote-posted by Yann LeCun**, who commented “Fun.” [View the post](/images/evidence/chatmusician-lecun-quote.jpg).
+</div>
+
+<div class="work-card" data-featured-order="7" markdown="1">
+<div class="project-meta"><span class="project-type">Music transcription</span><span class="star-pill">arXiv 2026</span></div>
+### [SheetSage2](https://huggingface.co/m-a-p/SheetSage2)
+**Toward a Whisper moment for music:** transcribing full songs into editable lead sheets, covering melody, chords, rhythm, key, and structure. SheetSage2-AR outperformed the compared prior systems on 12 of 15 benchmark–metric pairs.
+
+[Paper](https://arxiv.org/abs/2610.05336) · [Model & code](https://huggingface.co/m-a-p/SheetSage2)
+</div>
+
+<div class="work-card" markdown="1">
+<div class="project-meta"><span class="project-type">Audio foundation models</span><span class="star-pill">Technical Reports</span><span class="cite-pill" data-metric="publications.kimi_audio.citations" data-metric-prefix="Kimi GS cites ">Kimi GS cites {{ site.data.metrics.publications.kimi_audio.citations | default: 195 }}</span></div>
+### [Kimi-Audio](https://arxiv.org/abs/2504.18425) / [Spark-TTS](https://arxiv.org/abs/2503.01710)
+High-impact audio and speech foundation-model reports spanning general audio understanding and efficient LLM-based text-to-speech.
 </div>
 
 <div class="work-card" markdown="1">
@@ -246,7 +254,7 @@ Music-language modeling that treats symbolic music as a native language for unde
 </div>
 </div>
 
-### High-Impact Multimodal and LLM Work
+### Multimodal and LLM Work
 
 <div class="publication-list" markdown="1">
 <div class="publication-card" markdown="1">

@@ -36,7 +36,7 @@ All 12 source files under `_pages/`, `_posts/`, `_data/`, and `images/` matched 
 
 ## YuE and YuE2 content (September 2026)
 
-Following review, the standalone YuE2 feature, latest-release badge, and featured sorting were removed. The original editorial stylesheet and citation-based project sorting are restored. On September 23, YuE and YuE2 were merged into one ordinary Selected Work card, with separate links to the YuE repository and YuE2 project page. The card displays their shared repository star count once and labels the citation count as YuE's publication only. YuE2 remains a normal research tag and a mention in the biography. The card uses the same styling as the other projects; there is no dedicated hero or Trending scoreboard.
+Following the September review, the standalone YuE2 feature, latest-release badge, and featured sorting were removed. The original editorial stylesheet and citation-based project sorting were restored at that time; the approved October 30 ordering below supersedes that sorting rule. On September 23, YuE and YuE2 were merged into one ordinary Selected Work card, with separate links to the YuE repository and YuE2 project page. The card displays their shared repository star count once and labels the citation count as YuE's publication only. YuE2 remains a normal research tag and a mention in the biography. The card uses the same styling as the other projects; there is no dedicated hero or Trending scoreboard.
 
 The verified GitHub count remains 9,885 as observed on September 20, 2026 at 23:59:45 +08:00 via the [official repository API](https://api.github.com/repos/multimodal-art-projection/YuE). Stars belong to the shared YuE/YuE2 repository. Counts remain exact below 10,000; larger values use a floored one-decimal `k+` label. Metric timestamps prevent stale branch data from replacing the build-time snapshot. The YuE2 project description scopes its Suno v5 comparison to [WildSongBench](https://github.com/multimodal-art-projection/YuE/blob/main/docs/benchmarks.md). Scholar metrics remain unchanged.
 
@@ -82,3 +82,28 @@ Keep the public homepage institution-neutral in its music experience. Retain Slo
 ## Stylesheet freshness (October 13, 2026)
 
 The main stylesheet URL in `_includes/head.html` carries an explicit release query (`?v=20261013-mmmu`) so newly deployed HTML does not reuse an older cached stylesheet. Bump this version whenever changing stylesheet rules, and verify the exact versioned CSS served by Pages against the local build. A user screenshot showed the former four-column rules combined with six-metric markup although a fresh public fetch matched the new three-column CSS; client-side stale CSS is the likely cause, not a confirmed browser-cache trace.
+
+
+## Rank-label clarification (October 30, 2026)
+
+The owner approved retaining the prominent #8 while changing only its headline label to “Google Scholar · Music Generation tag” and its context to “Total profile citations · Oct 13, 2026”. The historical label-list scope, rank value and Sources & methodology disclosure remain unchanged. Keep the visible date consistent with the curated observation if the rank snapshot is ever refreshed. Broader biography, layout and metric simplification proposals were withdrawn; further changes require individual text review.
+
+The owner also approved shortening the publication-group heading from “High-Impact Multimodal and LLM Work” to “Multimodal and LLM Work”. This removes only the self-evaluative modifier; the group’s papers and metadata are unchanged.
+
+The Qwen-Music Selected Work card now dates the #3 leaderboard result to its July 2026 report and attributes the 55.4% vs. 44.6% professional blind-test preference to that report. Both headline results remain. Keep future wording and review items concise.
+
+
+## Selected Work ordering (October 30, 2026)
+
+Selected Work now prioritizes the owner's reviewed representative projects in this order: YuE/YuE2, Qwen-Music, MMMU/SuperGPQA/CMMMU, Qwen3-Omni/Qwen3.5-Omni, MERT/MERT2/MARBLE, ChatMusician/ComposerX, and SheetSage2. The SheetSage2 card uses the owner-approved two-sentence description, Music transcription / arXiv 2026 labels, and direct paper and model/code links. Existing project groupings, descriptions, metrics, evidence links, and the two-column desktop layout remain intact. Remaining cards continue in descending citation order; publication lists remain entirely citation-sorted.
+
+The seven priority cards carry explicit `data-featured-order` values in `_pages/about.md`, whose source order also follows the reviewed sequence. `assets/js/publication-sort.js` uses these ranks only within `.work-grid`, both on initial load and after `siteMetricsUpdated`; citation totals can refresh without moving the priority cards. Publication lists ignore featured ranks. The script URL in `_includes/scripts.html` is versioned as `?v=20261030-curated-work` so deployed pages load the updated sorting behavior. SheetSage2 carries rank 7.
+
+Initial ordering validation before adding SheetSage2 on the user Mac: Jekyll built successfully in 4.794 seconds. The nine existing work-card contents and all content outside the work grid matched the pre-ordering snapshot exactly. Checks against rendered work-card fixtures confirmed that the six priority cards remain stable on initial load and metric refresh, remaining cards follow citation totals with stable ties, and publication-list fixtures still sort by citations while ignoring featured ranks. The generated script matches the source and uses the versioned URL.
+
+The SheetSage2 opening is “Toward a Whisper moment for music”, framed as a research ambition rather than a claim of established field-wide impact. It is followed by the concrete lead-sheet transcription scope and the report’s 12-of-15 benchmark–metric comparison; do not turn this into an unqualified all-task SOTA claim.
+
+
+Final validation (October 30, 2026, user Mac): the approved SheetSage2 card is included as rank 7, bringing Selected Work to ten cards. Jekyll built successfully in 4.706 seconds. A source comparison against the original commit confirmed that only the approved rank labels, publication-group heading, Qwen-Music result wording, representative-work ordering, and new SheetSage2 card changed; original biography paragraphs, nine existing project cards apart from the reviewed Qwen wording, other publications, data, links, and music history are preserved. Rendered-fixture tests passed for all seven priorities, citation refresh, remaining-card ties, and unchanged publication-list sorting.
+
+Browser checks covered a 1440px desktop with two columns and 390px/320px mobile widths with one column, plus light and dark themes. No horizontal document overflow, overflowing work cards, broken images, or browser error logs were observed. The live metrics refreshed during preview without displacing the seven curated projects. These are focused homepage checks, not a full accessibility or external-service audit. No CSS or metric snapshot changes were needed.
