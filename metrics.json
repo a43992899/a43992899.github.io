@@ -1,0 +1,131 @@
+{
+  "updated_at": "November 21, 2026",
+  "scholar": {
+    "source": "Google Scholar",
+    "profile_url": "https://scholar.google.com/citations?user=Qd_hX1cAAAAJ",
+    "updated_at": "November 18, 2026",
+    "citations": 10123,
+    "h_index": 31,
+    "i10_index": 51,
+    "observed_at": "2026-11-18T19:51:09+08:00"
+  },
+  "github": {
+    "yue": {
+      "repo": "multimodal-art-projection/YuE",
+      "stars": 13644,
+      "stars_display": "13.6k+",
+      "updated_at": "November 21, 2026",
+      "observed_at": "2026-11-21T19:14:28+08:00"
+    }
+  },
+  "publications": {
+    "mmmu": {
+      "citations": 3372
+    },
+    "anygpt": {
+      "citations": 365
+    },
+    "rq_rag": {
+      "citations": 367
+    },
+    "cmmmu": {
+      "citations": 94
+    },
+    "coig": {
+      "citations": 53
+    },
+    "mert": {
+      "citations": 539
+    },
+    "marble": {
+      "citations": 100
+    },
+    "clamp2": {
+      "citations": 30
+    },
+    "speech_ssl_music": {
+      "citations": 18
+    },
+    "lyricwhiz": {
+      "citations": 54
+    },
+    "chatmusician": {
+      "citations": 180
+    },
+    "composerx": {
+      "citations": 79
+    },
+    "mupt": {
+      "citations": 51
+    },
+    "deid_vc": {
+      "citations": 17
+    },
+    "qwen3_omni": {
+      "citations": 1814
+    },
+    "qwen35_omni": {
+      "citations": 387
+    },
+    "kimi_audio": {
+      "citations": 321
+    },
+    "supergpqa": {
+      "citations": 294
+    },
+    "spark_tts": {
+      "citations": 247
+    },
+    "mmar": {
+      "citations": 189
+    },
+    "foundation_models_music": {
+      "citations": 95
+    },
+    "coig_cqia": {
+      "citations": 64
+    },
+    "omnibench": {
+      "citations": 133
+    },
+    "yue": {
+      "citations": 124
+    },
+    "audiox": {
+      "citations": 109
+    },
+    "audio_omni": {
+      "citations": 17
+    },
+    "vidmuse": {
+      "citations": 83
+    },
+    "uniss": {
+      "citations": 9
+    },
+    "songformer": {
+      "citations": 30
+    },
+    "voices_of_civilizations": {
+      "citations": 2
+    },
+    "map_neo": {
+      "citations": 77
+    },
+    "map_music2vec": {
+      "citations": 52
+    },
+    "clamp3": {
+      "citations": 78
+    },
+    "songeval": {
+      "citations": 74
+    },
+    "editing_music": {
+      "citations": 27
+    }
+  },
+  "update_errors": [
+    "Google Scholar update timed out after 180s"
+  ]
+}
