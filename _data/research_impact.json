@@ -1,5 +1,4 @@
 {
-  "as_of": "October 13, 2026",
   "mert": {
     "downloads_all_time": 8615710,
     "downloads_display": "8.6M+",
@@ -46,11 +45,11 @@
     ]
   },
   "scholar_music_generation": {
-    "rank": 8,
-    "observed_at": "2026-10-13T17:12:20+08:00",
+    "rank": 7,
+    "observed_at": "2026-11-25T10:32:00+07:00",
     "source": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:music_generation",
     "scope": "Public Google Scholar profiles tagged Music Generation, ranked by total profile citations",
-    "evidence": "Three consecutive first-page screenshots supplied by the profile owner on October 13, 2026"
+    "evidence": "Ruibin Yuan appeared seventh on the first page of the Google Scholar label results with 10,259 profile citations."
   },
   "mmmu": {
     "award": "CVPR 2024 Best Paper Award Candidate",

@@ -54,7 +54,7 @@ At Qwen, I was a co-lead and core contributor to [Qwen-Music](https://arxiv.org/
     <div class="impact-stat">
       <strong>#{{ site.data.research_impact.scholar_music_generation.rank }}</strong>
       <span class="impact-label">Google Scholar · Music Generation tag</span>
-      <span class="impact-context">Total profile citations · Oct 13, 2026</span>
+      <span class="impact-context">Total profile citations · {{ site.data.research_impact.scholar_music_generation.observed_at | date: "%b %-d, %Y" }}</span>
     </div>
     <div class="impact-stat">
       <strong data-metric="github.yue.stars_display">{{ site.data.metrics.github.yue.stars_display | default: "9,885" }}</strong>

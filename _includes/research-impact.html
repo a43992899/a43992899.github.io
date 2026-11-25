@@ -7,6 +7,6 @@
       <li><a href="{{ model.url }}">{{ model.id }}</a><span>{{ model.downloads_display }}</span></li>{% endfor %}
     </ul>
     <p><a href="{{ site.data.research_impact.mert.source | escape }}">Hugging Face source data</a></p>
-    <p><strong>Music Generation rank #{{ site.data.research_impact.scholar_music_generation.rank }}.</strong> Among public <a href="{{ site.data.research_impact.scholar_music_generation.source | escape }}">Google Scholar profiles tagged Music Generation</a>, ranked by total profile citations, as observed on {{ site.data.research_impact.as_of }}. This is a dated label-list snapshot, not a ranking of music-generation papers alone.</p>
+    <p><strong>Music Generation rank #{{ site.data.research_impact.scholar_music_generation.rank }}.</strong> Among public <a href="{{ site.data.research_impact.scholar_music_generation.source | escape }}">Google Scholar profiles tagged Music Generation</a>, ranked by total profile citations, as observed on {{ site.data.research_impact.scholar_music_generation.observed_at | date: "%B %-d, %Y" }}. This is a dated label-list snapshot, not a ranking of music-generation papers alone.</p>
   </div>
 </details>
